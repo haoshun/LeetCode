@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
+		24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		24E45767209CAC3C0048DEF7 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E4576A209CAC3C0048DEF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24E45771209EB4E00048DEF7 /* TwoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
+		24E45772209EB4E00048DEF7 /* TwoSum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TwoSum.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				24E45774209EB4E40048DEF7 /* TwoSum */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
 			);
 			path = LeetCode;
+			sourceTree = "<group>";
+		};
+		24E45774209EB4E40048DEF7 /* TwoSum */ = {
+			isa = PBXGroup;
+			children = (
+				24E45771209EB4E00048DEF7 /* TwoSum.h */,
+				24E45772209EB4E00048DEF7 /* TwoSum.c */,
+			);
+			path = TwoSum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
