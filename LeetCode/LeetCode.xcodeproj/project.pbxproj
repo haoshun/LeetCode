@@ -10,6 +10,7 @@
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
 		24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum.c */; };
 		24E45778209EC3060048DEF7 /* ThreeSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45777209EC3060048DEF7 /* ThreeSum.c */; };
+		24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E4577B20A01E840048DEF7 /* QuickSort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		24E45772209EB4E00048DEF7 /* TwoSum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TwoSum.c; sourceTree = "<group>"; };
 		24E45776209EC3060048DEF7 /* ThreeSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeSum.h; sourceTree = "<group>"; };
 		24E45777209EC3060048DEF7 /* ThreeSum.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ThreeSum.c; sourceTree = "<group>"; };
+		24E4577A20A01E840048DEF7 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		24E4577B20A01E840048DEF7 /* QuickSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QuickSort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				24E4577920A01E640048DEF7 /* QuickSort */,
 				24E45775209EC2EE0048DEF7 /* ThreeSum */,
 				24E45774209EB4E40048DEF7 /* TwoSum */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
@@ -86,6 +90,15 @@
 				24E45777209EC3060048DEF7 /* ThreeSum.c */,
 			);
 			path = ThreeSum;
+			sourceTree = "<group>";
+		};
+		24E4577920A01E640048DEF7 /* QuickSort */ = {
+			isa = PBXGroup;
+			children = (
+				24E4577A20A01E840048DEF7 /* QuickSort.h */,
+				24E4577B20A01E840048DEF7 /* QuickSort.c */,
+			);
+			path = QuickSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */,
+				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
 				24E45778209EC3060048DEF7 /* ThreeSum.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #include "ThreeSum.h"
+#include "QuickSort.h"
 
 
 //第一次 自己实现
@@ -108,22 +109,9 @@ int** threeSum(int* nums, int numsSize, int* returnSize)
     return resultPPWithoutDupllicate;
 }
 
-void quickSort(int* nums,int first,int end)
-{
-    int temp,l,r;
-    if(first>=end)return;
-    temp=nums[first];
-    l=first;r=end;
-    while(l<r){
-        while(l<r && nums[r]>=temp)r--;
-        if(l<r)nums[l]=nums[r];
-        while(l<r && nums[l]<=temp)l++;
-        if(l<r)nums[r]=nums[l];
-    }
-    nums[l]=temp;
-    quickSort(nums,first,l-1);
-    quickSort(nums,l+1,end);
-}
+
+
+
 
 int** threeSumBySorted(int* nums, int numsSize, int* returnSize)
 {
