@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 //#define TwoSum
-#define ThreeSum
-
+//#define ThreeSum
+#define ReverseStr
 
 
 #ifdef TwoSum
@@ -21,7 +21,9 @@
 #import "ThreeSum.h"
 #endif
 
-
+#ifdef ReverseStr
+#import "ReverseStr/ReverseStr.h"
+#endif
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -72,6 +74,15 @@ int main(int argc, const char * argv[]) {
         
         
 #endif
+        
+#ifdef ReverseStr
+        
+        char  t[100] = "abcdefghijk";
+        printf("%s\n" , reverseStr(t , 2));
+  
+        
+#endif
+        
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);
     }

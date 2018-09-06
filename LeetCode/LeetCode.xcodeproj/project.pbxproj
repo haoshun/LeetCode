@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B7F4C521410A7C0051F309 /* ReverseStr.c in Sources */ = {isa = PBXBuildFile; fileRef = 24B7F4C421410A7C0051F309 /* ReverseStr.c */; };
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
 		24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum.c */; };
 		24E45778209EC3060048DEF7 /* ThreeSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45777209EC3060048DEF7 /* ThreeSum.c */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24B7F4C321410A7C0051F309 /* ReverseStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseStr.h; sourceTree = "<group>"; };
+		24B7F4C421410A7C0051F309 /* ReverseStr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseStr.c; sourceTree = "<group>"; };
 		24E45767209CAC3C0048DEF7 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E4576A209CAC3C0048DEF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24E45771209EB4E00048DEF7 /* TwoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
@@ -47,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24B7F4C221410A200051F309 /* ReverseStr */ = {
+			isa = PBXGroup;
+			children = (
+				24B7F4C321410A7C0051F309 /* ReverseStr.h */,
+				24B7F4C421410A7C0051F309 /* ReverseStr.c */,
+			);
+			path = ReverseStr;
+			sourceTree = "<group>";
+		};
 		24E4575E209CAC3C0048DEF7 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +78,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				24B7F4C221410A200051F309 /* ReverseStr */,
 				24E4577920A01E640048DEF7 /* QuickSort */,
 				24E45775209EC2EE0048DEF7 /* ThreeSum */,
 				24E45774209EB4E40048DEF7 /* TwoSum */,
@@ -158,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */,
+				24B7F4C521410A7C0051F309 /* ReverseStr.c in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
 				24E45778209EC3060048DEF7 /* ThreeSum.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,
@@ -280,7 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FZ6D4C2GB5;
+				DEVELOPMENT_TEAM = 6BEQU99RP5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -289,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FZ6D4C2GB5;
+				DEVELOPMENT_TEAM = 6BEQU99RP5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
