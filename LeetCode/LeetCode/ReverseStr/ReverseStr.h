@@ -11,7 +11,12 @@
 
 #include <stdio.h>
 
-//反转字符串II
+//344 反转字符串
+char* reverseString(char* s) ;
+
+//541 反转字符串II
 char* reverseStr(char* s, int k);
 
+//345 反转字符串中的元音字母
+char* reverseVowels(char* s);
 #endif /* ReverseStr_h */

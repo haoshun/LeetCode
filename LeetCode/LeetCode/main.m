@@ -77,9 +77,14 @@ int main(int argc, const char * argv[]) {
         
 #ifdef ReverseStr
         
+        char  s[100] = "";
+        printf("反转字符串%s\n" , reverseString(s));
+        
         char  t[100] = "abcdefghijk";
-        printf("%s\n" , reverseStr(t , 2));
-  
+        printf("反转字符串II %s\n" , reverseStr(t , 2));
+        
+        char u[100] = "hello";
+        printf("反转反转字符串中的元音字母 %s\n" , reverseVowels(u));
         
 #endif
         
