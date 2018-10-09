@@ -10,8 +10,14 @@
 
 //#define TwoSum
 //#define ThreeSum
-#define ReverseStr
-
+//#define ReverseStr
+//#define ShortestToChar
+//#define FirstUniqChar
+//#define NumJewelsInStones
+//#define CompressChars
+//#define LicenseKeyFormatting
+//#define Reverse_7
+#define IsPalindrome_9
 
 #ifdef TwoSum
 #import "TwoSum.h"
@@ -23,6 +29,34 @@
 
 #ifdef ReverseStr
 #import "ReverseStr/ReverseStr.h"
+#endif
+
+#ifdef ShortestToChar
+#import "ShortestToChar/ShortestToChar.h"
+#endif
+
+#ifdef FirstUniqChar
+#import "FirstUniqChar/FirstUniqChar.h"
+#endif
+
+#ifdef NumJewelsInStones
+#import "NumJewelsInStones/NumJewelsInStones.h"
+#endif
+
+#ifdef CompressChars
+#import "CompressChars/CompressChars.h"
+#endif
+
+#ifdef LicenseKeyFormatting
+#import "LicenseKeyFormatting_482/LicenseKeyFormatting.h"
+#endif
+
+#ifdef Reverse_7
+#import "Reverse_7/Reverse_7.h"
+#endif
+
+#ifdef IsPalindrome_9
+#import "IsPalindrome_9/IsPalindrome_9.h"
 #endif
 
 int main(int argc, const char * argv[]) {
@@ -84,7 +118,78 @@ int main(int argc, const char * argv[]) {
         printf("反转字符串II %s\n" , reverseStr(t , 2));
         
         char u[100] = "hello";
-        printf("反转反转字符串中的元音字母 %s\n" , reverseVowels(u));
+        printf("反转字符串中的元音字母 %s\n" , reverseVowels(u));
+        
+        char v[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
+        printf("反转字符串中的单词 %s\n" , reverseWords(v));
+        
+        char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
+;
+        printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
+        
+#endif
+        
+#ifdef ShortestToChar
+        
+        char S[100] = "loveleetcode";
+        char C = 'e';
+        int length =strlen(S);
+        int * num = shortestToChar(S, C, &length);
+        
+        for (int i = 0;i<length; ++i)
+        {
+            printf("%d," , num[i]);
+        }
+        printf("\n");
+        
+        
+#endif
+        
+#ifdef FirstUniqChar
+        
+        char S[100000] = "tbxgqqacwoknthevmoinsvjrvqkfitllvafvswbxfoljeaveawrsdhglxhiubu";
+        
+        printf("%d\n",firstUniqChar(S));
+        
+        
+#endif
+        
+#ifdef NumJewelsInStones
+        
+        char S[50] = "beb";
+        char J[10] = "dbca";
+        printf("%d\n",numJewelsInStones(J, S));
+        
+        
+#endif
+        
+#ifdef CompressChars
+        
+        //char s[50] = "aabbbbbcccccdddddeeef";
+        char s[50] = "abc";
+        //char s[50] = "abcdefggggggggggggabc";
+        printf("%d\n" , compress(s, strlen(s)));
+        
+#endif
+        
+#ifdef LicenseKeyFormatting
+        
+        //char s[50] = "aabbbbbcccccdddddeeef";
+        char s[50] = "--a-a-a-a--";
+        //char s[50] = "abcdefggggggggggggabc";
+        printf("%s\n" , licenseKeyFormatting(s, 2));
+        
+#endif
+        
+#ifdef Reverse_7
+
+        printf("%d\n" , reverse(123));
+        
+#endif
+        
+#ifdef IsPalindrome_9
+        
+        printf("%d\n" , isPalindrome(20));
         
 #endif
         
