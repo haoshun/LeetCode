@@ -17,7 +17,10 @@
 //#define CompressChars
 //#define LicenseKeyFormatting
 //#define Reverse_7
-#define IsPalindrome_9
+//#define IsPalindrome_9
+
+//#define LongestCommonPrefix_14
+#define StrStr_28
 
 #ifdef TwoSum
 #import "TwoSum.h"
@@ -57,6 +60,14 @@
 
 #ifdef IsPalindrome_9
 #import "IsPalindrome_9/IsPalindrome_9.h"
+#endif
+
+#ifdef LongestCommonPrefix_14
+#import "LongestCommonPrefix_14/LongestCommonPrefix.h"
+#endif
+
+#ifdef StrStr_28
+#import "StrStr_28/StrStr_28.h"
 #endif
 
 int main(int argc, const char * argv[]) {
@@ -192,6 +203,71 @@ int main(int argc, const char * argv[]) {
         printf("%d\n" , isPalindrome(20));
         
 #endif
+        
+        
+#ifdef LongestCommonPrefix_14
+        
+        char *month[] = {"a","ac"};
+        
+        printf("%s" , longestCommonPrefix(month, 2));
+
+        
+#endif
+        
+        
+#ifdef StrStr_28
+        
+        char month[100] ="mississippi";
+        char jj[50] = "issip";
+        printf("-- %d --" , strStr(month, jj));
+        
+        
+        struct ListNode n1 , n2 , n3 , n4 ,n5 , n6  , n7;
+        struct ListNode * l1 = &n1 , *l2 = &n4 , *result;
+//        n1.val = 1;
+//        n1.next = &n2;
+//        n2.val = 2;
+//        n2.next = &n3;
+//        n3.val = 4;
+//        n3.next = NULL;
+//
+//        n4.val = 1;
+//        n4.next = &n5;
+//        n5.val = 3;
+//        n5.next = &n6;
+//        n6.val = 4;
+//        n6.next = NULL;
+//
+//
+//
+//
+//        result = mergeTwoLists(l1, l2);
+        
+        n1.val = 1;
+        n1.next = &n2;
+        n2.val = 2;
+        n2.next = &n3;
+        n3.val = 6;
+        n3.next = &n4;
+
+        n4.val = 3;
+        n4.next = &n5;
+        n5.val = 4;
+        n5.next = &n6;
+        n6.val = 5;
+        n6.next =&n7 ;
+    
+        n7.val = 6;
+        n7.next = NULL;
+    
+
+        result = removeElements(l1, 6);
+
+        
+        
+        
+#endif
+        
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);

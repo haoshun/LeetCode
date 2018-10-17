@@ -15,6 +15,9 @@
 		245BEC42215C914D005984BE /* LicenseKeyFormatting.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC41215C914D005984BE /* LicenseKeyFormatting.c */; };
 		245BEC46216B337B005984BE /* Reverse_7.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC45216B337B005984BE /* Reverse_7.c */; };
 		245BEC4A216C4276005984BE /* IsPalindrome_9.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC49216C4276005984BE /* IsPalindrome_9.c */; };
+		245BEC4E216E1845005984BE /* SearchInsert.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC4D216E1845005984BE /* SearchInsert.c */; };
+		245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC512172F9BE005984BE /* LongestCommonPrefix.c */; };
+		245BEC56217316F0005984BE /* StrStr_28.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC55217316F0005984BE /* StrStr_28.c */; };
 		24B7F4C521410A7C0051F309 /* ReverseStr.c in Sources */ = {isa = PBXBuildFile; fileRef = 24B7F4C421410A7C0051F309 /* ReverseStr.c */; };
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
 		24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum.c */; };
@@ -51,6 +54,12 @@
 		245BEC45216B337B005984BE /* Reverse_7.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Reverse_7.c; sourceTree = "<group>"; };
 		245BEC48216C4276005984BE /* IsPalindrome_9.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPalindrome_9.h; sourceTree = "<group>"; };
 		245BEC49216C4276005984BE /* IsPalindrome_9.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPalindrome_9.c; sourceTree = "<group>"; };
+		245BEC4C216E1845005984BE /* SearchInsert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchInsert.h; sourceTree = "<group>"; };
+		245BEC4D216E1845005984BE /* SearchInsert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SearchInsert.c; sourceTree = "<group>"; };
+		245BEC502172F9BE005984BE /* LongestCommonPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LongestCommonPrefix.h; sourceTree = "<group>"; };
+		245BEC512172F9BE005984BE /* LongestCommonPrefix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LongestCommonPrefix.c; sourceTree = "<group>"; };
+		245BEC54217316F0005984BE /* StrStr_28.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrStr_28.h; sourceTree = "<group>"; };
+		245BEC55217316F0005984BE /* StrStr_28.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StrStr_28.c; sourceTree = "<group>"; };
 		24B7F4C321410A7C0051F309 /* ReverseStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseStr.h; sourceTree = "<group>"; };
 		24B7F4C421410A7C0051F309 /* ReverseStr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseStr.c; sourceTree = "<group>"; };
 		24E45767209CAC3C0048DEF7 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +155,33 @@
 			path = IsPalindrome_9;
 			sourceTree = "<group>";
 		};
+		245BEC4B216E1825005984BE /* SearchInsert_35 */ = {
+			isa = PBXGroup;
+			children = (
+				245BEC4C216E1845005984BE /* SearchInsert.h */,
+				245BEC4D216E1845005984BE /* SearchInsert.c */,
+			);
+			path = SearchInsert_35;
+			sourceTree = "<group>";
+		};
+		245BEC4F2172F991005984BE /* LongestCommonPrefix_14 */ = {
+			isa = PBXGroup;
+			children = (
+				245BEC502172F9BE005984BE /* LongestCommonPrefix.h */,
+				245BEC512172F9BE005984BE /* LongestCommonPrefix.c */,
+			);
+			path = LongestCommonPrefix_14;
+			sourceTree = "<group>";
+		};
+		245BEC53217316C5005984BE /* StrStr_28 */ = {
+			isa = PBXGroup;
+			children = (
+				245BEC54217316F0005984BE /* StrStr_28.h */,
+				245BEC55217316F0005984BE /* StrStr_28.c */,
+			);
+			path = StrStr_28;
+			sourceTree = "<group>";
+		};
 		24B7F4C221410A200051F309 /* ReverseStr */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +210,9 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				245BEC53217316C5005984BE /* StrStr_28 */,
+				245BEC4F2172F991005984BE /* LongestCommonPrefix_14 */,
+				245BEC4B216E1825005984BE /* SearchInsert_35 */,
 				245BEC47216C424F005984BE /* IsPalindrome_9 */,
 				245BEC43216B3350005984BE /* Reverse_7 */,
 				245BEC3F215C9110005984BE /* LicenseKeyFormatting_482 */,
@@ -274,11 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245BEC4E216E1845005984BE /* SearchInsert.c in Sources */,
 				245BEC42215C914D005984BE /* LicenseKeyFormatting.c in Sources */,
 				245BEC2E21575841005984BE /* ShortestToChar.c in Sources */,
+				245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */,
 				245BEC3E215B604E005984BE /* CompressChars.c in Sources */,
 				245BEC36215B09E7005984BE /* NumJewelsInStones.c in Sources */,
 				245BEC3A215B2701005984BE /* Isomorphic.c in Sources */,
+				245BEC56217316F0005984BE /* StrStr_28.c in Sources */,
 				24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */,
 				245BEC46216B337B005984BE /* Reverse_7.c in Sources */,
 				24B7F4C521410A7C0051F309 /* ReverseStr.c in Sources */,
