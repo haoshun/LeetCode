@@ -70,6 +70,39 @@
 #import "StrStr_28/StrStr_28.h"
 #endif
 
+void removeOtherChar(char * s)
+{
+    int len = strlen(s) , i = 0;
+    for (int j = 0 ; j < len ; ++j)
+    {
+        if((s[j] >= 'A' && s[j] <='Z') ||(s[j] >= 'a' && s[j] <= 'z'))
+        {
+            s[i] = s[j];
+            if(s[i] >= 'A' && s[i] <='Z')
+            {
+                s[i] += 32;
+            }
+            ++i;
+        }
+    }
+    s[i] = '\0';
+}
+
+bool isPalindromes(char* s) {
+    if(!s)
+        return false;
+    if(!strlen(s))
+        return true;
+    removeOtherChar(s);
+    int len = strlen(s);
+    for(int i = 0 ; i<len/2 ; ++i)
+    {
+        if(s[i] != s[len-i-1])
+            return false;
+    }
+    return true;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -268,6 +301,10 @@ int main(int argc, const char * argv[]) {
         
 #endif
         
+        char pmpm[100] ="A man, a plan, a canal: Panama";
+        
+        printf("%d , %s\n" , isPalindromes(pmpm) , pmpm);
+
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);
