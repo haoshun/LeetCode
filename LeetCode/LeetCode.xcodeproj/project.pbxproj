@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
+		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		245BEC2E21575841005984BE /* ShortestToChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC2D21575841005984BE /* ShortestToChar.c */; };
 		245BEC32215A26B8005984BE /* FirstUniqChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC31215A26B8005984BE /* FirstUniqChar.c */; };
 		245BEC36215B09E7005984BE /* NumJewelsInStones.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC35215B09E7005984BE /* NumJewelsInStones.c */; };
@@ -39,6 +41,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
+		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
+		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
+		24388DEF21BF9F14002A4F8A /* FindPairs_532.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindPairs_532.c; sourceTree = "<group>"; };
 		245BEC2C21575841005984BE /* ShortestToChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortestToChar.h; sourceTree = "<group>"; };
 		245BEC2D21575841005984BE /* ShortestToChar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShortestToChar.c; sourceTree = "<group>"; };
 		245BEC30215A26B8005984BE /* FirstUniqChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstUniqChar.h; sourceTree = "<group>"; };
@@ -86,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */ = {
+			isa = PBXGroup;
+			children = (
+				24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */,
+				24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */,
+			);
+			path = FindDisappearedNumbers_448;
+			sourceTree = "<group>";
+		};
+		24388DED21BF9EE5002A4F8A /* FindPairs_532 */ = {
+			isa = PBXGroup;
+			children = (
+				24388DEE21BF9F14002A4F8A /* FindPairs_532.h */,
+				24388DEF21BF9F14002A4F8A /* FindPairs_532.c */,
+			);
+			path = FindPairs_532;
+			sourceTree = "<group>";
+		};
 		245BEC2B21575817005984BE /* ShortestToChar */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +246,8 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				24388DED21BF9EE5002A4F8A /* FindPairs_532 */,
+				24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */,
 				245BEC5721786093005984BE /* PlusOne_66 */,
 				245BEC53217316C5005984BE /* StrStr_28 */,
 				245BEC4F2172F991005984BE /* LongestCommonPrefix_14 */,
@@ -326,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */,
 				245BEC4E216E1845005984BE /* SearchInsert.c in Sources */,
 				245BEC42215C914D005984BE /* LicenseKeyFormatting.c in Sources */,
 				245BEC2E21575841005984BE /* ShortestToChar.c in Sources */,
@@ -337,6 +364,7 @@
 				24E45773209EB4E00048DEF7 /* TwoSum.c in Sources */,
 				245BEC46216B337B005984BE /* Reverse_7.c in Sources */,
 				245BEC5A217860C2005984BE /* PlusOne_66.c in Sources */,
+				24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */,
 				24B7F4C521410A7C0051F309 /* ReverseStr.c in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
 				245BEC4A216C4276005984BE /* IsPalindrome_9.c in Sources */,

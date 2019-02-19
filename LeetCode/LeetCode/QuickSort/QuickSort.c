@@ -31,3 +31,16 @@ void quickSort(int* nums,int first,int end)
     quickSort(nums,first,l-1);
     quickSort(nums,l+1,end);
 }
+
+//递归实现
+//void quickSort(int* nums,int first,int end)
+//{
+//    if (!nums )
+//        return;
+//
+//    if(first>=end)
+//        return;
+//
+//
+//}
+

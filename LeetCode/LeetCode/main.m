@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 //#define TwoSum
 //#define ThreeSum
 //#define ReverseStr
@@ -20,7 +22,7 @@
 //#define IsPalindrome_9
 
 //#define LongestCommonPrefix_14
-#define StrStr_28
+//#define StrStr_28
 
 #ifdef TwoSum
 #import "TwoSum.h"
@@ -69,6 +71,80 @@
 #ifdef StrStr_28
 #import "StrStr_28/StrStr_28.h"
 #endif
+
+#import "FindDisappearedNumbers_448/FindDisappearedNumbers_448.h"
+
+#import "FindPairs_532/FindPairs_532.h"
+
+bool isHappy(int n) {
+    int sum = 0 , num = n , tmp;
+    while(num != 4)
+    {
+        do
+        {
+            tmp = num%10;
+            sum += tmp*tmp;
+            num /= 10;
+            
+        }
+        while(num);
+        
+        if(sum == 1)
+            return true;
+        else
+        {
+            num = sum;
+            sum = 0;
+        }
+        
+    }
+    return false;
+}
+
+ int climbStairs1(int n) {
+     if(n ==1)
+         return 1;
+     if(n == 2)
+         return 2;
+     return climbStairs1(n-1) + climbStairs1(n-2);
+ }
+
+int climbStairs2(int n) {
+    if(n ==1)
+        return 1;
+    if(n == 2)
+        return 2;
+    int stairsCount[2] ={1,2}  ;
+    for (int index = 3 ; index <= n; ++index)
+    {
+        stairsCount[0] ^= stairsCount[1];
+        stairsCount[1] ^= stairsCount[0];
+        stairsCount[0] ^= stairsCount[1];
+        stairsCount[1] += stairsCount[0];
+    }
+    return stairsCount[1];
+}
+
+char  * decryptString(char * s)
+{
+    long len = strlen(s);
+    for(long i = 0 ; i < len ; ++i)
+    {
+        if((s[i] >= 'c' && s[i] <= 'z' ) || (s[i] >= 'C' && s[i] <= 'Z' ))
+        {
+            s[i] -= 2;
+        }
+        else if (s[i] == 'a' || s[i] == 'b' ||s[i] == 'A' || s[i] == 'B')
+        {
+            s[i] += 24;
+        }
+        else if (s[i] >= '0' && s[i] <= '9')
+        {
+            s[i] = '9' - s[i] + '0';
+        }
+    }
+    return s;
+}
 
 void removeOtherChar(char * s)
 {
@@ -301,13 +377,34 @@ int main(int argc, const char * argv[]) {
         
 #endif
         
-        char pmpm[100] ="A man, a plan, a canal: Panama";
+//        char pmpm[100] ="A man, a plan, a canal: Panama";
+//
+//        printf("%d , %s\n" , isPalindromes(pmpm) , pmpm);
         
-        printf("%d , %s\n" , isPalindromes(pmpm) , pmpm);
-
+//        int nums[8] ={4,3,2,7,8,2,3,1};
+//        int returnSize = 0;
+//        int * returnNums = findDisappearedNumbers(nums, 8, &returnSize);
+        
+//        int nums[5] ={1,1,1,2,2};
+//        
+//        int count = findPairs(nums, 5, 1);
+        
+#define testNum 25
+        
+        //printf("%d\n" , climbStairs2(testNum));
+        
+        
+        //printf("%d\n" , isHappy(testNum));
+        char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
+        printf("反转字符串%s\n" , decryptString(w));
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);
+        
+//        CFAbsoluteTime start1 = CFAbsoluteTimeGetCurrent();
+//        printf("%d\n" , climbStairs1(testNum));
+//        CFAbsoluteTime end1 = CFAbsoluteTimeGetCurrent();
+//        NSLog(@"time cost: %0.3f ms", (end1 - start1)*1000);
     }
     return 0;
 }
