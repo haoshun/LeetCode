@@ -24,6 +24,8 @@
 //#define LongestCommonPrefix_14
 //#define StrStr_28
 
+#define RemoveDuplicatesfromSortedArrayII_80
+
 #ifdef TwoSum
 #import "TwoSum.h"
 #endif
@@ -70,6 +72,10 @@
 
 #ifdef StrStr_28
 #import "StrStr_28/StrStr_28.h"
+#endif
+
+#ifdef RemoveDuplicatesfromSortedArrayII_80
+#import "RemoveDuplicatesfromSortedArrayII_80/RemoveDuplicatesfromSortedArrayII_80.h"
 #endif
 
 #import "FindDisappearedNumbers_448/FindDisappearedNumbers_448.h"
@@ -320,6 +326,17 @@ int main(int argc, const char * argv[]) {
         
         printf("%s" , longestCommonPrefix(month, 2));
 
+        
+#endif
+        
+#ifdef RemoveDuplicatesfromSortedArrayII_80
+        
+        int nums[9] ={0,0,1,1,1,1,2,3,3};
+        
+        int count = removeDuplicates(nums, 9);
+        
+        printf("%d\n" , count);
+        
         
 #endif
         

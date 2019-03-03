@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101605D2222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c in Sources */ = {isa = PBXBuildFile; fileRef = 101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		245BEC2E21575841005984BE /* ShortestToChar.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC2D21575841005984BE /* ShortestToChar.c */; };
@@ -41,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		101605D0222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveDuplicatesfromSortedArrayII_80.h; sourceTree = "<group>"; };
+		101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RemoveDuplicatesfromSortedArrayII_80.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -92,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101605D3222BBC3600D8D506 /* RemoveDuplicatesfromSortedArrayII_80 */ = {
+			isa = PBXGroup;
+			children = (
+				101605D0222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.h */,
+				101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */,
+			);
+			path = RemoveDuplicatesfromSortedArrayII_80;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +258,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				101605D3222BBC3600D8D506 /* RemoveDuplicatesfromSortedArrayII_80 */,
 				24388DED21BF9EE5002A4F8A /* FindPairs_532 */,
 				24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */,
 				245BEC5721786093005984BE /* PlusOne_66 */,
@@ -352,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101605D2222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c in Sources */,
 				24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */,
 				245BEC4E216E1845005984BE /* SearchInsert.c in Sources */,
 				245BEC42215C914D005984BE /* LicenseKeyFormatting.c in Sources */,
