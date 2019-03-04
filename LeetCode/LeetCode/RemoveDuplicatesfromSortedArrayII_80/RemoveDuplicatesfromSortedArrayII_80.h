@@ -10,6 +10,7 @@
 #define RemoveDuplicatesfromSortedArrayII_80_h
 
 #include <stdio.h>
+#include <stdbool.h>
 
 int removeDuplicates(int* nums, int numsSize);
 
