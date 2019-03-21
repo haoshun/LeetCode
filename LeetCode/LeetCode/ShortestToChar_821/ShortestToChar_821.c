@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "ShortestToChar.h"
+#include "ShortestToChar_821.h"
 
 //821. 字符的最短距离
 //给定一个字符串 S 和一个字符 C。返回一个代表字符串 S 中每个字符到字符串 S 中的字符 C 的最短距离的数组。

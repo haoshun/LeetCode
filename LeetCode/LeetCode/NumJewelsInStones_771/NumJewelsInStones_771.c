@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "NumJewelsInStones.h"
+#include "NumJewelsInStones_771.h"
 
 //时间复杂度 O(s * j) 空间复杂度 O(1)
 //int numJewelsInStones(char* J, char* S)

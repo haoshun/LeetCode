@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "Isomorphic.h"
+#include "Isomorphic_205.h"
 
 bool isIsomorphic(char* s, char* t)
 {

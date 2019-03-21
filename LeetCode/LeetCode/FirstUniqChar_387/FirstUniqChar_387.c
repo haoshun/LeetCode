@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "FirstUniqChar.h"
+#include "FirstUniqChar_387.h"
 
 int firstUniqChar(char* s)
 {

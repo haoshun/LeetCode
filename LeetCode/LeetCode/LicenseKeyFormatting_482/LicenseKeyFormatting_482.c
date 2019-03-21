@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "LicenseKeyFormatting.h"
+#include "LicenseKeyFormatting_482.h"
 char upperLetter(char t)
 {
     if (t>='a' &&t<='z')

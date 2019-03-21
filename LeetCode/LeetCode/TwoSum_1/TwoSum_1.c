@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "TwoSum.h"
+#include "TwoSum_1.h"
 
 //我的解法
 //时间复杂度 O(n^n)

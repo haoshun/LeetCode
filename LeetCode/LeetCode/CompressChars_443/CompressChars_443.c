@@ -6,7 +6,7 @@
 //  Copyright © 2018年 desezed. All rights reserved.
 //
 
-#include "CompressChars.h"
+#include "CompressChars_443.h"
 
 void countToChar(char * chars , int count , int * index_p)
 {
