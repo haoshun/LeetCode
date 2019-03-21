@@ -13,7 +13,6 @@
 
 
 
-//#define ReverseStr
 
 
 //#define TwoSum_1
@@ -36,9 +35,15 @@
 
 //#define RemoveDuplicatesfromSortedArrayII_80
 
+//#define ReverseWordsAndReduceSpace_186
+
+//#define IsHappy_202
 //#define RemoveElements_203
 
 //#define Isomorphic_205
+
+//#define ReverseString_344
+//#define ReverseVowels_345
 
 //#define FirstUniqChar_387
 
@@ -52,9 +57,15 @@
 
 //#define FindPairs_532
 
+//#define ReverseStr_II_541
+
+//#define ReverseWords_557
+
 //#define NumJewelsInStones_771
 
 //#define ShortestToChar_821
+
+//#define IsLongPressedName_925
 
 //#define AddToArrayForm_989
 
@@ -64,39 +75,8 @@
 
 
 
-#ifdef ReverseStr
-#import "ReverseStr/ReverseStr.h"
-#endif
 
 
-
-
-
-
-bool isHappy(int n) {
-    int sum = 0 , num = n , tmp;
-    while(num != 4)
-    {
-        do
-        {
-            tmp = num%10;
-            sum += tmp*tmp;
-            num /= 10;
-            
-        }
-        while(num);
-        
-        if(sum == 1)
-            return true;
-        else
-        {
-            num = sum;
-            sum = 0;
-        }
-        
-    }
-    return false;
-}
 
  int climbStairs1(int n) {
      if(n ==1)
@@ -176,38 +156,7 @@ bool isPalindromes(char* s) {
     return true;
 }
 
-bool isLongPressedName(char* name, char* typed) {
-    int n_len = strlen(name) , t_len = strlen(typed);
-    if(!name || !typed || n_len == 0 || t_len == 0 || t_len < n_len || name[0] != typed[0])
-        return false;
-    
-    for(int i = 0 , j = 0 ; i < n_len && j < t_len ; )
-    {
-        if(name[i] != typed[j])
-        {
-            if(typed[j] != name[i-1])
-                return false;
-        }
-        else
-            ++i;
-        
-        ++j;
-        
-        if(j == t_len && i != n_len)
-            return false;
-        if (i == n_len)
-        {
-            while (j < t_len)
-            {
-                if (name[i-1] != typed[j]) {
-                    return false;
-                }
-                ++j;
-            }
-        }
-    }
-    return true;
-}
+
 
 #pragma mark - 1_两数相加_TwoSum
 
@@ -441,7 +390,33 @@ void RemoveDuplicatesfromSortedArrayII()
     
     printf("%d\n" , count);
 }
+#endif
 
+
+#pragma mark - 186_翻转字符串中的单词_ReverseWordsAndReduceSpace
+
+#ifdef ReverseWordsAndReduceSpace_186
+#import "ReverseWordsAndReduceSpace_186/ReverseWordsAndReduceSpace_186.h"
+
+void ReverseWordsAndReduceSpace()
+{
+    char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
+    ;
+    printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
+}
+#endif
+
+
+#pragma mark - 202_快乐数_IsHappy
+
+#ifdef IsHappy_202
+#import "IsHappy_202/IsHappy_202.h"
+
+void IsHappy()
+{
+    int testNum = 25;
+    printf("%d\n" , isHappy(testNum));
+}
 #endif
 
 
@@ -485,6 +460,32 @@ void RemoveElements()
 void Isomorphic()
 {
     
+}
+#endif
+
+
+#pragma mark - 344_反转字符串_ReverseString
+
+#ifdef ReverseString_344
+#import "ReverseString_344/ReverseString_344.h"
+
+void ReverseString()
+{
+    char  s[100] = "";
+    printf("反转字符串%s\n" , reverseString(s));
+}
+#endif
+
+
+#pragma mark - 345_反转字符串中的元音字母_ReverseVowels
+
+#ifdef ReverseVowels_345
+#import "ReverseVowels_345/ReverseVowels_345.h"
+
+void ReverseVowels()
+{
+    char u[100] = "hello";
+    printf("反转字符串中的元音字母 %s\n" , reverseVowels(u));
 }
 #endif
 
@@ -571,6 +572,32 @@ void FindPairs()
 #endif
 
 
+#pragma mark - 541_反转字符串II_ReverseStr
+
+#ifdef ReverseStr_II_541
+#import "ReverseStr_541/ReverseStr_541.h"
+
+void ReverseStr()
+{
+    char  t[100] = "abcdefghijk";
+    printf("反转字符串II %s\n" , reverseStr(t , 2));
+}
+#endif
+
+
+#pragma mark - 557_反转字符串II_ReverseWords
+
+#ifdef ReverseWords_557
+#import "ReverseWords_557/ReverseWords_557.h"
+
+void ReverseWords()
+{
+    char v[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
+    printf("反转字符串中的单词 %s\n" , reverseWords(v));
+}
+#endif
+
+
 #pragma mark - 771_宝石与石头_NumJewelsInStones
 
 #ifdef NumJewelsInStones_771
@@ -606,6 +633,21 @@ void ShortestToChar()
 #endif
 
 
+#pragma mark - 925_长按键入_IsLongPressedName
+
+#ifdef IsLongPressedName_925
+#import "IsLongPressedName_925/IsLongPressedName_925.h"
+
+void IsLongPressedName()
+{
+    char * name = "vtkgn";
+    char * typed = "vttkgnn";
+    
+    NSLog(@"%d" , isLongPressedName(name, typed)) ;
+}
+#endif
+
+
 #pragma mark - 989_数组形式的整数加法_AddToArrayForm
 
 #ifdef AddToArrayForm_989
@@ -631,38 +673,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-
         
 
-        
-#ifdef ReverseStr
-        
-        char  s[100] = "";
-        printf("反转字符串%s\n" , reverseString(s));
-        
-        char  t[100] = "abcdefghijk";
-        printf("反转字符串II %s\n" , reverseStr(t , 2));
-        
-        char u[100] = "hello";
-        printf("反转字符串中的元音字母 %s\n" , reverseVowels(u));
-        
-        char v[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
-        printf("反转字符串中的单词 %s\n" , reverseWords(v));
-        
-        char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
-;
-        printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
-        
-#endif
-        
-
-        
-
-        
-
-        
-
-        
 #ifdef TwoSum_1
         TwoSum();
 #endif
@@ -717,6 +729,16 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef ReverseWordsAndReduceSpace_186
+        ReverseWordsAndReduceSpace();
+#endif
+
+        
+#ifdef IsHappy_202
+        IsHappy();
+#endif
+        
+        
 #ifdef RemoveElements_203
         RemoveElements();
 #endif
@@ -724,6 +746,16 @@ int main(int argc, const char * argv[]) {
         
 #ifdef Isomorphic_205
         Isomorphic();
+#endif
+        
+        
+#ifdef ReverseString_344
+        ReverseString();
+#endif
+        
+        
+#ifdef ReverseVowels_345
+        ReverseVowels();
 #endif
         
         
@@ -757,8 +789,13 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
-#ifdef NumJewelsInStones_771
-        NumJewelsInStones();
+#ifdef ReverseStr_II_541
+        ReverseStr();
+#endif
+        
+        
+#ifdef ReverseWords_557
+        ReverseWords();
 #endif
         
         
@@ -793,24 +830,12 @@ int main(int argc, const char * argv[]) {
         //printf("%d\n" , climbStairs2(testNum));
         
         
-        //printf("%d\n" , isHappy(testNum));
+        
         char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
         printf("反转字符串%s\n" , decryptString(w));
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);
-
-        char * name = "vtkgn";
-        char * typed = "vttkgnn";
-        
-
-        
-        NSLog(@"%d" , isLongPressedName(name, typed)) ;
-        
-//        CFAbsoluteTime start1 = CFAbsoluteTimeGetCurrent();
-//        printf("%d\n" , climbStairs1(testNum));
-//        CFAbsoluteTime end1 = CFAbsoluteTimeGetCurrent();
-//        NSLog(@"time cost: %0.3f ms", (end1 - start1)*1000);
     }
     return 0;
 }
