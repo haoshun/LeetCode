@@ -12,9 +12,6 @@
 
 
 
-
-
-
 //#define TwoSum_1
 //#define AddTwoNumbers_2
 
@@ -22,10 +19,15 @@
 
 //#define IsPalindrome_9
 
+//#define RomanToInt_13
 //#define LongestCommonPrefix_14
 //#define ThreeSum_15
 
 //#define MergeTwoLists_21
+
+//#define SwapPairs_24
+
+#define RemoveDuplicates_26
 
 //#define StrStr_28
 
@@ -33,7 +35,11 @@
 
 //#define PlusOne_66
 
+//#define ClimbStairs_70
+
 //#define RemoveDuplicatesfromSortedArrayII_80
+
+//#define IsPalindrome_125
 
 //#define ReverseWordsAndReduceSpace_186
 
@@ -73,35 +79,6 @@
 
 
 
-
-
-
-
-
- int climbStairs1(int n) {
-     if(n ==1)
-         return 1;
-     if(n == 2)
-         return 2;
-     return climbStairs1(n-1) + climbStairs1(n-2);
- }
-
-int climbStairs2(int n) {
-    if(n ==1)
-        return 1;
-    if(n == 2)
-        return 2;
-    int stairsCount[2] ={1,2}  ;
-    for (int index = 3 ; index <= n; ++index)
-    {
-        stairsCount[0] ^= stairsCount[1];
-        stairsCount[1] ^= stairsCount[0];
-        stairsCount[0] ^= stairsCount[1];
-        stairsCount[1] += stairsCount[0];
-    }
-    return stairsCount[1];
-}
-
 char  * decryptString(char * s)
 {
     long len = strlen(s);
@@ -121,39 +98,6 @@ char  * decryptString(char * s)
         }
     }
     return s;
-}
-
-void removeOtherChar(char * s)
-{
-    int len = strlen(s) , i = 0;
-    for (int j = 0 ; j < len ; ++j)
-    {
-        if((s[j] >= 'A' && s[j] <='Z') ||(s[j] >= 'a' && s[j] <= 'z'))
-        {
-            s[i] = s[j];
-            if(s[i] >= 'A' && s[i] <='Z')
-            {
-                s[i] += 32;
-            }
-            ++i;
-        }
-    }
-    s[i] = '\0';
-}
-
-bool isPalindromes(char* s) {
-    if(!s)
-        return false;
-    if(!strlen(s))
-        return true;
-    removeOtherChar(s);
-    int len = strlen(s);
-    for(int i = 0 ; i<len/2 ; ++i)
-    {
-        if(s[i] != s[len-i-1])
-            return false;
-    }
-    return true;
 }
 
 
@@ -262,6 +206,19 @@ void IsPalindrome()
 #endif
 
 
+#pragma mark - 13_罗马数字转整数_RomanToInt
+
+#ifdef RomanToInt_13
+#import "RomanToInt_13/RomanToInt_13.h"
+
+void RomanToInt()
+{
+    char u[100] = "MCMXCIV";
+    printf("罗马数字转整数 : %d\n" , romanToInt(u));
+}
+#endif
+
+
 #pragma mark - 14_最长公共前缀_LongestCommonPrefix
 
 #ifdef LongestCommonPrefix_14
@@ -339,6 +296,57 @@ void MergeTwoLists()
 #endif
 
 
+#pragma mark - 24_两两交换链表中的节点_SwapPairs
+
+#ifdef SwapPairs_24
+#import "SwapPairs_24/SwapPairs_24.h"
+
+void SwapPairs()
+{
+    struct ListNode n1 , n2 , n3 , n4;
+    struct ListNode * l1 = &n1 ,  *result;
+    
+    n1.val = 1;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 4;
+    n4.next = NULL;
+    
+    result = swapPairs(l1);
+    printf("两两交换链表中的节点 : ");
+    while (result) {
+        printf("%d " , result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 26_删除排序数组中的重复项_RemoveDuplicates
+
+#ifdef RemoveDuplicates_26
+#import "RemoveDuplicates_26/RemoveDuplicates_26.h"
+
+void RemoveDuplicates()
+{
+    int nums[10] ={0,0,1,1,1,2,2,3,3,4};
+    
+    int count = removeDuplicates_26(nums, 10);
+    
+    printf("删除排序数组中的重复项 : %d\n" , count);
+    for (int i = 0 ; i < count; ++i) {
+        printf("%d ," , nums[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
 #pragma mark - 28_实现strStr()_StrStr
 
 #ifdef StrStr_28
@@ -377,6 +385,20 @@ void PlusOne()
 #endif
 
 
+#pragma mark - 70_爬楼梯_ClimbStairs
+
+#ifdef ClimbStairs_70
+#import "ClimbStairs_70/ClimbStairs_70.h"
+
+void ClimbStairs()
+{
+    int stairsCount = 25;
+    printf("爬楼梯: %d\n" , climbStairs1(stairsCount));
+    printf("爬楼梯: %d\n" , climbStairs2(stairsCount));
+}
+#endif
+
+
 #pragma mark - 80_删除排序数组中的重复项_II_RemoveDuplicatesfromSortedArrayII
 
 #ifdef RemoveDuplicatesfromSortedArrayII_80
@@ -389,6 +411,20 @@ void RemoveDuplicatesfromSortedArrayII()
     int count = removeDuplicates(nums, 9);
     
     printf("%d\n" , count);
+}
+#endif
+
+
+#pragma mark - 125_验证回文串_IsPalindrome
+
+#ifdef IsPalindrome_125
+#import "IsPalindrome_125/IsPalindrome_125.h"
+
+void IsPalindrome()
+{
+    char pmpm[100] ="A man, a plan, a canal: Panama";
+
+    printf("验证回文串: %d , %s\n" , isPalindrome_125(pmpm) , pmpm);
 }
 #endif
 
@@ -540,7 +576,14 @@ void CompressChars()
 
 void FindDisappearedNumbers()
 {
-    
+    int nums[8] ={4,3,2,7,8,2,3,1};
+    int returnSize = 0;
+    int * returnNums = findDisappearedNumbers(nums, 8, &returnSize);
+    printf("找到所有数组中消失的数字 : \n");
+    for (int i = 0; i < returnSize; ++i) {
+        printf("%d ," , returnNums[i]);
+    }
+    printf("\n");
 }
 #endif
 
@@ -695,6 +738,11 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef RomanToInt_13
+        RomanToInt();
+#endif
+        
+        
 #ifdef LongestCommonPrefix_14
         LongestCommonPrefix();
 #endif
@@ -710,9 +758,20 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef SwapPairs_24
+        SwapPairs();
+#endif
+        
+        
+#ifdef RemoveDuplicates_26
+        RemoveDuplicates();
+#endif
+        
+        
 #ifdef StrStr_28
         StrStr();
 #endif
+        
         
 #ifdef SearchInsert_35
         SearchInsert();
@@ -724,8 +783,18 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef ClimbStairs_70
+        ClimbStairs();
+#endif
+        
+        
 #ifdef RemoveDuplicatesfromSortedArrayII_80
         RemoveDuplicatesfromSortedArrayII();
+#endif
+        
+        
+#ifdef IsPalindrome_125
+        IsPalindrome();
 #endif
         
         
@@ -815,20 +884,12 @@ int main(int argc, const char * argv[]) {
         
 
         
-//        char pmpm[100] ="A man, a plan, a canal: Panama";
-//
-//        printf("%d , %s\n" , isPalindromes(pmpm) , pmpm);
-        
-//        int nums[8] ={4,3,2,7,8,2,3,1};
-//        int returnSize = 0;
-//        int * returnNums = findDisappearedNumbers(nums, 8, &returnSize);
+
         
 
         
-#define testNum 25
-        
-        //printf("%d\n" , climbStairs2(testNum));
-        
+
+    
         
         
         char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
