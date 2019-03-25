@@ -22,6 +22,8 @@
 		102650CA224474E800D223A6 /* RomanToInt_13.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650C9224474E800D223A6 /* RomanToInt_13.c */; };
 		102650CE224476C500D223A6 /* SwapPairs_24.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650CD224476C500D223A6 /* SwapPairs_24.c */; };
 		102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650D122447AF400D223A6 /* RemoveDuplicates_26.c */; };
+		102650D92248892300D223A6 /* TitleToNumber_171.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650D82248892300D223A6 /* TitleToNumber_171.c */; };
+		102650DD2248BB8E00D223A6 /* ConvertToTitle_168.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650DC2248BB8E00D223A6 /* ConvertToTitle_168.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -89,6 +91,10 @@
 		102650CD224476C500D223A6 /* SwapPairs_24.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SwapPairs_24.c; sourceTree = "<group>"; };
 		102650D022447AF400D223A6 /* RemoveDuplicates_26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveDuplicates_26.h; sourceTree = "<group>"; };
 		102650D122447AF400D223A6 /* RemoveDuplicates_26.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RemoveDuplicates_26.c; sourceTree = "<group>"; };
+		102650D72248892300D223A6 /* TitleToNumber_171.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitleToNumber_171.h; sourceTree = "<group>"; };
+		102650D82248892300D223A6 /* TitleToNumber_171.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TitleToNumber_171.c; sourceTree = "<group>"; };
+		102650DB2248BB8E00D223A6 /* ConvertToTitle_168.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConvertToTitle_168.h; sourceTree = "<group>"; };
+		102650DC2248BB8E00D223A6 /* ConvertToTitle_168.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ConvertToTitle_168.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -290,6 +296,24 @@
 			path = RemoveDuplicates_26;
 			sourceTree = "<group>";
 		};
+		102650D6224888EE00D223A6 /* TitleToNumber_171 */ = {
+			isa = PBXGroup;
+			children = (
+				102650D72248892300D223A6 /* TitleToNumber_171.h */,
+				102650D82248892300D223A6 /* TitleToNumber_171.c */,
+			);
+			path = TitleToNumber_171;
+			sourceTree = "<group>";
+		};
+		102650DA2248BB5F00D223A6 /* ConvertToTitle_168 */ = {
+			isa = PBXGroup;
+			children = (
+				102650DB2248BB8E00D223A6 /* ConvertToTitle_168.h */,
+				102650DC2248BB8E00D223A6 /* ConvertToTitle_168.c */,
+			);
+			path = ConvertToTitle_168;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* AddToArrayForm_989 */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +486,8 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				102650DA2248BB5F00D223A6 /* ConvertToTitle_168 */,
+				102650D6224888EE00D223A6 /* TitleToNumber_171 */,
 				102650CF22447ADF00D223A6 /* RemoveDuplicates_26 */,
 				102650CB224476B200D223A6 /* SwapPairs_24 */,
 				1078035E2240EE85009684B6 /* AddStrings_415 */,
@@ -612,6 +638,7 @@
 				1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */,
 				24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */,
 				102650B62243B2E900D223A6 /* Tools.c in Sources */,
+				102650D92248892300D223A6 /* TitleToNumber_171.c in Sources */,
 				24B7F4C521410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c in Sources */,
 				102650C22244683700D223A6 /* ClimbStairs_70.c in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
@@ -623,6 +650,7 @@
 				24E45778209EC3060048DEF7 /* ThreeSum_15.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,
 				245BEC32215A26B8005984BE /* FirstUniqChar_387.c in Sources */,
+				102650DD2248BB8E00D223A6 /* ConvertToTitle_168.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

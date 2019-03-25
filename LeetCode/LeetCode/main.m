@@ -27,7 +27,7 @@
 
 //#define SwapPairs_24
 
-#define RemoveDuplicates_26
+//#define RemoveDuplicates_26
 
 //#define StrStr_28
 
@@ -40,6 +40,10 @@
 //#define RemoveDuplicatesfromSortedArrayII_80
 
 //#define IsPalindrome_125
+
+#define ConvertToTitle_168
+
+//#define TitleToNumber_171
 
 //#define ReverseWordsAndReduceSpace_186
 
@@ -429,6 +433,32 @@ void IsPalindrome()
 #endif
 
 
+#pragma mark - 168_Excel表列名称_ConvertToTitle
+
+#ifdef ConvertToTitle_168
+#import "ConvertToTitle_168/ConvertToTitle_168.h"
+
+void ConvertToTitle()
+{
+    char * result = convertToTitle(701);
+    printf("Excel表列名称 %s\n" , result);
+}
+#endif
+
+
+#pragma mark - 171_Excel表列序号_TitleToNumber
+
+#ifdef TitleToNumber_171
+#import "TitleToNumber_171/TitleToNumber_171.h"
+
+void TitleToNumber()
+{
+    char w[10] = "A";
+    printf("Excel表列序号 %d\n" , titleToNumber(w));
+}
+#endif
+
+
 #pragma mark - 186_翻转字符串中的单词_ReverseWordsAndReduceSpace
 
 #ifdef ReverseWordsAndReduceSpace_186
@@ -795,6 +825,16 @@ int main(int argc, const char * argv[]) {
         
 #ifdef IsPalindrome_125
         IsPalindrome();
+#endif
+        
+        
+#ifdef ConvertToTitle_168
+        ConvertToTitle();
+#endif
+        
+        
+#ifdef TitleToNumber_171
+        TitleToNumber();
 #endif
         
         
