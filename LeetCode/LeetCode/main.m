@@ -52,7 +52,9 @@
 
 //#define Isomorphic_205
 
-#define ComputeArea_223
+//#define ComputeArea_223
+
+#define AddDigits_258
 
 //#define ReverseString_344
 //#define ReverseVowels_345
@@ -546,6 +548,18 @@ void ComputeArea()
 #endif
 
 
+#pragma mark - 258_各位相加_AddDigits
+
+#ifdef AddDigits_258
+#import "AddDigits_258/AddDigits_258.h"
+
+void AddDigits()
+{
+    printf("各位相加 : %d \n" , addDigits(38));
+}
+#endif
+
+
 #pragma mark - 344_反转字符串_ReverseString
 
 #ifdef ReverseString_344
@@ -891,6 +905,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef ComputeArea_223
         ComputeArea();
+#endif
+        
+        
+#ifdef AddDigits_258
+        AddDigits();
 #endif
         
         

@@ -26,6 +26,7 @@
 		102650DD2248BB8E00D223A6 /* ConvertToTitle_168.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650DC2248BB8E00D223A6 /* ConvertToTitle_168.c */; };
 		102650E12249DFD300D223A6 /* IsRectangleOverlap_836.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E02249DFD300D223A6 /* IsRectangleOverlap_836.c */; };
 		102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E42249E17400D223A6 /* ComputeArea_223.c */; };
+		102650E9224A07D600D223A6 /* AddDigits_258.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E8224A07D600D223A6 /* AddDigits_258.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -101,6 +102,8 @@
 		102650E02249DFD300D223A6 /* IsRectangleOverlap_836.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsRectangleOverlap_836.c; sourceTree = "<group>"; };
 		102650E32249E17400D223A6 /* ComputeArea_223.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComputeArea_223.h; sourceTree = "<group>"; };
 		102650E42249E17400D223A6 /* ComputeArea_223.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ComputeArea_223.c; sourceTree = "<group>"; };
+		102650E7224A07D600D223A6 /* AddDigits_258.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDigits_258.h; sourceTree = "<group>"; };
+		102650E8224A07D600D223A6 /* AddDigits_258.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddDigits_258.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -338,6 +341,15 @@
 			path = ComputeArea_223;
 			sourceTree = "<group>";
 		};
+		102650E6224A07B300D223A6 /* AddDigits_258 */ = {
+			isa = PBXGroup;
+			children = (
+				102650E7224A07D600D223A6 /* AddDigits_258.h */,
+				102650E8224A07D600D223A6 /* AddDigits_258.c */,
+			);
+			path = AddDigits_258;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* AddToArrayForm_989 */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +522,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				102650E6224A07B300D223A6 /* AddDigits_258 */,
 				102650E22249E15700D223A6 /* ComputeArea_223 */,
 				102650DE2249DF9E00D223A6 /* IsRectangleOverlap_836 */,
 				102650DA2248BB5F00D223A6 /* ConvertToTitle_168 */,
@@ -651,6 +664,7 @@
 				245BEC36215B09E7005984BE /* NumJewelsInStones_771.c in Sources */,
 				102650A2224375CC00D223A6 /* RemoveElements_203.c in Sources */,
 				245BEC3A215B2701005984BE /* Isomorphic_205.c in Sources */,
+				102650E9224A07D600D223A6 /* AddDigits_258.c in Sources */,
 				245BEC56217316F0005984BE /* StrStr_28.c in Sources */,
 				102650A62243A4A000D223A6 /* ReverseString_344.c in Sources */,
 				102650CA224474E800D223A6 /* RomanToInt_13.c in Sources */,
