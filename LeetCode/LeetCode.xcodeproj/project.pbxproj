@@ -27,6 +27,10 @@
 		102650E12249DFD300D223A6 /* IsRectangleOverlap_836.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E02249DFD300D223A6 /* IsRectangleOverlap_836.c */; };
 		102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E42249E17400D223A6 /* ComputeArea_223.c */; };
 		102650E9224A07D600D223A6 /* AddDigits_258.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650E8224A07D600D223A6 /* AddDigits_258.c */; };
+		102650ED224A20CF00D223A6 /* RemoveElement_27.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650EC224A20CF00D223A6 /* RemoveElement_27.c */; };
+		102650F1224A246A00D223A6 /* LengthOfLastWord_58.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650F0224A246A00D223A6 /* LengthOfLastWord_58.c */; };
+		102650F5224A294200D223A6 /* AddBinary_67.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650F4224A294200D223A6 /* AddBinary_67.c */; };
+		102650F9224A2B2300D223A6 /* MySqrt_69.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650F8224A2B2300D223A6 /* MySqrt_69.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -104,6 +108,14 @@
 		102650E42249E17400D223A6 /* ComputeArea_223.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ComputeArea_223.c; sourceTree = "<group>"; };
 		102650E7224A07D600D223A6 /* AddDigits_258.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDigits_258.h; sourceTree = "<group>"; };
 		102650E8224A07D600D223A6 /* AddDigits_258.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddDigits_258.c; sourceTree = "<group>"; };
+		102650EB224A20CF00D223A6 /* RemoveElement_27.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveElement_27.h; sourceTree = "<group>"; };
+		102650EC224A20CF00D223A6 /* RemoveElement_27.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RemoveElement_27.c; sourceTree = "<group>"; };
+		102650EF224A246A00D223A6 /* LengthOfLastWord_58.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LengthOfLastWord_58.h; sourceTree = "<group>"; };
+		102650F0224A246A00D223A6 /* LengthOfLastWord_58.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LengthOfLastWord_58.c; sourceTree = "<group>"; };
+		102650F3224A294200D223A6 /* AddBinary_67.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBinary_67.h; sourceTree = "<group>"; };
+		102650F4224A294200D223A6 /* AddBinary_67.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddBinary_67.c; sourceTree = "<group>"; };
+		102650F7224A2B2300D223A6 /* MySqrt_69.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySqrt_69.h; sourceTree = "<group>"; };
+		102650F8224A2B2300D223A6 /* MySqrt_69.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MySqrt_69.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -161,76 +173,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		101605D3222BBC3600D8D506 /* RemoveDuplicatesfromSortedArrayII_80 */ = {
+		101605D3222BBC3600D8D506 /* 80_RemoveDuplicatesfromSortedArrayII */ = {
 			isa = PBXGroup;
 			children = (
 				101605D0222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.h */,
 				101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */,
 			);
-			path = RemoveDuplicatesfromSortedArrayII_80;
+			path = 80_RemoveDuplicatesfromSortedArrayII;
 			sourceTree = "<group>";
 		};
-		1026509A2243425D00D223A6 /* AddTwoNumbers_2 */ = {
+		1026509A2243425D00D223A6 /* 2_AddTwoNumbers */ = {
 			isa = PBXGroup;
 			children = (
 				10780357223F45F6009684B6 /* AddTwoNumbers_2.h */,
 				10780358223F45F6009684B6 /* AddTwoNumbers_2.c */,
 			);
-			path = AddTwoNumbers_2;
+			path = 2_AddTwoNumbers;
 			sourceTree = "<group>";
 		};
-		1026509B2243734800D223A6 /* MergeTwoLists_21 */ = {
+		1026509B2243734800D223A6 /* 21_MergeTwoLists */ = {
 			isa = PBXGroup;
 			children = (
 				1026509C2243737200D223A6 /* MergeTwoLists_21.h */,
 				1026509D2243737200D223A6 /* MergeTwoLists_21.c */,
 			);
-			path = MergeTwoLists_21;
+			path = 21_MergeTwoLists;
 			sourceTree = "<group>";
 		};
-		1026509F224375A800D223A6 /* RemoveElements_203 */ = {
+		1026509F224375A800D223A6 /* 203_RemoveElements */ = {
 			isa = PBXGroup;
 			children = (
 				102650A0224375CC00D223A6 /* RemoveElements_203.h */,
 				102650A1224375CC00D223A6 /* RemoveElements_203.c */,
 			);
-			path = RemoveElements_203;
+			path = 203_RemoveElements;
 			sourceTree = "<group>";
 		};
-		102650A32243A3AF00D223A6 /* ReverseString_344 */ = {
+		102650A32243A3AF00D223A6 /* 344_ReverseString */ = {
 			isa = PBXGroup;
 			children = (
 				102650A42243A4A000D223A6 /* ReverseString_344.h */,
 				102650A52243A4A000D223A6 /* ReverseString_344.c */,
 			);
-			path = ReverseString_344;
+			path = 344_ReverseString;
 			sourceTree = "<group>";
 		};
-		102650A72243AAFA00D223A6 /* ReverseStr_541 */ = {
+		102650A72243AAFA00D223A6 /* 541_ReverseStr */ = {
 			isa = PBXGroup;
 			children = (
 				102650A82243AB4800D223A6 /* ReverseStr_541.h */,
 				102650A92243AB4800D223A6 /* ReverseStr_541.c */,
 			);
-			path = ReverseStr_541;
+			path = 541_ReverseStr;
 			sourceTree = "<group>";
 		};
-		102650AB2243ACFD00D223A6 /* ReverseVowels_345 */ = {
+		102650AB2243ACFD00D223A6 /* 345_ReverseVowels */ = {
 			isa = PBXGroup;
 			children = (
 				102650AC2243AD1E00D223A6 /* ReverseVowels_345.h */,
 				102650AD2243AD1E00D223A6 /* ReverseVowels_345.c */,
 			);
-			path = ReverseVowels_345;
+			path = 345_ReverseVowels;
 			sourceTree = "<group>";
 		};
-		102650AF2243AEBD00D223A6 /* ReverseWords_557 */ = {
+		102650AF2243AEBD00D223A6 /* 557_ReverseWords */ = {
 			isa = PBXGroup;
 			children = (
 				102650B02243AED800D223A6 /* ReverseWords_557.h */,
 				102650B12243AED800D223A6 /* ReverseWords_557.c */,
 			);
-			path = ReverseWords_557;
+			path = 557_ReverseWords;
 			sourceTree = "<group>";
 		};
 		102650B32243B2D700D223A6 /* Tools */ = {
@@ -242,265 +254,301 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		102650B72243B5BF00D223A6 /* IsLongPressedName_925 */ = {
+		102650B72243B5BF00D223A6 /* 925_IsLongPressedName */ = {
 			isa = PBXGroup;
 			children = (
 				102650B82243B5DE00D223A6 /* IsLongPressedName_925.h */,
 				102650B92243B5DE00D223A6 /* IsLongPressedName_925.c */,
 			);
-			path = IsLongPressedName_925;
+			path = 925_IsLongPressedName;
 			sourceTree = "<group>";
 		};
-		102650BB2243B8E700D223A6 /* IsHappy_202 */ = {
+		102650BB2243B8E700D223A6 /* 202_IsHappy */ = {
 			isa = PBXGroup;
 			children = (
 				102650BC2243B90500D223A6 /* IsHappy_202.h */,
 				102650BD2243B90500D223A6 /* IsHappy_202.c */,
 			);
-			path = IsHappy_202;
+			path = 202_IsHappy;
 			sourceTree = "<group>";
 		};
-		102650BF2244681700D223A6 /* ClimbStairs_70 */ = {
+		102650BF2244681700D223A6 /* 70_ClimbStairs */ = {
 			isa = PBXGroup;
 			children = (
 				102650C02244683700D223A6 /* ClimbStairs_70.h */,
 				102650C12244683700D223A6 /* ClimbStairs_70.c */,
 			);
-			path = ClimbStairs_70;
+			path = 70_ClimbStairs;
 			sourceTree = "<group>";
 		};
-		102650C322446DDE00D223A6 /* IsPalindrome_125 */ = {
+		102650C322446DDE00D223A6 /* 125_IsPalindrome */ = {
 			isa = PBXGroup;
 			children = (
 				102650C422446E0F00D223A6 /* IsPalindrome_125.h */,
 				102650C522446E0F00D223A6 /* IsPalindrome_125.c */,
 			);
-			path = IsPalindrome_125;
+			path = 125_IsPalindrome;
 			sourceTree = "<group>";
 		};
-		102650C7224474CD00D223A6 /* RomanToInt_13 */ = {
+		102650C7224474CD00D223A6 /* 13_RomanToInt */ = {
 			isa = PBXGroup;
 			children = (
 				102650C8224474E800D223A6 /* RomanToInt_13.h */,
 				102650C9224474E800D223A6 /* RomanToInt_13.c */,
 			);
-			path = RomanToInt_13;
+			path = 13_RomanToInt;
 			sourceTree = "<group>";
 		};
-		102650CB224476B200D223A6 /* SwapPairs_24 */ = {
+		102650CB224476B200D223A6 /* 24_SwapPairs */ = {
 			isa = PBXGroup;
 			children = (
 				102650CC224476C500D223A6 /* SwapPairs_24.h */,
 				102650CD224476C500D223A6 /* SwapPairs_24.c */,
 			);
-			path = SwapPairs_24;
+			path = 24_SwapPairs;
 			sourceTree = "<group>";
 		};
-		102650CF22447ADF00D223A6 /* RemoveDuplicates_26 */ = {
+		102650CF22447ADF00D223A6 /* 26_RemoveDuplicates */ = {
 			isa = PBXGroup;
 			children = (
 				102650D022447AF400D223A6 /* RemoveDuplicates_26.h */,
 				102650D122447AF400D223A6 /* RemoveDuplicates_26.c */,
 			);
-			path = RemoveDuplicates_26;
+			path = 26_RemoveDuplicates;
 			sourceTree = "<group>";
 		};
-		102650D6224888EE00D223A6 /* TitleToNumber_171 */ = {
+		102650D6224888EE00D223A6 /* 171_TitleToNumber */ = {
 			isa = PBXGroup;
 			children = (
 				102650D72248892300D223A6 /* TitleToNumber_171.h */,
 				102650D82248892300D223A6 /* TitleToNumber_171.c */,
 			);
-			path = TitleToNumber_171;
+			path = 171_TitleToNumber;
 			sourceTree = "<group>";
 		};
-		102650DA2248BB5F00D223A6 /* ConvertToTitle_168 */ = {
+		102650DA2248BB5F00D223A6 /* 168_ConvertToTitle */ = {
 			isa = PBXGroup;
 			children = (
 				102650DB2248BB8E00D223A6 /* ConvertToTitle_168.h */,
 				102650DC2248BB8E00D223A6 /* ConvertToTitle_168.c */,
 			);
-			path = ConvertToTitle_168;
+			path = 168_ConvertToTitle;
 			sourceTree = "<group>";
 		};
-		102650DE2249DF9E00D223A6 /* IsRectangleOverlap_836 */ = {
+		102650DE2249DF9E00D223A6 /* 836_IsRectangleOverlap */ = {
 			isa = PBXGroup;
 			children = (
 				102650DF2249DFD300D223A6 /* IsRectangleOverlap_836.h */,
 				102650E02249DFD300D223A6 /* IsRectangleOverlap_836.c */,
 			);
-			path = IsRectangleOverlap_836;
+			path = 836_IsRectangleOverlap;
 			sourceTree = "<group>";
 		};
-		102650E22249E15700D223A6 /* ComputeArea_223 */ = {
+		102650E22249E15700D223A6 /* 223_ComputeArea */ = {
 			isa = PBXGroup;
 			children = (
 				102650E32249E17400D223A6 /* ComputeArea_223.h */,
 				102650E42249E17400D223A6 /* ComputeArea_223.c */,
 			);
-			path = ComputeArea_223;
+			path = 223_ComputeArea;
 			sourceTree = "<group>";
 		};
-		102650E6224A07B300D223A6 /* AddDigits_258 */ = {
+		102650E6224A07B300D223A6 /* 258_AddDigits */ = {
 			isa = PBXGroup;
 			children = (
 				102650E7224A07D600D223A6 /* AddDigits_258.h */,
 				102650E8224A07D600D223A6 /* AddDigits_258.c */,
 			);
-			path = AddDigits_258;
+			path = 258_AddDigits;
 			sourceTree = "<group>";
 		};
-		1078035A2240A039009684B6 /* AddToArrayForm_989 */ = {
+		102650EA224A20B300D223A6 /* 27_RemoveElement */ = {
+			isa = PBXGroup;
+			children = (
+				102650EB224A20CF00D223A6 /* RemoveElement_27.h */,
+				102650EC224A20CF00D223A6 /* RemoveElement_27.c */,
+			);
+			path = 27_RemoveElement;
+			sourceTree = "<group>";
+		};
+		102650EE224A244600D223A6 /* 58_LengthOfLastWord */ = {
+			isa = PBXGroup;
+			children = (
+				102650EF224A246A00D223A6 /* LengthOfLastWord_58.h */,
+				102650F0224A246A00D223A6 /* LengthOfLastWord_58.c */,
+			);
+			path = 58_LengthOfLastWord;
+			sourceTree = "<group>";
+		};
+		102650F2224A292900D223A6 /* 67_AddBinary */ = {
+			isa = PBXGroup;
+			children = (
+				102650F3224A294200D223A6 /* AddBinary_67.h */,
+				102650F4224A294200D223A6 /* AddBinary_67.c */,
+			);
+			path = 67_AddBinary;
+			sourceTree = "<group>";
+		};
+		102650F6224A2AF400D223A6 /* 69_MySqrt */ = {
+			isa = PBXGroup;
+			children = (
+				102650F7224A2B2300D223A6 /* MySqrt_69.h */,
+				102650F8224A2B2300D223A6 /* MySqrt_69.c */,
+			);
+			path = 69_MySqrt;
+			sourceTree = "<group>";
+		};
+		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
 				1078035B2240A069009684B6 /* AddToArrayForm_989.h */,
 				1078035C2240A069009684B6 /* AddToArrayForm_989.c */,
 			);
-			path = AddToArrayForm_989;
+			path = 989_AddToArrayForm;
 			sourceTree = "<group>";
 		};
-		1078035E2240EE85009684B6 /* AddStrings_415 */ = {
+		1078035E2240EE85009684B6 /* 415_AddStrings */ = {
 			isa = PBXGroup;
 			children = (
 				1078035F2240EEAB009684B6 /* AddStrings_415.h */,
 				107803602240EEAB009684B6 /* AddStrings_415.c */,
 			);
-			path = AddStrings_415;
+			path = 415_AddStrings;
 			sourceTree = "<group>";
 		};
-		24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */ = {
+		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
 				24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */,
 				24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */,
 			);
-			path = FindDisappearedNumbers_448;
+			path = 448_FindDisappearedNumbers;
 			sourceTree = "<group>";
 		};
-		24388DED21BF9EE5002A4F8A /* FindPairs_532 */ = {
+		24388DED21BF9EE5002A4F8A /* 532_FindPairs */ = {
 			isa = PBXGroup;
 			children = (
 				24388DEE21BF9F14002A4F8A /* FindPairs_532.h */,
 				24388DEF21BF9F14002A4F8A /* FindPairs_532.c */,
 			);
-			path = FindPairs_532;
+			path = 532_FindPairs;
 			sourceTree = "<group>";
 		};
-		245BEC2B21575817005984BE /* ShortestToChar_821 */ = {
+		245BEC2B21575817005984BE /* 821_ShortestToChar */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC2C21575841005984BE /* ShortestToChar_821.h */,
 				245BEC2D21575841005984BE /* ShortestToChar_821.c */,
 			);
-			path = ShortestToChar_821;
+			path = 821_ShortestToChar;
 			sourceTree = "<group>";
 		};
-		245BEC2F215A2680005984BE /* FirstUniqChar_387 */ = {
+		245BEC2F215A2680005984BE /* 387_FirstUniqChar */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC30215A26B8005984BE /* FirstUniqChar_387.h */,
 				245BEC31215A26B8005984BE /* FirstUniqChar_387.c */,
 			);
-			path = FirstUniqChar_387;
+			path = 387_FirstUniqChar;
 			sourceTree = "<group>";
 		};
-		245BEC33215B09BE005984BE /* NumJewelsInStones_771 */ = {
+		245BEC33215B09BE005984BE /* 771_NumJewelsInStones */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC34215B09E7005984BE /* NumJewelsInStones_771.h */,
 				245BEC35215B09E7005984BE /* NumJewelsInStones_771.c */,
 			);
-			path = NumJewelsInStones_771;
+			path = 771_NumJewelsInStones;
 			sourceTree = "<group>";
 		};
-		245BEC37215B26E7005984BE /* Isomorphic_205 */ = {
+		245BEC37215B26E7005984BE /* 205_Isomorphic */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC38215B2701005984BE /* Isomorphic_205.h */,
 				245BEC39215B2701005984BE /* Isomorphic_205.c */,
 			);
-			path = Isomorphic_205;
+			path = 205_Isomorphic;
 			sourceTree = "<group>";
 		};
-		245BEC3B215B6023005984BE /* CompressChars_443 */ = {
+		245BEC3B215B6023005984BE /* 443_CompressChars */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC3C215B604E005984BE /* CompressChars_443.h */,
 				245BEC3D215B604E005984BE /* CompressChars_443.c */,
 			);
-			path = CompressChars_443;
+			path = 443_CompressChars;
 			sourceTree = "<group>";
 		};
-		245BEC3F215C9110005984BE /* LicenseKeyFormatting_482 */ = {
+		245BEC3F215C9110005984BE /* 482_LicenseKeyFormatting */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC40215C914D005984BE /* LicenseKeyFormatting_482.h */,
 				245BEC41215C914D005984BE /* LicenseKeyFormatting_482.c */,
 			);
-			path = LicenseKeyFormatting_482;
+			path = 482_LicenseKeyFormatting;
 			sourceTree = "<group>";
 		};
-		245BEC43216B3350005984BE /* Reverse_7 */ = {
+		245BEC43216B3350005984BE /* 7_Reverse */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC44216B337B005984BE /* Reverse_7.h */,
 				245BEC45216B337B005984BE /* Reverse_7.c */,
 			);
-			path = Reverse_7;
+			path = 7_Reverse;
 			sourceTree = "<group>";
 		};
-		245BEC47216C424F005984BE /* IsPalindrome_9 */ = {
+		245BEC47216C424F005984BE /* 9_IsPalindrome */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC48216C4276005984BE /* IsPalindrome_9.h */,
 				245BEC49216C4276005984BE /* IsPalindrome_9.c */,
 			);
-			path = IsPalindrome_9;
+			path = 9_IsPalindrome;
 			sourceTree = "<group>";
 		};
-		245BEC4B216E1825005984BE /* SearchInsert_35 */ = {
+		245BEC4B216E1825005984BE /* 35_SearchInsert */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC4C216E1845005984BE /* SearchInsert_35.h */,
 				245BEC4D216E1845005984BE /* SearchInsert_35.c */,
 			);
-			path = SearchInsert_35;
+			path = 35_SearchInsert;
 			sourceTree = "<group>";
 		};
-		245BEC4F2172F991005984BE /* LongestCommonPrefix_14 */ = {
+		245BEC4F2172F991005984BE /* 14_LongestCommonPrefix */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC502172F9BE005984BE /* LongestCommonPrefix.h */,
 				245BEC512172F9BE005984BE /* LongestCommonPrefix.c */,
 			);
-			path = LongestCommonPrefix_14;
+			path = 14_LongestCommonPrefix;
 			sourceTree = "<group>";
 		};
-		245BEC53217316C5005984BE /* StrStr_28 */ = {
+		245BEC53217316C5005984BE /* 28_StrStr */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC54217316F0005984BE /* StrStr_28.h */,
 				245BEC55217316F0005984BE /* StrStr_28.c */,
 			);
-			path = StrStr_28;
+			path = 28_StrStr;
 			sourceTree = "<group>";
 		};
-		245BEC5721786093005984BE /* PlusOne_66 */ = {
+		245BEC5721786093005984BE /* 66_PlusOne */ = {
 			isa = PBXGroup;
 			children = (
 				245BEC58217860C1005984BE /* PlusOne_66.h */,
 				245BEC59217860C1005984BE /* PlusOne_66.c */,
 			);
-			path = PlusOne_66;
+			path = 66_PlusOne;
 			sourceTree = "<group>";
 		};
-		24B7F4C221410A200051F309 /* ReverseWordsAndReduceSpace_186 */ = {
+		24B7F4C221410A200051F309 /* 186_ReverseWordsAndReduceSpace */ = {
 			isa = PBXGroup;
 			children = (
 				24B7F4C321410A7C0051F309 /* ReverseWordsAndReduceSpace_186.h */,
 				24B7F4C421410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c */,
 			);
-			path = ReverseWordsAndReduceSpace_186;
+			path = 186_ReverseWordsAndReduceSpace;
 			sourceTree = "<group>";
 		};
 		24E4575E209CAC3C0048DEF7 = {
@@ -522,68 +570,72 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				102650E6224A07B300D223A6 /* AddDigits_258 */,
-				102650E22249E15700D223A6 /* ComputeArea_223 */,
-				102650DE2249DF9E00D223A6 /* IsRectangleOverlap_836 */,
-				102650DA2248BB5F00D223A6 /* ConvertToTitle_168 */,
-				102650D6224888EE00D223A6 /* TitleToNumber_171 */,
-				102650CF22447ADF00D223A6 /* RemoveDuplicates_26 */,
-				102650CB224476B200D223A6 /* SwapPairs_24 */,
-				1078035E2240EE85009684B6 /* AddStrings_415 */,
-				1078035A2240A039009684B6 /* AddToArrayForm_989 */,
-				1026509A2243425D00D223A6 /* AddTwoNumbers_2 */,
-				102650BF2244681700D223A6 /* ClimbStairs_70 */,
-				245BEC3B215B6023005984BE /* CompressChars_443 */,
-				24388DE521BE5C94002A4F8A /* FindDisappearedNumbers_448 */,
-				24388DED21BF9EE5002A4F8A /* FindPairs_532 */,
-				245BEC2F215A2680005984BE /* FirstUniqChar_387 */,
-				102650BB2243B8E700D223A6 /* IsHappy_202 */,
-				102650B72243B5BF00D223A6 /* IsLongPressedName_925 */,
-				245BEC37215B26E7005984BE /* Isomorphic_205 */,
-				245BEC47216C424F005984BE /* IsPalindrome_9 */,
-				102650C322446DDE00D223A6 /* IsPalindrome_125 */,
-				245BEC3F215C9110005984BE /* LicenseKeyFormatting_482 */,
-				245BEC4F2172F991005984BE /* LongestCommonPrefix_14 */,
+				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
+				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
+				245BEC43216B3350005984BE /* 7_Reverse */,
+				245BEC47216C424F005984BE /* 9_IsPalindrome */,
+				102650C7224474CD00D223A6 /* 13_RomanToInt */,
+				245BEC4F2172F991005984BE /* 14_LongestCommonPrefix */,
+				24E45775209EC2EE0048DEF7 /* 15_ThreeSum */,
+				1026509B2243734800D223A6 /* 21_MergeTwoLists */,
+				102650CB224476B200D223A6 /* 24_SwapPairs */,
+				102650CF22447ADF00D223A6 /* 26_RemoveDuplicates */,
+				102650EA224A20B300D223A6 /* 27_RemoveElement */,
+				245BEC53217316C5005984BE /* 28_StrStr */,
+				245BEC4B216E1825005984BE /* 35_SearchInsert */,
+				102650EE224A244600D223A6 /* 58_LengthOfLastWord */,
+				245BEC5721786093005984BE /* 66_PlusOne */,
+				102650F2224A292900D223A6 /* 67_AddBinary */,
+				102650F6224A2AF400D223A6 /* 69_MySqrt */,
+				102650BF2244681700D223A6 /* 70_ClimbStairs */,
+				101605D3222BBC3600D8D506 /* 80_RemoveDuplicatesfromSortedArrayII */,
+				102650C322446DDE00D223A6 /* 125_IsPalindrome */,
+				102650DA2248BB5F00D223A6 /* 168_ConvertToTitle */,
+				102650D6224888EE00D223A6 /* 171_TitleToNumber */,
+				24B7F4C221410A200051F309 /* 186_ReverseWordsAndReduceSpace */,
+				102650BB2243B8E700D223A6 /* 202_IsHappy */,
+				1026509F224375A800D223A6 /* 203_RemoveElements */,
+				245BEC37215B26E7005984BE /* 205_Isomorphic */,
+				102650E22249E15700D223A6 /* 223_ComputeArea */,
+				102650E6224A07B300D223A6 /* 258_AddDigits */,
+				102650A32243A3AF00D223A6 /* 344_ReverseString */,
+				102650AB2243ACFD00D223A6 /* 345_ReverseVowels */,
+				245BEC2F215A2680005984BE /* 387_FirstUniqChar */,
+				1078035E2240EE85009684B6 /* 415_AddStrings */,
+				245BEC3B215B6023005984BE /* 443_CompressChars */,
+				24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */,
+				245BEC3F215C9110005984BE /* 482_LicenseKeyFormatting */,
+				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
+				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
+				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
+				245BEC33215B09BE005984BE /* 771_NumJewelsInStones */,
+				245BEC2B21575817005984BE /* 821_ShortestToChar */,
+				102650DE2249DF9E00D223A6 /* 836_IsRectangleOverlap */,
+				102650B72243B5BF00D223A6 /* 925_IsLongPressedName */,
+				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
-				1026509B2243734800D223A6 /* MergeTwoLists_21 */,
-				245BEC33215B09BE005984BE /* NumJewelsInStones_771 */,
-				245BEC5721786093005984BE /* PlusOne_66 */,
 				24E4577920A01E640048DEF7 /* QuickSort */,
-				101605D3222BBC3600D8D506 /* RemoveDuplicatesfromSortedArrayII_80 */,
-				1026509F224375A800D223A6 /* RemoveElements_203 */,
-				245BEC43216B3350005984BE /* Reverse_7 */,
-				102650A72243AAFA00D223A6 /* ReverseStr_541 */,
-				102650A32243A3AF00D223A6 /* ReverseString_344 */,
-				102650AB2243ACFD00D223A6 /* ReverseVowels_345 */,
-				102650AF2243AEBD00D223A6 /* ReverseWords_557 */,
-				24B7F4C221410A200051F309 /* ReverseWordsAndReduceSpace_186 */,
-				102650C7224474CD00D223A6 /* RomanToInt_13 */,
-				245BEC4B216E1825005984BE /* SearchInsert_35 */,
-				245BEC2B21575817005984BE /* ShortestToChar_821 */,
-				245BEC53217316C5005984BE /* StrStr_28 */,
-				24E45775209EC2EE0048DEF7 /* ThreeSum_15 */,
 				102650B32243B2D700D223A6 /* Tools */,
-				24E45774209EB4E40048DEF7 /* TwoSum_1 */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
 		};
-		24E45774209EB4E40048DEF7 /* TwoSum_1 */ = {
+		24E45774209EB4E40048DEF7 /* 1_TwoSum */ = {
 			isa = PBXGroup;
 			children = (
 				24E45771209EB4E00048DEF7 /* TwoSum_1.h */,
 				24E45772209EB4E00048DEF7 /* TwoSum_1.c */,
 			);
-			path = TwoSum_1;
+			path = 1_TwoSum;
 			sourceTree = "<group>";
 		};
-		24E45775209EC2EE0048DEF7 /* ThreeSum_15 */ = {
+		24E45775209EC2EE0048DEF7 /* 15_ThreeSum */ = {
 			isa = PBXGroup;
 			children = (
 				24E45776209EC3060048DEF7 /* ThreeSum_15.h */,
 				24E45777209EC3060048DEF7 /* ThreeSum_15.c */,
 			);
-			path = ThreeSum_15;
+			path = 15_ThreeSum;
 			sourceTree = "<group>";
 		};
 		24E4577920A01E640048DEF7 /* QuickSort */ = {
@@ -656,6 +708,7 @@
 				107803612240EEAB009684B6 /* AddStrings_415.c in Sources */,
 				245BEC4E216E1845005984BE /* SearchInsert_35.c in Sources */,
 				102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */,
+				102650F1224A246A00D223A6 /* LengthOfLastWord_58.c in Sources */,
 				245BEC42215C914D005984BE /* LicenseKeyFormatting_482.c in Sources */,
 				245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */,
 				1026509E2243737200D223A6 /* MergeTwoLists_21.c in Sources */,
@@ -671,6 +724,8 @@
 				24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */,
 				102650BE2243B90500D223A6 /* IsHappy_202.c in Sources */,
 				102650B22243AED800D223A6 /* ReverseWords_557.c in Sources */,
+				102650ED224A20CF00D223A6 /* RemoveElement_27.c in Sources */,
+				102650F5224A294200D223A6 /* AddBinary_67.c in Sources */,
 				102650C622446E0F00D223A6 /* IsPalindrome_125.c in Sources */,
 				102650AA2243AB4800D223A6 /* ReverseStr_541.c in Sources */,
 				245BEC46216B337B005984BE /* Reverse_7.c in Sources */,
@@ -688,6 +743,7 @@
 				10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */,
 				102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */,
 				102650BA2243B5DE00D223A6 /* IsLongPressedName_925.c in Sources */,
+				102650F9224A2B2300D223A6 /* MySqrt_69.c in Sources */,
 				102650E12249DFD300D223A6 /* IsRectangleOverlap_836.c in Sources */,
 				24E45778209EC3060048DEF7 /* ThreeSum_15.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,

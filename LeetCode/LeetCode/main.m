@@ -14,75 +14,79 @@
 
 //#define TwoSum_1
 //#define AddTwoNumbers_2
-
+//
 //#define Reverse_7
-
+//
 //#define IsPalindrome_9
-
+//
 //#define RomanToInt_13
 //#define LongestCommonPrefix_14
 //#define ThreeSum_15
-
+//
 //#define MergeTwoLists_21
-
+//
 //#define SwapPairs_24
-
+//
 //#define RemoveDuplicates_26
-
+//#define RemoveElement_27
 //#define StrStr_28
-
+//
 //#define SearchInsert_35
-
+//
+//#define LengthOfLastWord_58
+//
 //#define PlusOne_66
-
+//#define AddBinary_67
+//
+//#define MySqrt_69
 //#define ClimbStairs_70
-
+//
 //#define RemoveDuplicatesfromSortedArrayII_80
-
+//
 //#define IsPalindrome_125
-
+//
 //#define ConvertToTitle_168
-
+//
 //#define TitleToNumber_171
-
+//
 //#define ReverseWordsAndReduceSpace_186
-
+//
 //#define IsHappy_202
 //#define RemoveElements_203
-
+//
 //#define Isomorphic_205
-
+//
 //#define ComputeArea_223
-
-#define AddDigits_258
-
+//
+//#define AddDigits_258
+//
 //#define ReverseString_344
 //#define ReverseVowels_345
-
+//
 //#define FirstUniqChar_387
-
+//
 //#define AddStrings_415
-
+//
 //#define CompressChars_443
-
+//
 //#define FindDisappearedNumbers_448
-
+//
 //#define LicenseKeyFormatting_482
-
+//
 //#define FindPairs_532
-
+//
 //#define ReverseStr_II_541
-
+//
 //#define ReverseWords_557
-
+//
 //#define NumJewelsInStones_771
-
+//
 //#define ShortestToChar_821
-
+//
 //#define IsRectangleOverlap_836
-
+//
 //#define IsLongPressedName_925
-
+//
 //#define AddToArrayForm_989
 
 
@@ -115,7 +119,7 @@ char  * decryptString(char * s)
 #pragma mark - 1_两数相加_TwoSum
 
 #ifdef TwoSum_1
-#import "TwoSum_1/TwoSum_1.h"
+#import "1_TwoSum/TwoSum_1.h"
 
 void TwoSum()
 {
@@ -135,7 +139,7 @@ void TwoSum()
 #pragma mark - 2_两数相加_AddTwoNumbers
 
 #ifdef AddTwoNumbers_2
-#import "AddTwoNumbers_2/AddTwoNumbers_2.h"
+#import "2_AddTwoNumbers/AddTwoNumbers_2.h"
 
 void AddTwoNumbers()
 {
@@ -195,7 +199,7 @@ void AddTwoNumbers()
 #pragma mark - 7_整数反转_Reverse
 
 #ifdef Reverse_7
-#import "Reverse_7/Reverse_7.h"
+#import "7_Reverse/Reverse_7.h"
 
 void Reverse()
 {
@@ -207,7 +211,7 @@ void Reverse()
 #pragma mark - 9_回文数_IsPalindrome
 
 #ifdef IsPalindrome_9
-#import "IsPalindrome_9/IsPalindrome_9.h"
+#import "9_IsPalindrome/IsPalindrome_9.h"
 
 void IsPalindrome()
 {
@@ -219,7 +223,7 @@ void IsPalindrome()
 #pragma mark - 13_罗马数字转整数_RomanToInt
 
 #ifdef RomanToInt_13
-#import "RomanToInt_13/RomanToInt_13.h"
+#import "13_RomanToInt/RomanToInt_13.h"
 
 void RomanToInt()
 {
@@ -232,7 +236,7 @@ void RomanToInt()
 #pragma mark - 14_最长公共前缀_LongestCommonPrefix
 
 #ifdef LongestCommonPrefix_14
-#import "LongestCommonPrefix_14/LongestCommonPrefix.h"
+#import "14_LongestCommonPrefix/LongestCommonPrefix.h"
 
 void LongestCommonPrefix()
 {
@@ -246,7 +250,7 @@ void LongestCommonPrefix()
 #pragma mark - 15_三数之和_ThreeSum
 
 #ifdef ThreeSum_15
-#import "ThreeSum_15/ThreeSum_15.h"
+#import "15_ThreeSum/ThreeSum_15.h"
 
 void ThreeSum()
 {
@@ -281,7 +285,7 @@ void ThreeSum()
 #pragma mark - 21_合并两个有序链表_MergeTwoLists
 
 #ifdef MergeTwoLists_21
-#import "MergeTwoLists_21/MergeTwoLists_21.h"
+#import "21_MergeTwoLists/MergeTwoLists_21.h"
 
 void MergeTwoLists()
 {
@@ -309,7 +313,7 @@ void MergeTwoLists()
 #pragma mark - 24_两两交换链表中的节点_SwapPairs
 
 #ifdef SwapPairs_24
-#import "SwapPairs_24/SwapPairs_24.h"
+#import "24_SwapPairs/SwapPairs_24.h"
 
 void SwapPairs()
 {
@@ -340,7 +344,7 @@ void SwapPairs()
 #pragma mark - 26_删除排序数组中的重复项_RemoveDuplicates
 
 #ifdef RemoveDuplicates_26
-#import "RemoveDuplicates_26/RemoveDuplicates_26.h"
+#import "26_RemoveDuplicates/RemoveDuplicates_26.h"
 
 void RemoveDuplicates()
 {
@@ -357,10 +361,30 @@ void RemoveDuplicates()
 #endif
 
 
+#pragma mark - 27_移除元素_RemoveElement
+
+#ifdef RemoveElement_27
+#import "27_RemoveElement/RemoveElement_27.h"
+
+void RemoveElement()
+{
+    int nums[4] ={3,2,2,3};
+    
+    int count = removeElement(nums, 4, 3);
+    
+    printf("移除元素 : %d\n" , count);
+    for (int i = 0 ; i < count; ++i) {
+        printf("%d ," , nums[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
 #pragma mark - 28_实现strStr()_StrStr
 
 #ifdef StrStr_28
-#import "StrStr_28/StrStr_28.h"
+#import "28_StrStr/StrStr_28.h"
 
 void StrStr()
 {
@@ -374,7 +398,7 @@ void StrStr()
 #pragma mark - 35_搜索插入位置_SearchInsert
 
 #ifdef SearchInsert_35
-#import "SearchInsert_35/SearchInsert_35.h"
+#import "35_SearchInsert/SearchInsert_35.h"
 
 void SearchInsert()
 {
@@ -383,10 +407,23 @@ void SearchInsert()
 #endif
 
 
+#pragma mark - 58_最后一个单词的长度_LengthOfLastWord
+
+#ifdef LengthOfLastWord_58
+#import "58_LengthOfLastWord/LengthOfLastWord_58.h"
+
+void LengthOfLastWord()
+{
+    char s[100] ="Hello World";
+    printf("最后一个单词的长度: %d , %s\n" , lengthOfLastWord(s) , s);
+}
+#endif
+
+
 #pragma mark - 66_加一_PlusOne
 
 #ifdef PlusOne_66
-#import "PlusOne_66/PlusOne_66.h"
+#import "66_PlusOne/PlusOne_66.h"
 
 void PlusOne()
 {
@@ -395,10 +432,37 @@ void PlusOne()
 #endif
 
 
+#pragma mark - 67_二进制求和_AddBinary
+
+#ifdef AddBinary_67
+#import "67_AddBinary/AddBinary_67.h"
+
+void AddBinary()
+{
+    char a[40] ="1010";
+    char b[40] ="1011";
+    printf("二进制求和: %s + %s = %s\n" , a , b , addBinary(a, b));
+}
+#endif
+
+
+#pragma mark - 69_x 的平方根_MySqrt
+
+#ifdef MySqrt_69
+#import "69_MySqrt/MySqrt_69.h"
+
+void MySqrt()
+{
+    int x = 8;
+    printf("%d 的平方根: %d\n" , x , mySqrt(x));
+}
+#endif
+
+
 #pragma mark - 70_爬楼梯_ClimbStairs
 
 #ifdef ClimbStairs_70
-#import "ClimbStairs_70/ClimbStairs_70.h"
+#import "70_ClimbStairs/ClimbStairs_70.h"
 
 void ClimbStairs()
 {
@@ -412,7 +476,7 @@ void ClimbStairs()
 #pragma mark - 80_删除排序数组中的重复项_II_RemoveDuplicatesfromSortedArrayII
 
 #ifdef RemoveDuplicatesfromSortedArrayII_80
-#import "RemoveDuplicatesfromSortedArrayII_80/RemoveDuplicatesfromSortedArrayII_80.h"
+#import "80_RemoveDuplicatesfromSortedArrayII/RemoveDuplicatesfromSortedArrayII_80.h"
 
 void RemoveDuplicatesfromSortedArrayII()
 {
@@ -428,7 +492,7 @@ void RemoveDuplicatesfromSortedArrayII()
 #pragma mark - 125_验证回文串_IsPalindrome
 
 #ifdef IsPalindrome_125
-#import "IsPalindrome_125/IsPalindrome_125.h"
+#import "125_IsPalindrome/IsPalindrome_125.h"
 
 void IsPalindrome()
 {
@@ -442,7 +506,7 @@ void IsPalindrome()
 #pragma mark - 168_Excel表列名称_ConvertToTitle
 
 #ifdef ConvertToTitle_168
-#import "ConvertToTitle_168/ConvertToTitle_168.h"
+#import "168_ConvertToTitle/ConvertToTitle_168.h"
 
 void ConvertToTitle()
 {
@@ -455,7 +519,7 @@ void ConvertToTitle()
 #pragma mark - 171_Excel表列序号_TitleToNumber
 
 #ifdef TitleToNumber_171
-#import "TitleToNumber_171/TitleToNumber_171.h"
+#import "171_TitleToNumber/TitleToNumber_171.h"
 
 void TitleToNumber()
 {
@@ -468,7 +532,7 @@ void TitleToNumber()
 #pragma mark - 186_翻转字符串中的单词_ReverseWordsAndReduceSpace
 
 #ifdef ReverseWordsAndReduceSpace_186
-#import "ReverseWordsAndReduceSpace_186/ReverseWordsAndReduceSpace_186.h"
+#import "186_ReverseWordsAndReduceSpace/ReverseWordsAndReduceSpace_186.h"
 
 void ReverseWordsAndReduceSpace()
 {
@@ -482,7 +546,7 @@ void ReverseWordsAndReduceSpace()
 #pragma mark - 202_快乐数_IsHappy
 
 #ifdef IsHappy_202
-#import "IsHappy_202/IsHappy_202.h"
+#import "202_IsHappy/IsHappy_202.h"
 
 void IsHappy()
 {
@@ -495,7 +559,7 @@ void IsHappy()
 #pragma mark - 203_移除链表元素_RemoveElements
 
 #ifdef RemoveElements_203
-#import "RemoveElements_203/RemoveElements_203.h"
+#import "203_RemoveElements/RemoveElements_203.h"
 
 void RemoveElements()
 {
@@ -527,7 +591,7 @@ void RemoveElements()
 #pragma mark - 205_同构字符串_Isomorphic
 
 #ifdef Isomorphic_205
-#import "Isomorphic_205/Isomorphic_205.h"
+#import "205_Isomorphic/Isomorphic_205.h"
 
 void Isomorphic()
 {
@@ -539,7 +603,7 @@ void Isomorphic()
 #pragma mark - 223_矩形面积_ComputeArea
 
 #ifdef ComputeArea_223
-#import "ComputeArea_223/ComputeArea_223.h"
+#import "223_ComputeArea/ComputeArea_223.h"
 
 void ComputeArea()
 {
@@ -551,7 +615,7 @@ void ComputeArea()
 #pragma mark - 258_各位相加_AddDigits
 
 #ifdef AddDigits_258
-#import "AddDigits_258/AddDigits_258.h"
+#import "258_AddDigits/AddDigits_258.h"
 
 void AddDigits()
 {
@@ -563,7 +627,7 @@ void AddDigits()
 #pragma mark - 344_反转字符串_ReverseString
 
 #ifdef ReverseString_344
-#import "ReverseString_344/ReverseString_344.h"
+#import "344_ReverseString/ReverseString_344.h"
 
 void ReverseString()
 {
@@ -576,7 +640,7 @@ void ReverseString()
 #pragma mark - 345_反转字符串中的元音字母_ReverseVowels
 
 #ifdef ReverseVowels_345
-#import "ReverseVowels_345/ReverseVowels_345.h"
+#import "345_ReverseVowels/ReverseVowels_345.h"
 
 void ReverseVowels()
 {
@@ -589,7 +653,7 @@ void ReverseVowels()
 #pragma mark - 387_字符串中的第一个唯一字符_FirstUniqChar
 
 #ifdef FirstUniqChar_387
-#import "FirstUniqChar_387/FirstUniqChar_387.h"
+#import "387_FirstUniqChar/FirstUniqChar_387.h"
 
 void FirstUniqChar()
 {
@@ -603,7 +667,7 @@ void FirstUniqChar()
 #pragma mark - 415_字符串相加_AddStrings
 
 #ifdef AddStrings_415
-#import "AddStrings_415/AddStrings_415.h"
+#import "415_AddStrings/AddStrings_415.h"
 
 void AddStrings()
 {
@@ -617,7 +681,7 @@ void AddStrings()
 #pragma mark - 443_字符串相加_AddStrings
 
 #ifdef CompressChars_443
-#import "CompressChars_443/CompressChars_443.h"
+#import "443_CompressChars/CompressChars_443.h"
 
 void CompressChars()
 {
@@ -632,7 +696,7 @@ void CompressChars()
 #pragma mark - 448_找到所有数组中消失的数字_FindDisappearedNumbers
 
 #ifdef FindDisappearedNumbers_448
-#import "FindDisappearedNumbers_448/FindDisappearedNumbers_448.h"
+#import "448_FindDisappearedNumbers/FindDisappearedNumbers_448.h"
 
 void FindDisappearedNumbers()
 {
@@ -650,7 +714,7 @@ void FindDisappearedNumbers()
 #pragma mark - 482_密钥格式化_LicenseKeyFormatting
 
 #ifdef LicenseKeyFormatting_482
-#import "LicenseKeyFormatting_482/LicenseKeyFormatting_482.h"
+#import "482_LicenseKeyFormatting/LicenseKeyFormatting_482.h"
 
 void LicenseKeyFormatting()
 {
@@ -665,7 +729,7 @@ void LicenseKeyFormatting()
 #pragma mark - 532_数组中的K-diff数对_FindPairs
 
 #ifdef FindPairs_532
-#import "FindPairs_532/FindPairs_532.h"
+#import "532_FindPairs/FindPairs_532.h"
 
 void FindPairs()
 {
@@ -678,7 +742,7 @@ void FindPairs()
 #pragma mark - 541_反转字符串II_ReverseStr
 
 #ifdef ReverseStr_II_541
-#import "ReverseStr_541/ReverseStr_541.h"
+#import "541_ReverseStr/ReverseStr_541.h"
 
 void ReverseStr()
 {
@@ -691,7 +755,7 @@ void ReverseStr()
 #pragma mark - 557_反转字符串II_ReverseWords
 
 #ifdef ReverseWords_557
-#import "ReverseWords_557/ReverseWords_557.h"
+#import "557_ReverseWords/ReverseWords_557.h"
 
 void ReverseWords()
 {
@@ -704,7 +768,7 @@ void ReverseWords()
 #pragma mark - 771_宝石与石头_NumJewelsInStones
 
 #ifdef NumJewelsInStones_771
-#import "NumJewelsInStones_771/NumJewelsInStones_771.h"
+#import "771_NumJewelsInStones/NumJewelsInStones_771.h"
 
 void NumJewelsInStones ()
 {
@@ -718,7 +782,7 @@ void NumJewelsInStones ()
 #pragma mark - 821_字符的最短距离_ShortestToChar
 
 #ifdef ShortestToChar_821
-#import "ShortestToChar_821/ShortestToChar_821.h"
+#import "821_ShortestToChar/ShortestToChar_821.h"
 
 void ShortestToChar()
 {
@@ -739,7 +803,7 @@ void ShortestToChar()
 #pragma mark - 836_矩形重叠_IsRectangleOverlap
 
 #ifdef IsRectangleOverlap_836
-#import "IsRectangleOverlap_836/IsRectangleOverlap_836.h"
+#import "836_IsRectangleOverlap/IsRectangleOverlap_836.h"
 
 void IsRectangleOverlap()
 {
@@ -754,7 +818,7 @@ void IsRectangleOverlap()
 #pragma mark - 925_长按键入_IsLongPressedName
 
 #ifdef IsLongPressedName_925
-#import "IsLongPressedName_925/IsLongPressedName_925.h"
+#import "925_IsLongPressedName/IsLongPressedName_925.h"
 
 void IsLongPressedName()
 {
@@ -769,7 +833,7 @@ void IsLongPressedName()
 #pragma mark - 989_数组形式的整数加法_AddToArrayForm
 
 #ifdef AddToArrayForm_989
-#import "AddToArrayForm_989/AddToArrayForm_989.h"
+#import "989_AddToArrayForm/AddToArrayForm_989.h"
 
 void AddToArrayForm()
 {
@@ -843,6 +907,11 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef RemoveElement_27
+        RemoveElement();
+#endif
+        
+        
 #ifdef StrStr_28
         StrStr();
 #endif
@@ -853,8 +922,23 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef LengthOfLastWord_58
+        LengthOfLastWord();
+#endif
+        
+        
 #ifdef PlusOne_66
         PlusOne();
+#endif
+        
+        
+#ifdef AddBinary_67
+        AddBinary();
+#endif
+        
+        
+#ifdef MySqrt_69
+        MySqrt();
 #endif
         
         
