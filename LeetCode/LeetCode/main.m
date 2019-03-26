@@ -42,9 +42,16 @@
 //#define ClimbStairs_70
 //
 //#define RemoveDuplicatesfromSortedArrayII_80
-//
+
+//#define DeleteDuplicates_82
+//#define DeleteDuplicates_83
+
+//#define Merge_88
+
 //#define IsPalindrome_125
-//
+
+#define SingleNumber_136
+
 //#define ConvertToTitle_168
 //
 //#define TitleToNumber_171
@@ -489,6 +496,102 @@ void RemoveDuplicatesfromSortedArrayII()
 #endif
 
 
+#pragma mark - 82_删除排序链表中的重复元素II_DeleteDuplicates
+
+#ifdef DeleteDuplicates_82
+#import "82_DeleteDuplicates/DeleteDuplicates_82.h"
+
+void DeleteDuplicates()
+{
+    struct ListNode n1 , n2 , n3 , n4 ,n5 , n6  , n7;
+    struct ListNode * result;
+    
+    n1.val = 1;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 3;
+    n4.next = &n5;
+    n5.val = 4;
+    n5.next = &n6;
+    n6.val = 4;
+    n6.next =&n7 ;
+    
+    n7.val = 5;
+    n7.next = NULL;
+    
+    result = deleteDuplicates(&n1);
+    while (result)
+    {
+        printf("%d ", result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 83_删除排序链表中的重复元素_DeleteDuplicates
+
+#ifdef DeleteDuplicates_83
+#import "83_DeleteDuplicates/DeleteDuplicates_83.h"
+
+void DeleteDuplicates()
+{
+    struct ListNode n1 , n2 , n3 , n4 ,n5 , n6  , n7;
+    struct ListNode * result;
+    
+    n1.val = 1;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 3;
+    n4.next = &n5;
+    n5.val = 4;
+    n5.next = &n6;
+    n6.val = 4;
+    n6.next =&n7 ;
+    
+    n7.val = 5;
+    n7.next = NULL;
+    
+    result = deleteDuplicates_83(&n1);
+    while (result)
+    {
+        printf("%d ", result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 88_合并两个有序数组_Merge
+
+#ifdef Merge_88
+#import "88_Merge/Merge_88.h"
+
+void Merge()
+{
+    int num1[6] = {1,2,3,0,0,0};
+    int num2[3] = {2,5,6};
+    
+    merge(num1, 3, num2, 3);
+    
+    for (int i = 0; i < 6; ++i) {
+        printf("%d " , num1[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
 #pragma mark - 125_验证回文串_IsPalindrome
 
 #ifdef IsPalindrome_125
@@ -499,6 +602,20 @@ void IsPalindrome()
     char pmpm[100] ="A man, a plan, a canal: Panama";
 
     printf("验证回文串: %d , %s\n" , isPalindrome_125(pmpm) , pmpm);
+}
+#endif
+
+
+#pragma mark - 136_只出现一次的数字_SingleNumber
+
+#ifdef SingleNumber_136
+#import "136_SingleNumber/SingleNumber_136.h"
+
+void SingleNumber()
+{
+    int num[5] = {4,1,2,1,2};
+    
+    printf("只出现一次的数字: %d \n" , singleNumber(num, 5));
 }
 #endif
 
@@ -952,8 +1069,28 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef DeleteDuplicates_82
+        DeleteDuplicates();
+#endif
+
+        
+#ifdef DeleteDuplicates_83
+        DeleteDuplicates();
+#endif
+        
+        
+#ifdef Merge_88
+        Merge();
+#endif
+        
+        
 #ifdef IsPalindrome_125
         IsPalindrome();
+#endif
+        
+        
+#ifdef SingleNumber_136
+        SingleNumber();
 #endif
         
         
