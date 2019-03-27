@@ -50,19 +50,35 @@
 
 //#define IsPalindrome_125
 
-#define SingleNumber_136
+//#define SingleNumber_136
+//#define SingleNumber_137
+
+//#define HasCycle_141
+//#define DetectCycle_142
+
+//#define InsertionSortList_147
 
 //#define ConvertToTitle_168
 //
 //#define TitleToNumber_171
-//
+//#define TrailingZeroes_172
+
 //#define ReverseWordsAndReduceSpace_186
-//
+
+//#define Rotate_189
+
 //#define IsHappy_202
 //#define RemoveElements_203
-//
+
 //#define Isomorphic_205
-//
+
+//#define ReverseList_206
+
+//#define ContainsDuplicate_217
+
+//#define ContainsNearbyDuplicate_219
+#define ContainsNearbyAlmostDuplicate_220
+
 //#define ComputeArea_223
 //
 //#define AddDigits_258
@@ -620,6 +636,125 @@ void SingleNumber()
 #endif
 
 
+#pragma mark - 137_只出现一次的数字_SingleNumberII
+
+#ifdef SingleNumber_137
+#import "137_SingleNumber/SingleNumber_137.h"
+
+void SingleNumber()
+{
+    int num[7] = {0,1,0,1,0,1,99};
+    
+    printf("只出现一次的数字: %d \n" , singleNumberII(num, 7));
+}
+#endif
+
+
+#pragma mark - 141_环形链表_HasCycle
+
+#ifdef HasCycle_141
+#import "141_HasCycle/HasCycle_141.h"
+
+void HasCycle()
+{
+    struct ListNode n1 , n2 , n3 , n4;
+    struct ListNode n5 , n6  , n7;
+    struct ListNode * result;
+    
+    n1.val = 3;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 0;
+    n3.next = &n4;
+    
+    n4.val = -4;
+    n4.next = &n2;
+//    n5.val = 4;
+//    n5.next = &n6;
+//    n6.val = 4;
+//    n6.next =&n7 ;
+//
+//    n7.val = 5;
+//    n7.next = NULL;
+    
+    printf("是否为环形链表: %d \n" , hasCycle(&n1));
+}
+#endif
+
+
+#pragma mark - 142_环形链表II_DetectCycle
+
+#ifdef DetectCycle_142
+#import "142_DetectCycle/DetectCycle_142.h"
+
+void DetectCycle()
+{
+    struct ListNode n1 , n2 , n3 , n4;
+    //struct ListNode n5 , n6  , n7;
+    struct ListNode * result;
+    
+    n1.val = 3;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 0;
+    n3.next = &n4;
+    
+    n4.val = -4;
+    n4.next = &n2;
+    //    n5.val = 4;
+    //    n5.next = &n6;
+    //    n6.val = 4;
+    //    n6.next =&n7 ;
+    //
+    //    n7.val = 5;
+    //    n7.next = NULL;
+    result = detectCycle(&n1);
+    printf("链表开始入环的第一个节点: %d \n" , result ->val);
+}
+#endif
+
+
+#pragma mark - 147_对链表进行插入排序_InsertionSortList
+
+#ifdef InsertionSortList_147
+#import "147_InsertionSortList/InsertionSortList_147.h"
+
+void InsertionSortList()
+{
+    struct ListNode n1 , n2 , n3 , n4 , n5;
+    //struct ListNode n5 , n6  , n7;
+    struct ListNode * result;
+    
+    n1.val = -1;
+    n1.next = &n2;
+    n2.val = 5;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 4;
+    n4.next = &n5;
+    n5.val = 0;
+    n5.next = NULL;
+    //    n6.val = 4;
+    //    n6.next =&n7 ;
+    //
+    //    n7.val = 5;
+    //    n7.next = NULL;
+    result = insertionSortList(&n1);
+    printf("对链表进行插入排序:  \n");
+    while (result)
+    {
+        printf("%d ", result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
 #pragma mark - 168_Excel表列名称_ConvertToTitle
 
 #ifdef ConvertToTitle_168
@@ -646,6 +781,19 @@ void TitleToNumber()
 #endif
 
 
+#pragma mark - 172_阶乘后的零_TrailingZeroes
+
+#ifdef TrailingZeroes_172
+#import "172_TrailingZeroes/TrailingZeroes_172.h"
+
+void TrailingZeroes()
+{
+    int n = 45;
+    printf("阶乘后的零 %d\n" , trailingZeroes(n));
+}
+#endif
+
+
 #pragma mark - 186_翻转字符串中的单词_ReverseWordsAndReduceSpace
 
 #ifdef ReverseWordsAndReduceSpace_186
@@ -656,6 +804,24 @@ void ReverseWordsAndReduceSpace()
     char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
     ;
     printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
+}
+#endif
+
+
+#pragma mark - 189_旋转数组_Rotate
+
+#ifdef Rotate_189
+#import "189_Rotate/Rotate_189.h"
+
+void Rotate()
+{
+    int num[7] = {1,2,3,4,5,6,7};
+    rotate(num, 7, 3);
+    printf("旋转数组: \n");
+    for (int i = 0; i < 7; ++i) {
+        printf("%d ," , num[i]);
+    }
+    printf("\n");
 }
 #endif
 
@@ -713,6 +879,80 @@ void RemoveElements()
 void Isomorphic()
 {
     
+}
+#endif
+
+
+#pragma mark - 206_反转链表_ReverseList
+
+#ifdef ReverseList_206
+#import "206_ReverseList/ReverseList_206.h"
+
+void ReverseList()
+{
+    struct ListNode n1 , n2 , n3 , n4 ,n5;
+    struct ListNode *result;
+    
+    n1.val = 1;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 4;
+    n4.next = &n5;
+    n5.val = 5;
+    n5.next = NULL;
+    
+    result = reverseList(&n1);
+    
+    printf("反转链表:  \n");
+    while (result)
+    {
+        printf("%d ", result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 217_存在重复元素_ContainsDuplicate
+
+#ifdef ContainsDuplicate_217
+#import "217_ContainsDuplicate/ContainsDuplicate_217.h"
+
+void ContainsDuplicate()
+{
+    int num[10] = {1,1,1,3,3,4,3,2,4,2};
+    printf("存在重复元素: %d \n" , containsDuplicate(num, 10));
+}
+#endif
+
+
+#pragma mark - 219_存在重复元素II_ContainsNearbyDuplicate
+
+#ifdef ContainsNearbyDuplicate_219
+#import "219_ContainsNearbyDuplicate/ContainsNearbyDuplicate_219.h"
+
+void ContainsNearbyDuplicate()
+{
+    int num[6] = {1,2,3,1,2,3};
+    printf("存在重复元素 II: %d \n" , containsNearbyDuplicate(num, 6, 2));
+}
+#endif
+
+
+#pragma mark - 220_存在重复元素III_ContainsNearbyAlmostDuplicate
+
+#ifdef ContainsNearbyAlmostDuplicate_220
+#import "220_ContainsNearbyAlmostDuplicate/ContainsNearbyAlmostDuplicate_220.h"
+
+void ContainsNearbyAlmostDuplicate()
+{
+    int num[6] = {1,5,9,1,5,9};
+    printf("存在重复元素 III: %d \n" , containsNearbyAlmostDuplicate(num, 6, 2,3));
 }
 #endif
 
@@ -1094,6 +1334,26 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef SingleNumber_137
+        SingleNumber();
+#endif
+        
+        
+#ifdef HasCycle_141
+        HasCycle();
+#endif
+        
+        
+#ifdef DetectCycle_142
+        DetectCycle();
+#endif
+      
+        
+#ifdef InsertionSortList_147
+        InsertionSortList();
+#endif
+        
+        
 #ifdef ConvertToTitle_168
         ConvertToTitle();
 #endif
@@ -1104,8 +1364,18 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef TrailingZeroes_172
+        TrailingZeroes();
+#endif
+        
+        
 #ifdef ReverseWordsAndReduceSpace_186
         ReverseWordsAndReduceSpace();
+#endif
+        
+        
+#ifdef Rotate_189
+        Rotate();
 #endif
 
         
@@ -1121,6 +1391,26 @@ int main(int argc, const char * argv[]) {
         
 #ifdef Isomorphic_205
         Isomorphic();
+#endif
+        
+        
+#ifdef ReverseList_206
+        ReverseList();
+#endif
+        
+        
+#ifdef ContainsDuplicate_217
+        ContainsDuplicate();
+#endif
+        
+        
+#ifdef ContainsNearbyDuplicate_219
+        ContainsNearbyDuplicate();
+#endif
+        
+        
+#ifdef ContainsNearbyAlmostDuplicate_220
+        ContainsNearbyAlmostDuplicate();
 #endif
         
         

@@ -35,6 +35,16 @@
 		10265101224A4A8700D223A6 /* DeleteDuplicates_83.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265100224A4A8700D223A6 /* DeleteDuplicates_83.c */; };
 		10265105224A4BC500D223A6 /* Merge_88.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265104224A4BC500D223A6 /* Merge_88.c */; };
 		10265109224A4E8E00D223A6 /* SingleNumber_136.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265108224A4E8E00D223A6 /* SingleNumber_136.c */; };
+		1026510D224AEFA500D223A6 /* SingleNumber_137.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026510C224AEFA500D223A6 /* SingleNumber_137.c */; };
+		10265111224AF0E300D223A6 /* HasCycle_141.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265110224AF0E300D223A6 /* HasCycle_141.c */; };
+		10265115224B126800D223A6 /* DetectCycle_142.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265114224B126800D223A6 /* DetectCycle_142.c */; };
+		10265119224B14BA00D223A6 /* InsertionSortList_147.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265118224B14BA00D223A6 /* InsertionSortList_147.c */; };
+		1026511D224B161500D223A6 /* TrailingZeroes_172.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026511C224B161500D223A6 /* TrailingZeroes_172.c */; };
+		10265121224B17C900D223A6 /* Rotate_189.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265120224B17C900D223A6 /* Rotate_189.c */; };
+		10265125224B1A1400D223A6 /* ReverseList_206.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265124224B1A1400D223A6 /* ReverseList_206.c */; };
+		10265129224B1D4C00D223A6 /* ContainsDuplicate_217.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265128224B1D4C00D223A6 /* ContainsDuplicate_217.c */; };
+		1026512D224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026512C224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c */; };
+		10265131224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265130224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -128,6 +138,26 @@
 		10265104224A4BC500D223A6 /* Merge_88.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Merge_88.c; sourceTree = "<group>"; };
 		10265107224A4E8E00D223A6 /* SingleNumber_136.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleNumber_136.h; sourceTree = "<group>"; };
 		10265108224A4E8E00D223A6 /* SingleNumber_136.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SingleNumber_136.c; sourceTree = "<group>"; };
+		1026510B224AEFA500D223A6 /* SingleNumber_137.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleNumber_137.h; sourceTree = "<group>"; };
+		1026510C224AEFA500D223A6 /* SingleNumber_137.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SingleNumber_137.c; sourceTree = "<group>"; };
+		1026510F224AF0E300D223A6 /* HasCycle_141.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HasCycle_141.h; sourceTree = "<group>"; };
+		10265110224AF0E300D223A6 /* HasCycle_141.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HasCycle_141.c; sourceTree = "<group>"; };
+		10265113224B126800D223A6 /* DetectCycle_142.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetectCycle_142.h; sourceTree = "<group>"; };
+		10265114224B126800D223A6 /* DetectCycle_142.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DetectCycle_142.c; sourceTree = "<group>"; };
+		10265117224B14BA00D223A6 /* InsertionSortList_147.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSortList_147.h; sourceTree = "<group>"; };
+		10265118224B14BA00D223A6 /* InsertionSortList_147.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InsertionSortList_147.c; sourceTree = "<group>"; };
+		1026511B224B161500D223A6 /* TrailingZeroes_172.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailingZeroes_172.h; sourceTree = "<group>"; };
+		1026511C224B161500D223A6 /* TrailingZeroes_172.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TrailingZeroes_172.c; sourceTree = "<group>"; };
+		1026511F224B17C900D223A6 /* Rotate_189.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rotate_189.h; sourceTree = "<group>"; };
+		10265120224B17C900D223A6 /* Rotate_189.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Rotate_189.c; sourceTree = "<group>"; };
+		10265123224B1A1400D223A6 /* ReverseList_206.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList_206.h; sourceTree = "<group>"; };
+		10265124224B1A1400D223A6 /* ReverseList_206.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseList_206.c; sourceTree = "<group>"; };
+		10265127224B1D4C00D223A6 /* ContainsDuplicate_217.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainsDuplicate_217.h; sourceTree = "<group>"; };
+		10265128224B1D4C00D223A6 /* ContainsDuplicate_217.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ContainsDuplicate_217.c; sourceTree = "<group>"; };
+		1026512B224B1EF700D223A6 /* ContainsNearbyDuplicate_219.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainsNearbyDuplicate_219.h; sourceTree = "<group>"; };
+		1026512C224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ContainsNearbyDuplicate_219.c; sourceTree = "<group>"; };
+		1026512F224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContainsNearbyAlmostDuplicate_220.h; sourceTree = "<group>"; };
+		10265130224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ContainsNearbyAlmostDuplicate_220.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -446,6 +476,96 @@
 			path = 136_SingleNumber;
 			sourceTree = "<group>";
 		};
+		1026510A224AEF5400D223A6 /* 137_SingleNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1026510B224AEFA500D223A6 /* SingleNumber_137.h */,
+				1026510C224AEFA500D223A6 /* SingleNumber_137.c */,
+			);
+			path = 137_SingleNumber;
+			sourceTree = "<group>";
+		};
+		1026510E224AF0B000D223A6 /* 141_HasCycle */ = {
+			isa = PBXGroup;
+			children = (
+				1026510F224AF0E300D223A6 /* HasCycle_141.h */,
+				10265110224AF0E300D223A6 /* HasCycle_141.c */,
+			);
+			path = 141_HasCycle;
+			sourceTree = "<group>";
+		};
+		10265112224B124900D223A6 /* 142_DetectCycle */ = {
+			isa = PBXGroup;
+			children = (
+				10265113224B126800D223A6 /* DetectCycle_142.h */,
+				10265114224B126800D223A6 /* DetectCycle_142.c */,
+			);
+			path = 142_DetectCycle;
+			sourceTree = "<group>";
+		};
+		10265116224B14A300D223A6 /* 147_InsertionSortList */ = {
+			isa = PBXGroup;
+			children = (
+				10265117224B14BA00D223A6 /* InsertionSortList_147.h */,
+				10265118224B14BA00D223A6 /* InsertionSortList_147.c */,
+			);
+			path = 147_InsertionSortList;
+			sourceTree = "<group>";
+		};
+		1026511A224B15F700D223A6 /* 172_TrailingZeroes */ = {
+			isa = PBXGroup;
+			children = (
+				1026511B224B161500D223A6 /* TrailingZeroes_172.h */,
+				1026511C224B161500D223A6 /* TrailingZeroes_172.c */,
+			);
+			path = 172_TrailingZeroes;
+			sourceTree = "<group>";
+		};
+		1026511E224B17B600D223A6 /* 189_Rotate */ = {
+			isa = PBXGroup;
+			children = (
+				1026511F224B17C900D223A6 /* Rotate_189.h */,
+				10265120224B17C900D223A6 /* Rotate_189.c */,
+			);
+			path = 189_Rotate;
+			sourceTree = "<group>";
+		};
+		10265122224B19CC00D223A6 /* 206_ReverseList */ = {
+			isa = PBXGroup;
+			children = (
+				10265123224B1A1400D223A6 /* ReverseList_206.h */,
+				10265124224B1A1400D223A6 /* ReverseList_206.c */,
+			);
+			path = 206_ReverseList;
+			sourceTree = "<group>";
+		};
+		10265126224B1D2500D223A6 /* 217_ContainsDuplicate */ = {
+			isa = PBXGroup;
+			children = (
+				10265127224B1D4C00D223A6 /* ContainsDuplicate_217.h */,
+				10265128224B1D4C00D223A6 /* ContainsDuplicate_217.c */,
+			);
+			path = 217_ContainsDuplicate;
+			sourceTree = "<group>";
+		};
+		1026512A224B1EDD00D223A6 /* 219_ContainsNearbyDuplicate */ = {
+			isa = PBXGroup;
+			children = (
+				1026512B224B1EF700D223A6 /* ContainsNearbyDuplicate_219.h */,
+				1026512C224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c */,
+			);
+			path = 219_ContainsNearbyDuplicate;
+			sourceTree = "<group>";
+		};
+		1026512E224B205700D223A6 /* 220_ContainsNearbyAlmostDuplicate */ = {
+			isa = PBXGroup;
+			children = (
+				1026512F224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.h */,
+				10265130224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c */,
+			);
+			path = 220_ContainsNearbyAlmostDuplicate;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,12 +762,22 @@
 				10265102224A4BA800D223A6 /* 88_Merge */,
 				102650C322446DDE00D223A6 /* 125_IsPalindrome */,
 				10265106224A4E6100D223A6 /* 136_SingleNumber */,
+				1026510A224AEF5400D223A6 /* 137_SingleNumber */,
+				1026510E224AF0B000D223A6 /* 141_HasCycle */,
+				10265112224B124900D223A6 /* 142_DetectCycle */,
+				10265116224B14A300D223A6 /* 147_InsertionSortList */,
 				102650DA2248BB5F00D223A6 /* 168_ConvertToTitle */,
 				102650D6224888EE00D223A6 /* 171_TitleToNumber */,
+				1026511A224B15F700D223A6 /* 172_TrailingZeroes */,
 				24B7F4C221410A200051F309 /* 186_ReverseWordsAndReduceSpace */,
+				1026511E224B17B600D223A6 /* 189_Rotate */,
 				102650BB2243B8E700D223A6 /* 202_IsHappy */,
 				1026509F224375A800D223A6 /* 203_RemoveElements */,
 				245BEC37215B26E7005984BE /* 205_Isomorphic */,
+				10265122224B19CC00D223A6 /* 206_ReverseList */,
+				10265126224B1D2500D223A6 /* 217_ContainsDuplicate */,
+				1026512A224B1EDD00D223A6 /* 219_ContainsNearbyDuplicate */,
+				1026512E224B205700D223A6 /* 220_ContainsNearbyAlmostDuplicate */,
 				102650E22249E15700D223A6 /* 223_ComputeArea */,
 				102650E6224A07B300D223A6 /* 258_AddDigits */,
 				102650A32243A3AF00D223A6 /* 344_ReverseString */,
@@ -755,7 +885,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10265111224AF0E300D223A6 /* HasCycle_141.c in Sources */,
 				101605D2222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c in Sources */,
+				10265115224B126800D223A6 /* DetectCycle_142.c in Sources */,
 				10265109224A4E8E00D223A6 /* SingleNumber_136.c in Sources */,
 				24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */,
 				107803612240EEAB009684B6 /* AddStrings_415.c in Sources */,
@@ -765,21 +897,27 @@
 				245BEC42215C914D005984BE /* LicenseKeyFormatting_482.c in Sources */,
 				245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */,
 				1026509E2243737200D223A6 /* MergeTwoLists_21.c in Sources */,
+				10265119224B14BA00D223A6 /* InsertionSortList_147.c in Sources */,
 				245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */,
 				245BEC3E215B604E005984BE /* CompressChars_443.c in Sources */,
 				245BEC36215B09E7005984BE /* NumJewelsInStones_771.c in Sources */,
 				102650A2224375CC00D223A6 /* RemoveElements_203.c in Sources */,
 				245BEC3A215B2701005984BE /* Isomorphic_205.c in Sources */,
+				10265131224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c in Sources */,
 				102650E9224A07D600D223A6 /* AddDigits_258.c in Sources */,
+				10265129224B1D4C00D223A6 /* ContainsDuplicate_217.c in Sources */,
+				1026511D224B161500D223A6 /* TrailingZeroes_172.c in Sources */,
 				102650FD224A327C00D223A6 /* DeleteDuplicates_82.c in Sources */,
 				245BEC56217316F0005984BE /* StrStr_28.c in Sources */,
 				102650A62243A4A000D223A6 /* ReverseString_344.c in Sources */,
 				102650CA224474E800D223A6 /* RomanToInt_13.c in Sources */,
+				10265125224B1A1400D223A6 /* ReverseList_206.c in Sources */,
 				24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */,
 				102650BE2243B90500D223A6 /* IsHappy_202.c in Sources */,
 				10265105224A4BC500D223A6 /* Merge_88.c in Sources */,
 				102650B22243AED800D223A6 /* ReverseWords_557.c in Sources */,
 				102650ED224A20CF00D223A6 /* RemoveElement_27.c in Sources */,
+				10265121224B17C900D223A6 /* Rotate_189.c in Sources */,
 				102650F5224A294200D223A6 /* AddBinary_67.c in Sources */,
 				102650C622446E0F00D223A6 /* IsPalindrome_125.c in Sources */,
 				102650AA2243AB4800D223A6 /* ReverseStr_541.c in Sources */,
@@ -795,11 +933,13 @@
 				102650C22244683700D223A6 /* ClimbStairs_70.c in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
 				245BEC4A216C4276005984BE /* IsPalindrome_9.c in Sources */,
+				1026512D224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c in Sources */,
 				102650AE2243AD1E00D223A6 /* ReverseVowels_345.c in Sources */,
 				10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */,
 				102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */,
 				102650BA2243B5DE00D223A6 /* IsLongPressedName_925.c in Sources */,
 				102650F9224A2B2300D223A6 /* MySqrt_69.c in Sources */,
+				1026510D224AEFA500D223A6 /* SingleNumber_137.c in Sources */,
 				102650E12249DFD300D223A6 /* IsRectangleOverlap_836.c in Sources */,
 				24E45778209EC3060048DEF7 /* ThreeSum_15.c in Sources */,
 				24E4576B209CAC3C0048DEF7 /* main.m in Sources */,
