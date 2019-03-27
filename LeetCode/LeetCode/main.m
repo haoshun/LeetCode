@@ -77,10 +77,14 @@
 //#define ContainsDuplicate_217
 
 //#define ContainsNearbyDuplicate_219
-#define ContainsNearbyAlmostDuplicate_220
+//#define ContainsNearbyAlmostDuplicate_220
 
 //#define ComputeArea_223
-//
+
+//#define MyStackCreate_225
+
+#define IsPowerOfTwo_231
+
 //#define AddDigits_258
 //
 //#define ReverseString_344
@@ -969,6 +973,32 @@ void ComputeArea()
 #endif
 
 
+#pragma mark - 225_用队列实现栈_MyStackCreate
+
+#ifdef MyStackCreate_225
+#import "225_MyStackCreate/MyStackCreate_225.h"
+
+void MyStackCreate()
+{
+    
+}
+#endif
+
+
+#pragma mark - 231_2的幂_IsPowerOfTwo
+
+#ifdef IsPowerOfTwo_231
+#import "231_IsPowerOfTwo/IsPowerOfTwo_231.h"
+
+void IsPowerOfTwo()
+{
+    int num = 16;
+    printf("是否为 2的幂 : %d \n" , isPowerOfTwo(num));
+}
+#endif
+
+
+
 #pragma mark - 258_各位相加_AddDigits
 
 #ifdef AddDigits_258
@@ -1416,6 +1446,16 @@ int main(int argc, const char * argv[]) {
         
 #ifdef ComputeArea_223
         ComputeArea();
+#endif
+        
+        
+#ifdef MyStackCreate_225
+        MyStackCreate();
+#endif
+        
+        
+#ifdef IsPowerOfTwo_231
+        IsPowerOfTwo();
 #endif
         
         
