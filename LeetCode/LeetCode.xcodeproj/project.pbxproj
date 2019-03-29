@@ -47,6 +47,24 @@
 		10265131224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265130224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c */; };
 		10265136224B2B0C00D223A6 /* MyStackCreate_225.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265135224B2B0C00D223A6 /* MyStackCreate_225.c */; };
 		1026513A224B2C7100D223A6 /* IsPowerOfTwo_231.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265139224B2C7100D223A6 /* IsPowerOfTwo_231.c */; };
+		1026513E224C68A000D223A6 /* MissingNumber_268.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026513D224C68A000D223A6 /* MissingNumber_268.c */; };
+		10265142224C6FC800D223A6 /* FirstBadVersion_278.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265141224C6FC800D223A6 /* FirstBadVersion_278.c */; };
+		10265146224C710D00D223A6 /* MoveZeroes_283.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265145224C710D00D223A6 /* MoveZeroes_283.c */; };
+		1026514B224C732A00D223A6 /* CanWinNim_292.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026514A224C732A00D223A6 /* CanWinNim_292.c */; };
+		1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026514E224C757100D223A6 /* BulbSwitch_319.c */; };
+		10265153224C771D00D223A6 /* IsPowerOfThree_326.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265152224C771D00D223A6 /* IsPowerOfThree_326.c */; };
+		10265157224C7F9A00D223A6 /* IsPowerOfFour_342.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265156224C7F9A00D223A6 /* IsPowerOfFour_342.c */; };
+		1026515B224CABC200D223A6 /* Intersection_349.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026515A224CABC200D223A6 /* Intersection_349.c */; };
+		1026515F224CAE3A00D223A6 /* IsPerfectSquare_367.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026515E224CAE3A00D223A6 /* IsPerfectSquare_367.c */; };
+		10265163224CB0DF00D223A6 /* GuessNumber_374.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10265161224CB0DF00D223A6 /* GuessNumber_374.cpp */; };
+		10265167224CB1DF00D223A6 /* FindTheDifference_389.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265166224CB1DF00D223A6 /* FindTheDifference_389.c */; };
+		1026516B224CB41200D223A6 /* CountSegments_434.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026516A224CB41200D223A6 /* CountSegments_434.c */; };
+		1026516F224CB59C00D223A6 /* JudgeSquareSum_633.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026516E224CB59C00D223A6 /* JudgeSquareSum_633.c */; };
+		10265173224CD2ED00D223A6 /* CanTransform_777.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265172224CD2ED00D223A6 /* CanTransform_777.c */; };
+		10265177224CD47700D223A6 /* BackspaceCompare_844.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265176224CD47700D223A6 /* BackspaceCompare_844.c */; };
+		1026517B224CD80900D223A6 /* MiddleNode_876.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517A224CD80900D223A6 /* MiddleNode_876.c */; };
+		1026517F224CE02900D223A6 /* SortedSquares_977.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517E224CE02900D223A6 /* SortedSquares_977.c */; };
+		10265183224DAC5700D223A6 /* SumEvenAfterQueries_985.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -164,6 +182,42 @@
 		10265135224B2B0C00D223A6 /* MyStackCreate_225.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyStackCreate_225.c; sourceTree = "<group>"; };
 		10265138224B2C7100D223A6 /* IsPowerOfTwo_231.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPowerOfTwo_231.h; sourceTree = "<group>"; };
 		10265139224B2C7100D223A6 /* IsPowerOfTwo_231.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPowerOfTwo_231.c; sourceTree = "<group>"; };
+		1026513C224C68A000D223A6 /* MissingNumber_268.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MissingNumber_268.h; sourceTree = "<group>"; };
+		1026513D224C68A000D223A6 /* MissingNumber_268.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MissingNumber_268.c; sourceTree = "<group>"; };
+		10265140224C6FC800D223A6 /* FirstBadVersion_278.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstBadVersion_278.h; sourceTree = "<group>"; };
+		10265141224C6FC800D223A6 /* FirstBadVersion_278.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FirstBadVersion_278.c; sourceTree = "<group>"; };
+		10265144224C710D00D223A6 /* MoveZeroes_283.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveZeroes_283.h; sourceTree = "<group>"; };
+		10265145224C710D00D223A6 /* MoveZeroes_283.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MoveZeroes_283.c; sourceTree = "<group>"; };
+		10265149224C732A00D223A6 /* CanWinNim_292.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanWinNim_292.h; sourceTree = "<group>"; };
+		1026514A224C732A00D223A6 /* CanWinNim_292.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CanWinNim_292.c; sourceTree = "<group>"; };
+		1026514D224C757100D223A6 /* BulbSwitch_319.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BulbSwitch_319.h; sourceTree = "<group>"; };
+		1026514E224C757100D223A6 /* BulbSwitch_319.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BulbSwitch_319.c; sourceTree = "<group>"; };
+		10265151224C771D00D223A6 /* IsPowerOfThree_326.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPowerOfThree_326.h; sourceTree = "<group>"; };
+		10265152224C771D00D223A6 /* IsPowerOfThree_326.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPowerOfThree_326.c; sourceTree = "<group>"; };
+		10265155224C7F9A00D223A6 /* IsPowerOfFour_342.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPowerOfFour_342.h; sourceTree = "<group>"; };
+		10265156224C7F9A00D223A6 /* IsPowerOfFour_342.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPowerOfFour_342.c; sourceTree = "<group>"; };
+		10265159224CABC200D223A6 /* Intersection_349.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Intersection_349.h; sourceTree = "<group>"; };
+		1026515A224CABC200D223A6 /* Intersection_349.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Intersection_349.c; sourceTree = "<group>"; };
+		1026515D224CAE3A00D223A6 /* IsPerfectSquare_367.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPerfectSquare_367.h; sourceTree = "<group>"; };
+		1026515E224CAE3A00D223A6 /* IsPerfectSquare_367.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPerfectSquare_367.c; sourceTree = "<group>"; };
+		10265161224CB0DF00D223A6 /* GuessNumber_374.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuessNumber_374.cpp; sourceTree = "<group>"; };
+		10265162224CB0DF00D223A6 /* GuessNumber_374.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GuessNumber_374.hpp; sourceTree = "<group>"; };
+		10265165224CB1DF00D223A6 /* FindTheDifference_389.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindTheDifference_389.h; sourceTree = "<group>"; };
+		10265166224CB1DF00D223A6 /* FindTheDifference_389.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindTheDifference_389.c; sourceTree = "<group>"; };
+		10265169224CB41200D223A6 /* CountSegments_434.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountSegments_434.h; sourceTree = "<group>"; };
+		1026516A224CB41200D223A6 /* CountSegments_434.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CountSegments_434.c; sourceTree = "<group>"; };
+		1026516D224CB59C00D223A6 /* JudgeSquareSum_633.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JudgeSquareSum_633.h; sourceTree = "<group>"; };
+		1026516E224CB59C00D223A6 /* JudgeSquareSum_633.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JudgeSquareSum_633.c; sourceTree = "<group>"; };
+		10265171224CD2ED00D223A6 /* CanTransform_777.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanTransform_777.h; sourceTree = "<group>"; };
+		10265172224CD2ED00D223A6 /* CanTransform_777.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CanTransform_777.c; sourceTree = "<group>"; };
+		10265175224CD47700D223A6 /* BackspaceCompare_844.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackspaceCompare_844.h; sourceTree = "<group>"; };
+		10265176224CD47700D223A6 /* BackspaceCompare_844.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BackspaceCompare_844.c; sourceTree = "<group>"; };
+		10265179224CD80900D223A6 /* MiddleNode_876.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiddleNode_876.h; sourceTree = "<group>"; };
+		1026517A224CD80900D223A6 /* MiddleNode_876.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MiddleNode_876.c; sourceTree = "<group>"; };
+		1026517D224CE02900D223A6 /* SortedSquares_977.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortedSquares_977.h; sourceTree = "<group>"; };
+		1026517E224CE02900D223A6 /* SortedSquares_977.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortedSquares_977.c; sourceTree = "<group>"; };
+		10265181224DAC5700D223A6 /* SumEvenAfterQueries_985.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumEvenAfterQueries_985.h; sourceTree = "<group>"; };
+		10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SumEvenAfterQueries_985.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -590,6 +644,168 @@
 			path = 231_IsPowerOfTwo;
 			sourceTree = "<group>";
 		};
+		1026513B224C688000D223A6 /* 268_MissingNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1026513C224C68A000D223A6 /* MissingNumber_268.h */,
+				1026513D224C68A000D223A6 /* MissingNumber_268.c */,
+			);
+			path = 268_MissingNumber;
+			sourceTree = "<group>";
+		};
+		1026513F224C6F9E00D223A6 /* 278_FirstBadVersion */ = {
+			isa = PBXGroup;
+			children = (
+				10265140224C6FC800D223A6 /* FirstBadVersion_278.h */,
+				10265141224C6FC800D223A6 /* FirstBadVersion_278.c */,
+			);
+			path = 278_FirstBadVersion;
+			sourceTree = "<group>";
+		};
+		10265143224C70DA00D223A6 /* 283_MoveZeroes */ = {
+			isa = PBXGroup;
+			children = (
+				10265144224C710D00D223A6 /* MoveZeroes_283.h */,
+				10265145224C710D00D223A6 /* MoveZeroes_283.c */,
+			);
+			path = 283_MoveZeroes;
+			sourceTree = "<group>";
+		};
+		10265148224C730E00D223A6 /* 292_CanWinNim */ = {
+			isa = PBXGroup;
+			children = (
+				10265149224C732A00D223A6 /* CanWinNim_292.h */,
+				1026514A224C732A00D223A6 /* CanWinNim_292.c */,
+			);
+			path = 292_CanWinNim;
+			sourceTree = "<group>";
+		};
+		1026514C224C754E00D223A6 /* 319_BulbSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				1026514D224C757100D223A6 /* BulbSwitch_319.h */,
+				1026514E224C757100D223A6 /* BulbSwitch_319.c */,
+			);
+			path = 319_BulbSwitch;
+			sourceTree = "<group>";
+		};
+		10265150224C76DD00D223A6 /* 326_IsPowerOfThree */ = {
+			isa = PBXGroup;
+			children = (
+				10265151224C771D00D223A6 /* IsPowerOfThree_326.h */,
+				10265152224C771D00D223A6 /* IsPowerOfThree_326.c */,
+			);
+			path = 326_IsPowerOfThree;
+			sourceTree = "<group>";
+		};
+		10265154224C7F6400D223A6 /* 342_IsPowerOfFour */ = {
+			isa = PBXGroup;
+			children = (
+				10265155224C7F9A00D223A6 /* IsPowerOfFour_342.h */,
+				10265156224C7F9A00D223A6 /* IsPowerOfFour_342.c */,
+			);
+			path = 342_IsPowerOfFour;
+			sourceTree = "<group>";
+		};
+		10265158224CABA100D223A6 /* 349_Intersection */ = {
+			isa = PBXGroup;
+			children = (
+				10265159224CABC200D223A6 /* Intersection_349.h */,
+				1026515A224CABC200D223A6 /* Intersection_349.c */,
+			);
+			path = 349_Intersection;
+			sourceTree = "<group>";
+		};
+		1026515C224CADF700D223A6 /* 367_IsPerfectSquare */ = {
+			isa = PBXGroup;
+			children = (
+				1026515D224CAE3A00D223A6 /* IsPerfectSquare_367.h */,
+				1026515E224CAE3A00D223A6 /* IsPerfectSquare_367.c */,
+			);
+			path = 367_IsPerfectSquare;
+			sourceTree = "<group>";
+		};
+		10265160224CB05800D223A6 /* 374_GuessNumber */ = {
+			isa = PBXGroup;
+			children = (
+				10265161224CB0DF00D223A6 /* GuessNumber_374.cpp */,
+				10265162224CB0DF00D223A6 /* GuessNumber_374.hpp */,
+			);
+			path = 374_GuessNumber;
+			sourceTree = "<group>";
+		};
+		10265164224CB1A400D223A6 /* 389_FindTheDifference */ = {
+			isa = PBXGroup;
+			children = (
+				10265165224CB1DF00D223A6 /* FindTheDifference_389.h */,
+				10265166224CB1DF00D223A6 /* FindTheDifference_389.c */,
+			);
+			path = 389_FindTheDifference;
+			sourceTree = "<group>";
+		};
+		10265168224CB3CD00D223A6 /* 434_CountSegments */ = {
+			isa = PBXGroup;
+			children = (
+				10265169224CB41200D223A6 /* CountSegments_434.h */,
+				1026516A224CB41200D223A6 /* CountSegments_434.c */,
+			);
+			path = 434_CountSegments;
+			sourceTree = "<group>";
+		};
+		1026516C224CB57900D223A6 /* 633_JudgeSquareSum */ = {
+			isa = PBXGroup;
+			children = (
+				1026516D224CB59C00D223A6 /* JudgeSquareSum_633.h */,
+				1026516E224CB59C00D223A6 /* JudgeSquareSum_633.c */,
+			);
+			path = 633_JudgeSquareSum;
+			sourceTree = "<group>";
+		};
+		10265170224CD2BC00D223A6 /* 777_CanTransform */ = {
+			isa = PBXGroup;
+			children = (
+				10265171224CD2ED00D223A6 /* CanTransform_777.h */,
+				10265172224CD2ED00D223A6 /* CanTransform_777.c */,
+			);
+			path = 777_CanTransform;
+			sourceTree = "<group>";
+		};
+		10265174224CD45900D223A6 /* 844_BackspaceCompare */ = {
+			isa = PBXGroup;
+			children = (
+				10265175224CD47700D223A6 /* BackspaceCompare_844.h */,
+				10265176224CD47700D223A6 /* BackspaceCompare_844.c */,
+			);
+			path = 844_BackspaceCompare;
+			sourceTree = "<group>";
+		};
+		10265178224CD7AC00D223A6 /* 876_MiddleNode */ = {
+			isa = PBXGroup;
+			children = (
+				10265179224CD80900D223A6 /* MiddleNode_876.h */,
+				1026517A224CD80900D223A6 /* MiddleNode_876.c */,
+			);
+			path = 876_MiddleNode;
+			sourceTree = "<group>";
+		};
+		1026517C224CDFEF00D223A6 /* 977_SortedSquares */ = {
+			isa = PBXGroup;
+			children = (
+				1026517D224CE02900D223A6 /* SortedSquares_977.h */,
+				1026517E224CE02900D223A6 /* SortedSquares_977.c */,
+			);
+			path = 977_SortedSquares;
+			sourceTree = "<group>";
+		};
+		10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */ = {
+			isa = PBXGroup;
+			children = (
+				10265181224DAC5700D223A6 /* SumEvenAfterQueries_985.h */,
+				10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */,
+			);
+			path = 985_SumEvenAfterQueries;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,20 +1022,38 @@
 				10265133224B2AA000D223A6 /* 225_MyStackCreate */,
 				10265137224B2C4E00D223A6 /* 231_IsPowerOfTwo */,
 				102650E6224A07B300D223A6 /* 258_AddDigits */,
+				1026513B224C688000D223A6 /* 268_MissingNumber */,
+				1026513F224C6F9E00D223A6 /* 278_FirstBadVersion */,
+				10265143224C70DA00D223A6 /* 283_MoveZeroes */,
+				10265148224C730E00D223A6 /* 292_CanWinNim */,
+				1026514C224C754E00D223A6 /* 319_BulbSwitch */,
+				10265150224C76DD00D223A6 /* 326_IsPowerOfThree */,
+				10265154224C7F6400D223A6 /* 342_IsPowerOfFour */,
 				102650A32243A3AF00D223A6 /* 344_ReverseString */,
 				102650AB2243ACFD00D223A6 /* 345_ReverseVowels */,
+				10265158224CABA100D223A6 /* 349_Intersection */,
+				1026515C224CADF700D223A6 /* 367_IsPerfectSquare */,
+				10265160224CB05800D223A6 /* 374_GuessNumber */,
 				245BEC2F215A2680005984BE /* 387_FirstUniqChar */,
+				10265164224CB1A400D223A6 /* 389_FindTheDifference */,
 				1078035E2240EE85009684B6 /* 415_AddStrings */,
+				10265168224CB3CD00D223A6 /* 434_CountSegments */,
 				245BEC3B215B6023005984BE /* 443_CompressChars */,
 				24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */,
 				245BEC3F215C9110005984BE /* 482_LicenseKeyFormatting */,
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
+				1026516C224CB57900D223A6 /* 633_JudgeSquareSum */,
 				245BEC33215B09BE005984BE /* 771_NumJewelsInStones */,
+				10265170224CD2BC00D223A6 /* 777_CanTransform */,
 				245BEC2B21575817005984BE /* 821_ShortestToChar */,
 				102650DE2249DF9E00D223A6 /* 836_IsRectangleOverlap */,
+				10265174224CD45900D223A6 /* 844_BackspaceCompare */,
+				10265178224CD7AC00D223A6 /* 876_MiddleNode */,
 				102650B72243B5BF00D223A6 /* 925_IsLongPressedName */,
+				1026517C224CDFEF00D223A6 /* 977_SortedSquares */,
+				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
 				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
 				24E4577920A01E640048DEF7 /* QuickSort */,
@@ -912,10 +1146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				10265111224AF0E300D223A6 /* HasCycle_141.c in Sources */,
+				10265167224CB1DF00D223A6 /* FindTheDifference_389.c in Sources */,
 				101605D2222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c in Sources */,
 				10265115224B126800D223A6 /* DetectCycle_142.c in Sources */,
 				10265109224A4E8E00D223A6 /* SingleNumber_136.c in Sources */,
+				10265177224CD47700D223A6 /* BackspaceCompare_844.c in Sources */,
 				24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */,
+				10265153224C771D00D223A6 /* IsPowerOfThree_326.c in Sources */,
 				107803612240EEAB009684B6 /* AddStrings_415.c in Sources */,
 				245BEC4E216E1845005984BE /* SearchInsert_35.c in Sources */,
 				102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */,
@@ -932,16 +1169,24 @@
 				245BEC3A215B2701005984BE /* Isomorphic_205.c in Sources */,
 				10265131224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c in Sources */,
 				102650E9224A07D600D223A6 /* AddDigits_258.c in Sources */,
+				1026516B224CB41200D223A6 /* CountSegments_434.c in Sources */,
 				10265129224B1D4C00D223A6 /* ContainsDuplicate_217.c in Sources */,
 				1026511D224B161500D223A6 /* TrailingZeroes_172.c in Sources */,
 				10265136224B2B0C00D223A6 /* MyStackCreate_225.c in Sources */,
 				102650FD224A327C00D223A6 /* DeleteDuplicates_82.c in Sources */,
 				245BEC56217316F0005984BE /* StrStr_28.c in Sources */,
 				102650A62243A4A000D223A6 /* ReverseString_344.c in Sources */,
+				1026515F224CAE3A00D223A6 /* IsPerfectSquare_367.c in Sources */,
+				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
+				10265142224C6FC800D223A6 /* FirstBadVersion_278.c in Sources */,
 				102650CA224474E800D223A6 /* RomanToInt_13.c in Sources */,
 				10265125224B1A1400D223A6 /* ReverseList_206.c in Sources */,
+				1026514B224C732A00D223A6 /* CanWinNim_292.c in Sources */,
+				10265157224C7F9A00D223A6 /* IsPowerOfFour_342.c in Sources */,
 				24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */,
+				1026513E224C68A000D223A6 /* MissingNumber_268.c in Sources */,
 				102650BE2243B90500D223A6 /* IsHappy_202.c in Sources */,
+				1026515B224CABC200D223A6 /* Intersection_349.c in Sources */,
 				10265105224A4BC500D223A6 /* Merge_88.c in Sources */,
 				102650B22243AED800D223A6 /* ReverseWords_557.c in Sources */,
 				102650ED224A20CF00D223A6 /* RemoveElement_27.c in Sources */,
@@ -950,21 +1195,28 @@
 				102650C622446E0F00D223A6 /* IsPalindrome_125.c in Sources */,
 				102650AA2243AB4800D223A6 /* ReverseStr_541.c in Sources */,
 				245BEC46216B337B005984BE /* Reverse_7.c in Sources */,
+				10265183224DAC5700D223A6 /* SumEvenAfterQueries_985.c in Sources */,
 				245BEC5A217860C2005984BE /* PlusOne_66.c in Sources */,
 				102650CE224476C500D223A6 /* SwapPairs_24.c in Sources */,
 				1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */,
+				10265146224C710D00D223A6 /* MoveZeroes_283.c in Sources */,
 				24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */,
 				102650B62243B2E900D223A6 /* Tools.c in Sources */,
 				102650D92248892300D223A6 /* TitleToNumber_171.c in Sources */,
 				10265101224A4A8700D223A6 /* DeleteDuplicates_83.c in Sources */,
 				24B7F4C521410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c in Sources */,
 				102650C22244683700D223A6 /* ClimbStairs_70.c in Sources */,
+				10265163224CB0DF00D223A6 /* GuessNumber_374.cpp in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
+				1026517B224CD80900D223A6 /* MiddleNode_876.c in Sources */,
+				1026517F224CE02900D223A6 /* SortedSquares_977.c in Sources */,
 				245BEC4A216C4276005984BE /* IsPalindrome_9.c in Sources */,
 				1026512D224B1EF700D223A6 /* ContainsNearbyDuplicate_219.c in Sources */,
 				102650AE2243AD1E00D223A6 /* ReverseVowels_345.c in Sources */,
 				10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */,
+				10265173224CD2ED00D223A6 /* CanTransform_777.c in Sources */,
 				102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */,
+				1026516F224CB59C00D223A6 /* JudgeSquareSum_633.c in Sources */,
 				102650BA2243B5DE00D223A6 /* IsLongPressedName_925.c in Sources */,
 				102650F9224A2B2300D223A6 /* MySqrt_69.c in Sources */,
 				1026510D224AEFA500D223A6 /* SingleNumber_137.c in Sources */,

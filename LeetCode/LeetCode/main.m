@@ -83,17 +83,39 @@
 
 //#define MyStackCreate_225
 
-#define IsPowerOfTwo_231
+//#define IsPowerOfTwo_231
 
 //#define AddDigits_258
-//
+
+//#define MissingNumber_268
+
+//#define MoveZeroes_283
+
+//#define CanWinNim_292
+
+//#define BulbSwitch_319
+
+//define IsPowerOfThree_326
+
+//#define IsPowerOfFour_342
+
 //#define ReverseString_344
 //#define ReverseVowels_345
-//
+
+//#define Intersection_349
+
+//#define IsPerfectSquare_367
+
+//#define IsPerfectSquare_374
+
 //#define FirstUniqChar_387
-//
+
+//#define FindTheDifference_389
+
 //#define AddStrings_415
-//
+
+//#define CountSegments_434
+
 //#define CompressChars_443
 //
 //#define FindDisappearedNumbers_448
@@ -105,15 +127,29 @@
 //#define ReverseStr_II_541
 //
 //#define ReverseWords_557
-//
+
+//#define CountSegments_434
+
+//#define JudgeSquareSum_633
+
 //#define NumJewelsInStones_771
-//
+
+//#define CanTransform_777
+
 //#define ShortestToChar_821
-//
+
 //#define IsRectangleOverlap_836
-//
+
+//#define BackspaceCompare_844
+
+//#define MiddleNode_876
+
 //#define IsLongPressedName_925
-//
+
+//#define SortedSquares_977
+
+#define SumEvenAfterQueries_985
+
 //#define AddToArrayForm_989
 
 
@@ -1011,6 +1047,86 @@ void AddDigits()
 #endif
 
 
+#pragma mark - 268_缺失数字_MissingNumber
+
+#ifdef MissingNumber_268
+#import "268_MissingNumber/MissingNumber_268.h"
+
+void MissingNumbers()
+{
+    int num[9] = {9,6,4,2,3,5,7,0,1};
+    printf("缺失数字: %d \n" , missingNumber(num, 9));
+}
+#endif
+
+
+#pragma mark - 283_移动零_MoveZeroes
+
+#ifdef MoveZeroes_283
+#import "283_MoveZeroes/MoveZeroes_283.h"
+
+void MoveZeroes()
+{
+    int num[5] = {0,1,0,3,12};
+    moveZeroes(num, 5);
+    printf("移动零:  \n");
+    for (int i = 0 ; i < 5; ++i)
+    {
+        printf("%d ," ,  num[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 292_Nim游戏_CanWinNim
+
+#ifdef CanWinNim_292
+#import "292_CanWinNim/CanWinNim_292.h"
+
+void CanWinNim()
+{
+    printf("Nim游戏: %d \n" , canWinNim(4));
+}
+#endif
+
+
+#pragma mark - 319_灯泡开关_BulbSwitch
+
+#ifdef BulbSwitch_319
+#import "319_BulbSwitch/BulbSwitch_319.h"
+
+void BulbSwitch()
+{
+    printf("灯泡开关: %d \n" , bulbSwitch(3));
+}
+#endif
+
+
+#pragma mark - 326_3的幂_IsPowerOfThree
+
+#ifdef IsPowerOfThree_326
+#import "326_IsPowerOfThree/IsPowerOfThree_326.h"
+
+void IsPowerOfThree()
+{
+    printf("3的幂: %d \n" , isPowerOfThree(45));
+}
+#endif
+
+
+#pragma mark - 342_4的幂_IsPowerOfFour
+
+#ifdef IsPowerOfFour_342
+#import "342_IsPowerOfFour/IsPowerOfFour_342.h"
+
+void IsPowerOfFour()
+{
+    printf("4的幂: %d \n" , isPowerOfFour(64));
+}
+#endif
+
+
 #pragma mark - 344_反转字符串_ReverseString
 
 #ifdef ReverseString_344
@@ -1037,6 +1153,40 @@ void ReverseVowels()
 #endif
 
 
+#pragma mark - 349_两个数组的交集_Intersection
+
+#ifdef Intersection_349
+#import "349_Intersection/Intersection_349.h"
+
+void Intersection()
+{
+    int nums1[3] = {4,9,5};
+    int nums2[5] = {9,4,9,8,4};
+    int returnSize = 0;
+    int * result = intersection(nums1, 3, nums2, 5, &returnSize);
+    printf("两个数组的交集:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 367_有效的完全平方数_IsPerfectSquare
+
+#ifdef IsPerfectSquare_367
+#import "367_IsPerfectSquare/IsPerfectSquare_367.h"
+
+void IsPerfectSquare()
+{
+    int num = 16;
+    printf("有效的完全平方数: %d \n" , isPerfectSquare(num));
+}
+#endif
+
+
 #pragma mark - 387_字符串中的第一个唯一字符_FirstUniqChar
 
 #ifdef FirstUniqChar_387
@@ -1051,6 +1201,20 @@ void FirstUniqChar()
 #endif
 
 
+#pragma mark - 389_找不同_FindTheDifference
+
+#ifdef FindTheDifference_389
+#import "389_FindTheDifference/FindTheDifference_389.h"
+
+void FindTheDifference()
+{
+    char  s[10] = "abcd";
+    char t[10] = "abcde";
+    printf("找不同 %c\n" , findTheDifference(s, t));
+}
+#endif
+
+
 #pragma mark - 415_字符串相加_AddStrings
 
 #ifdef AddStrings_415
@@ -1061,6 +1225,20 @@ void AddStrings()
     char num1[50] = "1";
     char num2[50] = "1";
     printf("%s\n",addStrings(num1, num2));
+}
+#endif
+
+
+#pragma mark - 434_字符串中的单词数_CountSegments
+
+#ifdef CountSegments_434
+#import "434_CountSegments/CountSegments_434.h"
+
+void CountSegments()
+{
+    char s[50] = "Hello, my name is John";
+    
+    printf("字符串中的单词数: %d\n" , countSegments(s));
 }
 #endif
 
@@ -1152,6 +1330,19 @@ void ReverseWords()
 #endif
 
 
+#pragma mark - 633_平方数之和_JudgeSquareSum
+
+#ifdef JudgeSquareSum_633
+#import "633_JudgeSquareSum/JudgeSquareSum_633.h"
+
+void JudgeSquareSum()
+{
+    int num = 5;
+    printf("平方数之和  %d\n" , judgeSquareSum(num));
+}
+#endif
+
+
 #pragma mark - 771_宝石与石头_NumJewelsInStones
 
 #ifdef NumJewelsInStones_771
@@ -1162,6 +1353,20 @@ void NumJewelsInStones ()
     char S[50] = "beb";
     char J[10] = "dbca";
     printf("%d\n",numJewelsInStones(J, S));
+}
+#endif
+
+
+#pragma mark - 777_在LR字符串中交换相邻字符_CanTransform
+
+#ifdef CanTransform_777
+#import "777_CanTransform/CanTransform_777.h"
+
+void CanTransform ()
+{
+    char start[50] = "RXXLRXRXL";
+    char end[50] = "XRLXXRRLX";
+    printf("在LR字符串中交换相邻字符 : %d\n",canTransform(start, end));
 }
 #endif
 
@@ -1202,6 +1407,58 @@ void IsRectangleOverlap()
 #endif
 
 
+#pragma mark - 844_比较含退格的字符串_BackspaceCompare
+
+#ifdef BackspaceCompare_844
+#import "844_BackspaceCompare/BackspaceCompare_844.h"
+
+void BackspaceCompare()
+{
+    char S[50] = "a##c";
+    char T[50] = "#a#c";
+    
+    printf("比较含退格的字符串: %d\n," , backspaceCompare_844(S, T));
+}
+#endif
+
+
+#pragma mark - 876_比较含退格的字符串_MiddleNode
+
+#ifdef MiddleNode_876
+#import "876_MiddleNode/MiddleNode_876.h"
+
+void MiddleNode()
+{
+    struct ListNode n1 , n2 , n3 , n4 ,n5 ,n6;
+    struct ListNode *result;
+    
+    n1.val = 1;
+    n1.next = &n2;
+    n2.val = 2;
+    n2.next = &n3;
+    n3.val = 3;
+    n3.next = &n4;
+    
+    n4.val = 4;
+    n4.next = &n5;
+    n5.val = 5;
+    n5.next = &n6;
+    n6.val = 6;
+    n6.next = NULL;
+    
+    result = middleNode(&n1);
+    
+    printf("链表的中间结点:  \n");
+    while (result)
+    {
+        printf("%d ", result->val);
+        result = result->next;
+    }
+    printf("\n");
+}
+#endif
+
+
 #pragma mark - 925_长按键入_IsLongPressedName
 
 #ifdef IsLongPressedName_925
@@ -1212,7 +1469,66 @@ void IsLongPressedName()
     char * name = "vtkgn";
     char * typed = "vttkgnn";
     
-    NSLog(@"%d" , isLongPressedName(name, typed)) ;
+    NSLog(@"长按键入 %d\n" , isLongPressedName(name, typed)) ;
+}
+#endif
+
+
+#pragma mark - 977_有序数组的平方_SortedSquares
+
+#ifdef SortedSquares_977
+#import "977_SortedSquares/SortedSquares_977.h"
+
+void SortedSquares()
+{
+    int num[5] ={-7,-3,2,3,11};
+    
+    int returnSize;
+    
+    int * result = sortedSquares(num, 5, &returnSize);
+    
+    printf("有序数组的平方:  \n");
+    for (int i = 0;i<returnSize; ++i)
+    {
+        printf("%d," , result[i]);
+    }
+    printf("\n");
+}
+#endif
+
+
+#pragma mark - 985_查询后的偶数和_SumEvenAfterQueries_985
+
+#ifdef SumEvenAfterQueries_985
+#import "985_SumEvenAfterQueries/SumEvenAfterQueries_985.h"
+
+void SumEvenAfterQueries()
+{
+    int A[4] ={1,2,3,4};
+    //int queries[4][2] = {{1,0},{-3,1},{-4,0},{2,3}};
+    int returnSize = 0 , cSize = 2;
+    
+    int**p = (int**)malloc(sizeof(int*)*4);
+    for (int i = 0; i < 4; i++) {
+        p[i] = (int*)malloc(sizeof(int)*2);
+    }
+    
+    p[0][0] = 1;
+    p[0][1] = 0;
+    p[1][0] = -3;
+    p[1][1] = 1;
+    p[2][0] = -4;
+    p[2][1] = 0;
+    p[3][0] = 2;
+    p[3][1] = 3;
+    
+    
+    int * result = sumEvenAfterQueries(A, 4, p, 4, &cSize, &returnSize);
+    printf(" 查询后的偶数和 : \n");
+    for (int i = 0; i< returnSize; ++i) {
+        printf("%d " , result[i]);
+    }
+    printf("\n");
 }
 #endif
 
@@ -1464,6 +1780,36 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef MissingNumber_268
+        MissingNumbers();
+#endif
+        
+        
+#ifdef MoveZeroes_283
+        MoveZeroes();
+#endif
+        
+        
+#ifdef CanWinNim_292
+        CanWinNim();
+#endif
+        
+        
+#ifdef BulbSwitch_319
+        BulbSwitch();
+#endif
+        
+        
+#ifdef IsPowerOfThree_326
+        IsPowerOfThree();
+#endif
+        
+        
+#ifdef IsPowerOfFour_342
+        IsPowerOfFour();
+#endif
+        
+        
 #ifdef ReverseString_344
         ReverseString();
 #endif
@@ -1474,13 +1820,33 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef Intersection_349
+        Intersection();
+#endif
+
+        
+#ifdef IsPerfectSquare_367
+        IsPerfectSquare();
+#endif
+        
+        
 #ifdef FirstUniqChar_387
         FirstUniqChar();
 #endif
         
         
+#ifdef FindTheDifference_389
+        FindTheDifference();
+#endif
+        
+        
 #ifdef AddStrings_415
         AddStrings();
+#endif
+        
+        
+#ifdef CountSegments_434
+        CountSegments();
 #endif
         
         
@@ -1514,10 +1880,20 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef JudgeSquareSum_633
+        JudgeSquareSum();
+#endif
+        
+        
 #ifdef NumJewelsInStones_771
         NumJewelsInStones();
 #endif
 
+        
+#ifdef CanTransform_777
+        CanTransform();
+#endif
+        
         
 #ifdef ShortestToChar_821
         ShortestToChar();
@@ -1526,6 +1902,31 @@ int main(int argc, const char * argv[]) {
         
 #ifdef IsRectangleOverlap_836
         IsRectangleOverlap();
+#endif
+        
+        
+#ifdef BackspaceCompare_844
+        BackspaceCompare();
+#endif
+        
+        
+#ifdef MiddleNode_876
+        MiddleNode();
+#endif
+        
+        
+#ifdef IsLongPressedName_925
+        IsLongPressedName();
+#endif
+        
+        
+#ifdef SortedSquares_977
+        SortedSquares();
+#endif
+        
+        
+#ifdef SumEvenAfterQueries_985
+        SumEvenAfterQueries();
 #endif
         
         
