@@ -65,6 +65,7 @@
 		1026517B224CD80900D223A6 /* MiddleNode_876.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517A224CD80900D223A6 /* MiddleNode_876.c */; };
 		1026517F224CE02900D223A6 /* SortedSquares_977.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517E224CE02900D223A6 /* SortedSquares_977.c */; };
 		10265183224DAC5700D223A6 /* SumEvenAfterQueries_985.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */; };
+		1065C16322533DBF008BC940 /* IsUgly_263.c in Sources */ = {isa = PBXBuildFile; fileRef = 1065C16222533DBF008BC940 /* IsUgly_263.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -218,6 +219,8 @@
 		1026517E224CE02900D223A6 /* SortedSquares_977.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortedSquares_977.c; sourceTree = "<group>"; };
 		10265181224DAC5700D223A6 /* SumEvenAfterQueries_985.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumEvenAfterQueries_985.h; sourceTree = "<group>"; };
 		10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SumEvenAfterQueries_985.c; sourceTree = "<group>"; };
+		1065C16122533DBF008BC940 /* IsUgly_263.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsUgly_263.h; sourceTree = "<group>"; };
+		1065C16222533DBF008BC940 /* IsUgly_263.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsUgly_263.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -806,6 +809,15 @@
 			path = 985_SumEvenAfterQueries;
 			sourceTree = "<group>";
 		};
+		1065C16022533D96008BC940 /* 263_IsUgly */ = {
+			isa = PBXGroup;
+			children = (
+				1065C16122533DBF008BC940 /* IsUgly_263.h */,
+				1065C16222533DBF008BC940 /* IsUgly_263.c */,
+			);
+			path = 263_IsUgly;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -1022,6 +1034,7 @@
 				10265133224B2AA000D223A6 /* 225_MyStackCreate */,
 				10265137224B2C4E00D223A6 /* 231_IsPowerOfTwo */,
 				102650E6224A07B300D223A6 /* 258_AddDigits */,
+				1065C16022533D96008BC940 /* 263_IsUgly */,
 				1026513B224C688000D223A6 /* 268_MissingNumber */,
 				1026513F224C6F9E00D223A6 /* 278_FirstBadVersion */,
 				10265143224C70DA00D223A6 /* 283_MoveZeroes */,
@@ -1158,6 +1171,7 @@
 				102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */,
 				1026513A224B2C7100D223A6 /* IsPowerOfTwo_231.c in Sources */,
 				102650F1224A246A00D223A6 /* LengthOfLastWord_58.c in Sources */,
+				1065C16322533DBF008BC940 /* IsUgly_263.c in Sources */,
 				245BEC42215C914D005984BE /* LicenseKeyFormatting_482.c in Sources */,
 				245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */,
 				1026509E2243737200D223A6 /* MergeTwoLists_21.c in Sources */,

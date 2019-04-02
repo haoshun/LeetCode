@@ -89,6 +89,8 @@
 
 //#define MissingNumber_268
 
+#define IsUgly_263
+
 //#define MoveZeroes_283
 
 //#define CanWinNim_292
@@ -148,7 +150,7 @@
 
 //#define SortedSquares_977
 
-#define SumEvenAfterQueries_985
+//#define SumEvenAfterQueries_985
 
 //#define AddToArrayForm_989
 
@@ -1047,6 +1049,19 @@ void AddDigits()
 #endif
 
 
+#pragma mark - 263_丑数_IsUgly
+
+#ifdef IsUgly_263
+#import "263_IsUgly/IsUgly_263.h"
+
+void IsUgly()
+{
+    int num = 6;
+    printf("是否为c丑数 : %d \n" , isUgly(num));
+}
+#endif
+
+
 #pragma mark - 268_缺失数字_MissingNumber
 
 #ifdef MissingNumber_268
@@ -1777,6 +1792,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef AddDigits_258
         AddDigits();
+#endif
+        
+        
+#ifdef IsUgly_263
+        IsUgly();
 #endif
         
         
