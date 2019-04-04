@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100EE67C22561AAB00D817B9 /* ArrangeCoins_441.c in Sources */ = {isa = PBXBuildFile; fileRef = 100EE67B22561AAB00D817B9 /* ArrangeCoins_441.c */; };
 		101605D2222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c in Sources */ = {isa = PBXBuildFile; fileRef = 101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */; };
 		1026509E2243737200D223A6 /* MergeTwoLists_21.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026509D2243737200D223A6 /* MergeTwoLists_21.c */; };
 		102650A2224375CC00D223A6 /* RemoveElements_203.c in Sources */ = {isa = PBXBuildFile; fileRef = 102650A1224375CC00D223A6 /* RemoveElements_203.c */; };
@@ -103,6 +104,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		100EE67A22561AAB00D817B9 /* ArrangeCoins_441.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrangeCoins_441.h; sourceTree = "<group>"; };
+		100EE67B22561AAB00D817B9 /* ArrangeCoins_441.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArrangeCoins_441.c; sourceTree = "<group>"; };
 		101605D0222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveDuplicatesfromSortedArrayII_80.h; sourceTree = "<group>"; };
 		101605D1222BBA8600D8D506 /* RemoveDuplicatesfromSortedArrayII_80.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RemoveDuplicatesfromSortedArrayII_80.c; sourceTree = "<group>"; };
 		1026509C2243737200D223A6 /* MergeTwoLists_21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeTwoLists_21.h; sourceTree = "<group>"; };
@@ -278,6 +281,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100EE67922561A9200D817B9 /* 441_ArrangeCoins */ = {
+			isa = PBXGroup;
+			children = (
+				100EE67A22561AAB00D817B9 /* ArrangeCoins_441.h */,
+				100EE67B22561AAB00D817B9 /* ArrangeCoins_441.c */,
+			);
+			path = 441_ArrangeCoins;
+			sourceTree = "<group>";
+		};
 		101605D3222BBC3600D8D506 /* 80_RemoveDuplicatesfromSortedArrayII */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,6 +1002,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				100EE67922561A9200D817B9 /* 441_ArrangeCoins */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1233,6 +1246,7 @@
 				1026516F224CB59C00D223A6 /* JudgeSquareSum_633.c in Sources */,
 				102650BA2243B5DE00D223A6 /* IsLongPressedName_925.c in Sources */,
 				102650F9224A2B2300D223A6 /* MySqrt_69.c in Sources */,
+				100EE67C22561AAB00D817B9 /* ArrangeCoins_441.c in Sources */,
 				1026510D224AEFA500D223A6 /* SingleNumber_137.c in Sources */,
 				102650E12249DFD300D223A6 /* IsRectangleOverlap_836.c in Sources */,
 				24E45778209EC3060048DEF7 /* ThreeSum_15.c in Sources */,

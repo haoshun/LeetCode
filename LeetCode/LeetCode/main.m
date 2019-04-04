@@ -89,7 +89,7 @@
 
 //#define MissingNumber_268
 
-#define IsUgly_263
+//#define IsUgly_263
 
 //#define MoveZeroes_283
 
@@ -117,6 +117,8 @@
 //#define AddStrings_415
 
 //#define CountSegments_434
+
+#define ArrangeCoins_441
 
 //#define CompressChars_443
 //
@@ -1258,6 +1260,20 @@ void CountSegments()
 #endif
 
 
+#pragma mark - 441_排列硬币_ArrangeCoins
+
+#ifdef ArrangeCoins_441
+#import "441_ArrangeCoins/ArrangeCoins_441.h"
+
+void ArrangeCoins()
+{
+    int n = 5;
+    
+    printf("排列硬币: %d\n" , arrangeCoins(n));
+}
+#endif
+
+
 #pragma mark - 443_字符串相加_AddStrings
 
 #ifdef CompressChars_443
@@ -1867,6 +1883,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef CountSegments_434
         CountSegments();
+#endif
+        
+        
+#ifdef ArrangeCoins_441
+        ArrangeCoins();
 #endif
         
         
