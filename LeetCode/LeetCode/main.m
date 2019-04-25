@@ -118,12 +118,16 @@
 
 //#define CountSegments_434
 
-#define ArrangeCoins_441
+//#define ArrangeCoins_441
 
 //#define CompressChars_443
 //
 //#define FindDisappearedNumbers_448
-//
+
+//#define MinMoves_453
+
+#define MinMoves2_462
+
 //#define LicenseKeyFormatting_482
 //
 //#define FindPairs_532
@@ -1307,6 +1311,37 @@ void FindDisappearedNumbers()
 }
 #endif
 
+
+#pragma mark - 453_最小移动次数使数组元素相等_MinMoves
+
+#ifdef MinMoves_453
+#import "453_MinMoves/MinMoves_453.h"
+
+void MinMoves()
+{
+    int nums[5] ={5,6,8,8,5};
+    int numsSize = 5;
+
+    printf("最小移动次数使数组元素相等 %d  \n" , minMoves(nums, numsSize));
+}
+#endif
+
+
+#pragma mark - 462_最少移动次数使数组元素相等 II_MinMoves2
+
+#ifdef MinMoves2_462
+#import "462_MinMoves2/MinMoves2_462.h"
+
+void MinMoves2()
+{
+    int nums[5] ={5,6,8,8,5};
+    int numsSize = 5;
+    
+    printf("最少移动次数使数组元素相等 %d  \n" , minMoves2(nums, numsSize));
+}
+#endif
+
+
 #pragma mark - 482_密钥格式化_LicenseKeyFormatting
 
 #ifdef LicenseKeyFormatting_482
@@ -1588,7 +1623,9 @@ void AddToArrayForm()
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
+        printf("start :\n");
         CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+        
         
 
 #ifdef TwoSum_1
@@ -1901,6 +1938,15 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef MinMoves_453
+        MinMoves();
+#endif
+        
+        
+#ifdef MinMoves2_462
+        MinMoves2();
+#endif
+        
 #ifdef LicenseKeyFormatting_482
         LicenseKeyFormatting();
 #endif
@@ -1985,8 +2031,8 @@ int main(int argc, const char * argv[]) {
     
         
         
-        char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
-        printf("反转字符串%s\n" , decryptString(w));
+//        char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
+//        printf("反转字符串%s\n" , decryptString(w));
         
         CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
         NSLog(@"time cost: %0.3f ms", (end - start)*1000);
