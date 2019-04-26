@@ -16,7 +16,7 @@
 //#define AddTwoNumbers_2
 //
 //#define Reverse_7
-//
+#define MyAtoi_8
 //#define IsPalindrome_9
 //
 //#define RomanToInt_13
@@ -138,7 +138,7 @@
 //
 //#define ReverseWords_557
 
-#define MaxCount_598
+//#define MaxCount_598
 
 //#define JudgeSquareSum_633
 
@@ -279,6 +279,18 @@ void AddTwoNumbers()
 void Reverse()
 {
     printf("%d\n" , reverse(123));
+}
+#endif
+
+
+#pragma mark - 8_字符串转换整数_MyAtoi
+
+#ifdef MyAtoi_8
+#import "8_MyAtoi/MyAtoi_8.h"
+
+void MyAtoi()
+{
+    printf("字符串转换整数  %d\n" , myAtoi(" 4321 kds"));
 }
 #endif
 
@@ -1693,6 +1705,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef Reverse_7
         Reverse();
+#endif
+
+        
+#ifdef MyAtoi_8
+        MyAtoi();
 #endif
         
         

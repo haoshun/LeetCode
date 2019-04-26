@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LeetCode/598_MaxCount/MaxCount_598.c"
-            timestampString = "577959802.376501"
+            timestampString = "577970949.2128071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "maxCount()"
             landmarkType = "9">
          </BreakpointContent>

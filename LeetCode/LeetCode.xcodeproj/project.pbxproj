@@ -72,6 +72,7 @@
 		107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */ = {isa = PBXBuildFile; fileRef = 107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */; };
 		107106082272DCBC0074B0C0 /* SelfDividingNumbers_728.c in Sources */ = {isa = PBXBuildFile; fileRef = 107106072272DCBC0074B0C0 /* SelfDividingNumbers_728.c */; };
 		1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */ = {isa = PBXBuildFile; fileRef = 1071060B2272EF3A0074B0C0 /* MaxCount_598.c */; };
+		10710610227321B70074B0C0 /* MyAtoi_8.c in Sources */ = {isa = PBXBuildFile; fileRef = 1071060F227321B70074B0C0 /* MyAtoi_8.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -239,6 +240,8 @@
 		107106072272DCBC0074B0C0 /* SelfDividingNumbers_728.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelfDividingNumbers_728.c; sourceTree = "<group>"; };
 		1071060A2272EF3A0074B0C0 /* MaxCount_598.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxCount_598.h; sourceTree = "<group>"; };
 		1071060B2272EF3A0074B0C0 /* MaxCount_598.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxCount_598.c; sourceTree = "<group>"; };
+		1071060E227321B70074B0C0 /* MyAtoi_8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAtoi_8.h; sourceTree = "<group>"; };
+		1071060F227321B70074B0C0 /* MyAtoi_8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyAtoi_8.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -890,6 +893,15 @@
 			path = 598_MaxCount;
 			sourceTree = "<group>";
 		};
+		1071060D227321910074B0C0 /* 8_MyAtoi */ = {
+			isa = PBXGroup;
+			children = (
+				1071060E227321B70074B0C0 /* MyAtoi_8.h */,
+				1071060F227321B70074B0C0 /* MyAtoi_8.c */,
+			);
+			path = 8_MyAtoi;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -1065,6 +1077,7 @@
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
+				1071060D227321910074B0C0 /* 8_MyAtoi */,
 				245BEC47216C424F005984BE /* 9_IsPalindrome */,
 				102650C7224474CD00D223A6 /* 13_RomanToInt */,
 				245BEC4F2172F991005984BE /* 14_LongestCommonPrefix */,
@@ -1281,6 +1294,7 @@
 				10265157224C7F9A00D223A6 /* IsPowerOfFour_342.c in Sources */,
 				24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */,
 				1026513E224C68A000D223A6 /* MissingNumber_268.c in Sources */,
+				10710610227321B70074B0C0 /* MyAtoi_8.c in Sources */,
 				102650BE2243B90500D223A6 /* IsHappy_202.c in Sources */,
 				1026515B224CABC200D223A6 /* Intersection_349.c in Sources */,
 				10265105224A4BC500D223A6 /* Merge_88.c in Sources */,
