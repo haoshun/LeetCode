@@ -69,6 +69,7 @@
 		1065C16322533DBF008BC940 /* IsUgly_263.c in Sources */ = {isa = PBXBuildFile; fileRef = 1065C16222533DBF008BC940 /* IsUgly_263.c */; };
 		107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */ = {isa = PBXBuildFile; fileRef = 107105FB2271AB510074B0C0 /* MinMoves_453.c */; };
 		107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */ = {isa = PBXBuildFile; fileRef = 107105FF2271ED2D0074B0C0 /* MinMoves2_462.c */; };
+		107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */ = {isa = PBXBuildFile; fileRef = 107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -230,6 +231,8 @@
 		107105FB2271AB510074B0C0 /* MinMoves_453.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinMoves_453.c; sourceTree = "<group>"; };
 		107105FE2271ED2D0074B0C0 /* MinMoves2_462.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinMoves2_462.h; sourceTree = "<group>"; };
 		107105FF2271ED2D0074B0C0 /* MinMoves2_462.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinMoves2_462.c; sourceTree = "<group>"; };
+		107106022272A2A80074B0C0 /* CheckPerfectNumber_507.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPerfectNumber_507.h; sourceTree = "<group>"; };
+		107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CheckPerfectNumber_507.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -854,6 +857,15 @@
 			path = 462_MinMoves2;
 			sourceTree = "<group>";
 		};
+		107106012272A2830074B0C0 /* 507_CheckPerfectNumber */ = {
+			isa = PBXGroup;
+			children = (
+				107106022272A2A80074B0C0 /* CheckPerfectNumber_507.h */,
+				107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */,
+			);
+			path = 507_CheckPerfectNumber;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -1093,6 +1105,7 @@
 				107105F92271AB210074B0C0 /* 453_MinMoves */,
 				107105FD2271ECF40074B0C0 /* 462_MinMoves2 */,
 				245BEC3F215C9110005984BE /* 482_LicenseKeyFormatting */,
+				107106012272A2830074B0C0 /* 507_CheckPerfectNumber */,
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
@@ -1232,6 +1245,7 @@
 				1026515F224CAE3A00D223A6 /* IsPerfectSquare_367.c in Sources */,
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
+				107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */,
 				107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */,
 				10265142224C6FC800D223A6 /* FirstBadVersion_278.c in Sources */,
 				102650CA224474E800D223A6 /* RomanToInt_13.c in Sources */,

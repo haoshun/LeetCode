@@ -126,10 +126,12 @@
 
 //#define MinMoves_453
 
-#define MinMoves2_462
+//#define MinMoves2_462
 
 //#define LicenseKeyFormatting_482
-//
+
+#define CheckPerfectNumber_507
+
 //#define FindPairs_532
 //
 //#define ReverseStr_II_541
@@ -1357,6 +1359,19 @@ void LicenseKeyFormatting()
 #endif
 
 
+#pragma mark - 507_完美数_CheckPerfectNumber
+
+#ifdef CheckPerfectNumber_507
+#import "507_CheckPerfectNumber/CheckPerfectNumber_507.h"
+
+void CheckPerfectNumber()
+{
+    int num = 28;
+    printf("%d 是否是完美数? %s\n" , num ,checkPerfectNumber(num) ? "是" : "否");
+}
+#endif
+
+
 #pragma mark - 532_数组中的K-diff数对_FindPairs
 
 #ifdef FindPairs_532
@@ -1947,10 +1962,16 @@ int main(int argc, const char * argv[]) {
         MinMoves2();
 #endif
         
+        
 #ifdef LicenseKeyFormatting_482
         LicenseKeyFormatting();
 #endif
 
+        
+#ifdef CheckPerfectNumber_507
+        CheckPerfectNumber();
+#endif
+        
         
 #ifdef FindPairs_532
         FindPairs();
