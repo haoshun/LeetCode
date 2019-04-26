@@ -130,7 +130,7 @@
 
 //#define LicenseKeyFormatting_482
 
-#define CheckPerfectNumber_507
+//#define CheckPerfectNumber_507
 
 //#define FindPairs_532
 //
@@ -141,6 +141,8 @@
 //#define CountSegments_434
 
 //#define JudgeSquareSum_633
+
+#define SelfDividingNumbers_728
 
 //#define NumJewelsInStones_771
 
@@ -1424,6 +1426,24 @@ void JudgeSquareSum()
 #endif
 
 
+#pragma mark - 728_自除数_SelfDividingNumbers
+
+#ifdef SelfDividingNumbers_728
+#import "728_SelfDividingNumbers/SelfDividingNumbers_728.h"
+
+void SelfDividingNumbers ()
+{
+    int returnSize = 0;
+    int * num = selfDividingNumbers(1, 22, &returnSize);
+    for (int i = 0;i<returnSize; ++i)
+    {
+        printf("%d," , num[i]);
+    }
+    printf("\n returnSize : %d \n" , returnSize);
+}
+#endif
+
+
 #pragma mark - 771_宝石与石头_NumJewelsInStones
 
 #ifdef NumJewelsInStones_771
@@ -1990,6 +2010,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef JudgeSquareSum_633
         JudgeSquareSum();
+#endif
+
+        
+#ifdef SelfDividingNumbers_728
+        SelfDividingNumbers();
 #endif
         
         
