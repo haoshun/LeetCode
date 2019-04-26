@@ -138,11 +138,11 @@
 //
 //#define ReverseWords_557
 
-//#define CountSegments_434
+#define MaxCount_598
 
 //#define JudgeSquareSum_633
 
-#define SelfDividingNumbers_728
+//#define SelfDividingNumbers_728
 
 //#define NumJewelsInStones_771
 
@@ -1413,6 +1413,24 @@ void ReverseWords()
 #endif
 
 
+#pragma mark - 598_范围求和 II_MaxCount
+
+#ifdef MaxCount_598
+#import "598_MaxCount/MaxCount_598.h"
+
+void MaxCount()
+{
+    
+    int**ops = (int**)malloc(sizeof(int*)*4);
+//    for (int i = 0; i < 4; i++) {
+//        ops[i] = (int*)malloc(sizeof(int)*2);
+//    }
+    
+    printf("范围求和 II %d\n" , maxCount(10, 10, ops, 4, NULL));
+}
+#endif
+
+
 #pragma mark - 633_平方数之和_JudgeSquareSum
 
 #ifdef JudgeSquareSum_633
@@ -2005,6 +2023,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef ReverseWords_557
         ReverseWords();
+#endif
+        
+        
+#ifdef MaxCount_598
+        MaxCount();
 #endif
         
         

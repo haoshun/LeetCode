@@ -71,6 +71,7 @@
 		107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */ = {isa = PBXBuildFile; fileRef = 107105FF2271ED2D0074B0C0 /* MinMoves2_462.c */; };
 		107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */ = {isa = PBXBuildFile; fileRef = 107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */; };
 		107106082272DCBC0074B0C0 /* SelfDividingNumbers_728.c in Sources */ = {isa = PBXBuildFile; fileRef = 107106072272DCBC0074B0C0 /* SelfDividingNumbers_728.c */; };
+		1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */ = {isa = PBXBuildFile; fileRef = 1071060B2272EF3A0074B0C0 /* MaxCount_598.c */; };
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
@@ -236,6 +237,8 @@
 		107106032272A2A80074B0C0 /* CheckPerfectNumber_507.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CheckPerfectNumber_507.c; sourceTree = "<group>"; };
 		107106062272DCBC0074B0C0 /* SelfDividingNumbers_728.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfDividingNumbers_728.h; sourceTree = "<group>"; };
 		107106072272DCBC0074B0C0 /* SelfDividingNumbers_728.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelfDividingNumbers_728.c; sourceTree = "<group>"; };
+		1071060A2272EF3A0074B0C0 /* MaxCount_598.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxCount_598.h; sourceTree = "<group>"; };
+		1071060B2272EF3A0074B0C0 /* MaxCount_598.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxCount_598.c; sourceTree = "<group>"; };
 		10780357223F45F6009684B6 /* AddTwoNumbers_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTwoNumbers_2.h; sourceTree = "<group>"; };
 		10780358223F45F6009684B6 /* AddTwoNumbers_2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddTwoNumbers_2.c; sourceTree = "<group>"; };
 		1078035B2240A069009684B6 /* AddToArrayForm_989.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddToArrayForm_989.h; sourceTree = "<group>"; };
@@ -878,6 +881,15 @@
 			path = 728_SelfDividingNumbers;
 			sourceTree = "<group>";
 		};
+		107106092272EF140074B0C0 /* 598_MaxCount */ = {
+			isa = PBXGroup;
+			children = (
+				1071060A2272EF3A0074B0C0 /* MaxCount_598.h */,
+				1071060B2272EF3A0074B0C0 /* MaxCount_598.c */,
+			);
+			path = 598_MaxCount;
+			sourceTree = "<group>";
+		};
 		1078035A2240A039009684B6 /* 989_AddToArrayForm */ = {
 			isa = PBXGroup;
 			children = (
@@ -1121,6 +1133,7 @@
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
+				107106092272EF140074B0C0 /* 598_MaxCount */,
 				1026516C224CB57900D223A6 /* 633_JudgeSquareSum */,
 				107106052272DC9B0074B0C0 /* 728_SelfDividingNumbers */,
 				245BEC33215B09BE005984BE /* 771_NumJewelsInStones */,
@@ -1257,6 +1270,7 @@
 				102650A62243A4A000D223A6 /* ReverseString_344.c in Sources */,
 				1026515F224CAE3A00D223A6 /* IsPerfectSquare_367.c in Sources */,
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
+				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
 				107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */,
 				107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */,
