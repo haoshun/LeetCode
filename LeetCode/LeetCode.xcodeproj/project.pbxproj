@@ -76,6 +76,7 @@
 		10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */ = {isa = PBXBuildFile; fileRef = 10780358223F45F6009684B6 /* AddTwoNumbers_2.c */; };
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
+		10AC5DAA22784E6C00ED8321 /* FindNthDigit_400.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC2D21575841005984BE /* ShortestToChar_821.c */; };
@@ -248,6 +249,8 @@
 		1078035C2240A069009684B6 /* AddToArrayForm_989.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddToArrayForm_989.c; sourceTree = "<group>"; };
 		1078035F2240EEAB009684B6 /* AddStrings_415.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddStrings_415.h; sourceTree = "<group>"; };
 		107803602240EEAB009684B6 /* AddStrings_415.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddStrings_415.c; sourceTree = "<group>"; };
+		10AC5DA822784E6C00ED8321 /* FindNthDigit_400.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNthDigit_400.h; sourceTree = "<group>"; };
+		10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindNthDigit_400.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -920,6 +923,15 @@
 			path = 415_AddStrings;
 			sourceTree = "<group>";
 		};
+		10AC5DA722784E4600ED8321 /* 400_FindNthDigit */ = {
+			isa = PBXGroup;
+			children = (
+				10AC5DA822784E6C00ED8321 /* FindNthDigit_400.h */,
+				10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */,
+			);
+			path = 400_FindNthDigit;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1134,6 +1146,7 @@
 				10265160224CB05800D223A6 /* 374_GuessNumber */,
 				245BEC2F215A2680005984BE /* 387_FirstUniqChar */,
 				10265164224CB1A400D223A6 /* 389_FindTheDifference */,
+				10AC5DA722784E4600ED8321 /* 400_FindNthDigit */,
 				1078035E2240EE85009684B6 /* 415_AddStrings */,
 				10265168224CB3CD00D223A6 /* 434_CountSegments */,
 				100EE67922561A9200D817B9 /* 441_ArrangeCoins */,
@@ -1313,6 +1326,7 @@
 				24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */,
 				102650B62243B2E900D223A6 /* Tools.c in Sources */,
 				102650D92248892300D223A6 /* TitleToNumber_171.c in Sources */,
+				10AC5DAA22784E6C00ED8321 /* FindNthDigit_400.c in Sources */,
 				10265101224A4A8700D223A6 /* DeleteDuplicates_83.c in Sources */,
 				24B7F4C521410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c in Sources */,
 				102650C22244683700D223A6 /* ClimbStairs_70.c in Sources */,

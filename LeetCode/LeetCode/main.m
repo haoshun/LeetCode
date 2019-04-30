@@ -16,7 +16,7 @@
 //#define AddTwoNumbers_2
 //
 //#define Reverse_7
-#define MyAtoi_8
+//#define MyAtoi_8
 //#define IsPalindrome_9
 //
 //#define RomanToInt_13
@@ -113,6 +113,8 @@
 //#define FirstUniqChar_387
 
 //#define FindTheDifference_389
+
+#define FindNthDigit_400
 
 //#define AddStrings_415
 
@@ -1252,6 +1254,20 @@ void FindTheDifference()
 #endif
 
 
+#pragma mark - 400_第N个数字_FindNthDigit
+
+#ifdef FindNthDigit_400
+#import "400_FindNthDigit/FindNthDigit_400.h"
+
+void FindNthDigit()
+{
+    int n = 1000000000;
+    
+    printf("第%d个数字: %d\n" ,  n, findNthDigit(n));
+}
+#endif
+
+
 #pragma mark - 415_字符串相加_AddStrings
 
 #ifdef AddStrings_415
@@ -1980,6 +1996,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef FindTheDifference_389
         FindTheDifference();
+#endif
+        
+        
+#ifdef FindNthDigit_400
+        FindNthDigit();
 #endif
         
         
