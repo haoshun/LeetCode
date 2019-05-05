@@ -87,7 +87,8 @@
 
 //#define AddDigits_258
 
-#define IsUgly_263
+//#define IsUgly_263
+//#define NthUglyNumber_264
 
 //#define MissingNumber_268
 
@@ -149,6 +150,8 @@
 //#define SelfDividingNumbers_728
 
 //#define NumJewelsInStones_771
+
+#define IsIdealPermutation_775
 
 //#define CanTransform_777
 
@@ -1084,23 +1087,36 @@ void AddDigits()
 
 void IsUgly()
 {
-//    int num = 6;
-//    printf("是否为c丑数 : %d \n" , isUgly(num));
+    int num = 6;
+    printf("是否为c丑数 : %d \n" , isUgly(num));
+//    int n = 1690;
+//    int result = 0;
+//    for(int i = 1 , count = 0 ; i <= INT_MAX ; ++i)
+//    {
+//        if(isUgly(i))
+//        {
+//            count ++;
+//            if(count == n)
+//            {
+//                result = i;
+//                break;
+//            }
+//        }
+//    }
+//    printf("%d\n" , result);
+}
+#endif
+
+
+#pragma mark - 264_丑数 II_NthUglyNumber
+
+#ifdef NthUglyNumber_264
+#import "264_NthUglyNumber/NthUglyNumber_264.h"
+
+void NthUglyNumber()
+{
     int n = 1690;
-    int result = 0;
-    for(int i = 1 , count = 0 ; i <= INT_MAX ; ++i)
-    {
-        if(isUgly(i))
-        {
-            count ++;
-            if(count == n)
-            {
-                result = i;
-                break;
-            }
-        }
-    }
-    printf("%d\n" , result);
+    printf("第%d位丑数为 : %d \n" , n, nthUglyNumber(n));
 }
 #endif
 
@@ -1534,6 +1550,19 @@ void NumJewelsInStones ()
     char S[50] = "beb";
     char J[10] = "dbca";
     printf("%d\n",numJewelsInStones(J, S));
+}
+#endif
+
+
+#pragma mark - 775_全局倒置与局部倒置_IsIdealPermutation
+
+#ifdef IsIdealPermutation_775
+#import "775_IsIdealPermutation/IsIdealPermutation.h"
+
+void IsIdealPermutation ()
+{
+    int num[3] = { 2 , 1 , 0};
+    printf("全局倒置与局部倒置数是否相等 %s\n" , isIdealPermutation(num, 3) ? "是" : "否");
 }
 #endif
 
@@ -1987,6 +2016,11 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef NthUglyNumber_264
+        NthUglyNumber();
+#endif
+        
+        
 #ifdef MissingNumber_268
         MissingNumbers();
 #endif
@@ -2137,6 +2171,11 @@ int main(int argc, const char * argv[]) {
 #endif
 
         
+#ifdef IsIdealPermutation_775
+        IsIdealPermutation();
+#endif
+        
+        
 #ifdef CanTransform_777
         CanTransform();
 #endif
@@ -2190,7 +2229,6 @@ int main(int argc, const char * argv[]) {
         
 
         
-
         
 
     
