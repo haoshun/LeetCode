@@ -79,6 +79,8 @@
 		10AC5DAA22784E6C00ED8321 /* FindNthDigit_400.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
+		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
+		243FA680227D1F9300AF6162 /* SmallestRangeI_908.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67F227D1F9300AF6162 /* SmallestRangeI_908.c */; };
 		245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC2D21575841005984BE /* ShortestToChar_821.c */; };
 		245BEC32215A26B8005984BE /* FirstUniqChar_387.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC31215A26B8005984BE /* FirstUniqChar_387.c */; };
 		245BEC36215B09E7005984BE /* NumJewelsInStones_771.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC35215B09E7005984BE /* NumJewelsInStones_771.c */; };
@@ -255,6 +257,10 @@
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
 		24388DEF21BF9F14002A4F8A /* FindPairs_532.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindPairs_532.c; sourceTree = "<group>"; };
+		243FA67A227B1B7700AF6162 /* FindErrorNums_645.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindErrorNums_645.h; sourceTree = "<group>"; };
+		243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindErrorNums_645.c; sourceTree = "<group>"; };
+		243FA67E227D1F9300AF6162 /* SmallestRangeI_908.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmallestRangeI_908.h; sourceTree = "<group>"; };
+		243FA67F227D1F9300AF6162 /* SmallestRangeI_908.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SmallestRangeI_908.c; sourceTree = "<group>"; };
 		245BEC2C21575841005984BE /* ShortestToChar_821.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortestToChar_821.h; sourceTree = "<group>"; };
 		245BEC2D21575841005984BE /* ShortestToChar_821.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShortestToChar_821.c; sourceTree = "<group>"; };
 		245BEC30215A26B8005984BE /* FirstUniqChar_387.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstUniqChar_387.h; sourceTree = "<group>"; };
@@ -950,6 +956,24 @@
 			path = 532_FindPairs;
 			sourceTree = "<group>";
 		};
+		243FA679227B1B4C00AF6162 /* 645_FindErrorNums */ = {
+			isa = PBXGroup;
+			children = (
+				243FA67A227B1B7700AF6162 /* FindErrorNums_645.h */,
+				243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */,
+			);
+			path = 645_FindErrorNums;
+			sourceTree = "<group>";
+		};
+		243FA67D227D1F6900AF6162 /* 908_SmallestRangeI */ = {
+			isa = PBXGroup;
+			children = (
+				243FA67E227D1F9300AF6162 /* SmallestRangeI_908.h */,
+				243FA67F227D1F9300AF6162 /* SmallestRangeI_908.c */,
+			);
+			path = 908_SmallestRangeI;
+			sourceTree = "<group>";
+		};
 		245BEC2B21575817005984BE /* 821_ShortestToChar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1161,6 +1185,7 @@
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
 				107106092272EF140074B0C0 /* 598_MaxCount */,
 				1026516C224CB57900D223A6 /* 633_JudgeSquareSum */,
+				243FA679227B1B4C00AF6162 /* 645_FindErrorNums */,
 				107106052272DC9B0074B0C0 /* 728_SelfDividingNumbers */,
 				245BEC33215B09BE005984BE /* 771_NumJewelsInStones */,
 				10265170224CD2BC00D223A6 /* 777_CanTransform */,
@@ -1168,6 +1193,7 @@
 				102650DE2249DF9E00D223A6 /* 836_IsRectangleOverlap */,
 				10265174224CD45900D223A6 /* 844_BackspaceCompare */,
 				10265178224CD7AC00D223A6 /* 876_MiddleNode */,
+				243FA67D227D1F6900AF6162 /* 908_SmallestRangeI */,
 				102650B72243B5BF00D223A6 /* 925_IsLongPressedName */,
 				1026517C224CDFEF00D223A6 /* 977_SortedSquares */,
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
@@ -1298,6 +1324,7 @@
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
+				243FA680227D1F9300AF6162 /* SmallestRangeI_908.c in Sources */,
 				107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */,
 				107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */,
 				10265142224C6FC800D223A6 /* FirstBadVersion_278.c in Sources */,
@@ -1308,6 +1335,7 @@
 				24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */,
 				1026513E224C68A000D223A6 /* MissingNumber_268.c in Sources */,
 				10710610227321B70074B0C0 /* MyAtoi_8.c in Sources */,
+				243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */,
 				102650BE2243B90500D223A6 /* IsHappy_202.c in Sources */,
 				1026515B224CABC200D223A6 /* Intersection_349.c in Sources */,
 				10265105224A4BC500D223A6 /* Merge_88.c in Sources */,

@@ -87,9 +87,9 @@
 
 //#define AddDigits_258
 
-//#define MissingNumber_268
+#define IsUgly_263
 
-//#define IsUgly_263
+//#define MissingNumber_268
 
 //#define MoveZeroes_283
 
@@ -114,7 +114,7 @@
 
 //#define FindTheDifference_389
 
-#define FindNthDigit_400
+//#define FindNthDigit_400
 
 //#define AddStrings_415
 
@@ -144,6 +144,8 @@
 
 //#define JudgeSquareSum_633
 
+//#define FindErrorNums_645
+
 //#define SelfDividingNumbers_728
 
 //#define NumJewelsInStones_771
@@ -157,6 +159,8 @@
 //#define BackspaceCompare_844
 
 //#define MiddleNode_876
+
+//#define SmallestRangeI_908
 
 //#define IsLongPressedName_925
 
@@ -1080,8 +1084,23 @@ void AddDigits()
 
 void IsUgly()
 {
-    int num = 6;
-    printf("是否为c丑数 : %d \n" , isUgly(num));
+//    int num = 6;
+//    printf("是否为c丑数 : %d \n" , isUgly(num));
+    int n = 1690;
+    int result = 0;
+    for(int i = 1 , count = 0 ; i <= INT_MAX ; ++i)
+    {
+        if(isUgly(i))
+        {
+            count ++;
+            if(count == n)
+            {
+                result = i;
+                break;
+            }
+        }
+    }
+    printf("%d\n" , result);
 }
 #endif
 
@@ -1472,6 +1491,21 @@ void JudgeSquareSum()
 #endif
 
 
+#pragma mark - 645_错误的集合_FindErrorNums
+
+#ifdef FindErrorNums_645
+#import "645_FindErrorNums/FindErrorNums_645.h"
+
+void FindErrorNums()
+{
+    int nums[2] = {2,2};
+    int returnSize = 0;
+    int * result =  findErrorNums(nums, 2, &returnSize);
+    //printf("错误的集合  %d\n" , judgeSquareSum(num));
+}
+#endif
+
+
 #pragma mark - 728_自除数_SelfDividingNumbers
 
 #ifdef SelfDividingNumbers_728
@@ -1602,6 +1636,20 @@ void MiddleNode()
         result = result->next;
     }
     printf("\n");
+}
+#endif
+
+
+#pragma mark - 908_最小差值 I_SmallestRangeI_908
+
+#ifdef SmallestRangeI_908
+#import "908_SmallestRangeI/SmallestRangeI_908.h"
+
+void SmallestRangeI()
+{
+    int num[5] ={-7,-3,2,3,11};
+    
+    printf("最小差值 I : %d \n" , smallestRangeI(num, 5, 5));
 }
 #endif
 
@@ -2072,6 +2120,11 @@ int main(int argc, const char * argv[]) {
 #ifdef JudgeSquareSum_633
         JudgeSquareSum();
 #endif
+        
+        
+#ifdef FindErrorNums_645
+        FindErrorNums();
+#endif
 
         
 #ifdef SelfDividingNumbers_728
@@ -2106,6 +2159,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef MiddleNode_876
         MiddleNode();
+#endif
+
+        
+#ifdef SmallestRangeI_908
+        SmallestRangeI();
 #endif
         
         
