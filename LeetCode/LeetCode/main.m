@@ -151,9 +151,11 @@
 
 //#define NumJewelsInStones_771
 
-#define IsIdealPermutation_775
+//#define IsIdealPermutation_775
 
 //#define CanTransform_777
+
+//#define NumRabbits_781
 
 //#define ShortestToChar_821
 
@@ -163,10 +165,13 @@
 
 //#define MiddleNode_876
 
+//#define ProjectionArea_883
+
 //#define SmallestRangeI_908
 
 //#define IsLongPressedName_925
 
+#define LargestPerimeter_976
 //#define SortedSquares_977
 
 //#define SumEvenAfterQueries_985
@@ -1581,6 +1586,19 @@ void CanTransform ()
 #endif
 
 
+#pragma mark - 781_森林中的兔子_NumRabbits
+
+#ifdef NumRabbits_781
+#import "781_NumRabbits/NumRabbits_781.h"
+
+void NumRabbits ()
+{
+    int nums[5] = {1,0,1,0,0};
+    printf("森林中最少有%d只兔子\n",numRabbits(nums, 5));
+}
+#endif
+
+
 #pragma mark - 821_字符的最短距离_ShortestToChar
 
 #ifdef ShortestToChar_821
@@ -1669,6 +1687,35 @@ void MiddleNode()
 #endif
 
 
+#pragma mark - 883_三维形体投影面积_ProjectionArea
+
+#ifdef ProjectionArea_883
+#import "883_ProjectionArea/ProjectionArea_883.h"
+
+void ProjectionArea()
+{
+    int cSize = 3;
+    
+    int**p = (int**)malloc(sizeof(int*)*3);
+    for (int i = 0; i < 3; i++) {
+        p[i] = (int*)malloc(sizeof(int)*2);
+    }
+    
+    p[0][0] = 2;
+    p[0][1] = 2;
+    p[0][2] = 2;
+    p[1][0] = 2;
+    p[1][1] = 1;
+    p[1][2] = 2;
+    p[2][0] = 2;
+    p[2][1] = 2;
+    p[2][2] = 2;
+    
+    printf("三维形体投影面积: %d\n," , projectionArea(p, 3, &cSize));
+}
+#endif
+
+
 #pragma mark - 908_最小差值 I_SmallestRangeI_908
 
 #ifdef SmallestRangeI_908
@@ -1694,6 +1741,20 @@ void IsLongPressedName()
     char * typed = "vttkgnn";
     
     NSLog(@"长按键入 %d\n" , isLongPressedName(name, typed)) ;
+}
+#endif
+
+
+#pragma mark - 976_三角形的最大周长_LargestPerimeter
+
+#ifdef LargestPerimeter_976
+#import "976_LargestPerimeter/LargestPerimeter_976.h"
+
+void LargestPerimeter()
+{
+    int A[5] ={7,3,2,5,11};
+    
+    printf("三角形的最大周长为: %d  \n" , largestPerimeter(A, 5));
 }
 #endif
 
@@ -2181,6 +2242,11 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef NumRabbits_781
+        NumRabbits();
+#endif
+        
+        
 #ifdef ShortestToChar_821
         ShortestToChar();
 #endif
@@ -2199,6 +2265,11 @@ int main(int argc, const char * argv[]) {
 #ifdef MiddleNode_876
         MiddleNode();
 #endif
+        
+        
+#ifdef ProjectionArea_883
+        ProjectionArea();
+#endif
 
         
 #ifdef SmallestRangeI_908
@@ -2208,6 +2279,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef IsLongPressedName_925
         IsLongPressedName();
+#endif
+        
+        
+#ifdef LargestPerimeter_976
+        LargestPerimeter();
 #endif
         
         
