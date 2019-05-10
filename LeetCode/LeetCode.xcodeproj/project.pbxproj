@@ -82,6 +82,8 @@
 		10AC5DB62280488900ED8321 /* NumRabbits_781.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DB52280488900ED8321 /* NumRabbits_781.c */; };
 		10AC5DBA2281274500ED8321 /* ProjectionArea_883.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DB92281274500ED8321 /* ProjectionArea_883.c */; };
 		10AC5DBE2282859A00ED8321 /* LargestPerimeter_976.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DBD2282859A00ED8321 /* LargestPerimeter_976.c */; };
+		10AC5DC22284E82F00ED8321 /* MirrorReflection_858.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */; };
+		10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC5228564C600ED8321 /* BinaryGap_868.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
@@ -268,6 +270,10 @@
 		10AC5DB92281274500ED8321 /* ProjectionArea_883.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ProjectionArea_883.c; sourceTree = "<group>"; };
 		10AC5DBC2282859A00ED8321 /* LargestPerimeter_976.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargestPerimeter_976.h; sourceTree = "<group>"; };
 		10AC5DBD2282859A00ED8321 /* LargestPerimeter_976.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LargestPerimeter_976.c; sourceTree = "<group>"; };
+		10AC5DC02284E82F00ED8321 /* MirrorReflection_858.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirrorReflection_858.h; sourceTree = "<group>"; };
+		10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MirrorReflection_858.c; sourceTree = "<group>"; };
+		10AC5DC4228564C600ED8321 /* BinaryGap_868.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryGap_868.h; sourceTree = "<group>"; };
+		10AC5DC5228564C600ED8321 /* BinaryGap_868.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryGap_868.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -998,6 +1004,24 @@
 			path = 976_LargestPerimeter;
 			sourceTree = "<group>";
 		};
+		10AC5DBF2284E80200ED8321 /* 858_MirrorReflection */ = {
+			isa = PBXGroup;
+			children = (
+				10AC5DC02284E82F00ED8321 /* MirrorReflection_858.h */,
+				10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */,
+			);
+			path = 858_MirrorReflection;
+			sourceTree = "<group>";
+		};
+		10AC5DC3228564A500ED8321 /* 868_BinaryGap */ = {
+			isa = PBXGroup;
+			children = (
+				10AC5DC4228564C600ED8321 /* BinaryGap_868.h */,
+				10AC5DC5228564C600ED8321 /* BinaryGap_868.c */,
+			);
+			path = 868_BinaryGap;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1255,6 +1279,8 @@
 				245BEC2B21575817005984BE /* 821_ShortestToChar */,
 				102650DE2249DF9E00D223A6 /* 836_IsRectangleOverlap */,
 				10265174224CD45900D223A6 /* 844_BackspaceCompare */,
+				10AC5DBF2284E80200ED8321 /* 858_MirrorReflection */,
+				10AC5DC3228564A500ED8321 /* 868_BinaryGap */,
 				10265178224CD7AC00D223A6 /* 876_MiddleNode */,
 				10AC5DB72281272100ED8321 /* 883_ProjectionArea */,
 				243FA67D227D1F6900AF6162 /* 908_SmallestRangeI */,
@@ -1391,6 +1417,7 @@
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
+				10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */,
 				243FA680227D1F9300AF6162 /* SmallestRangeI_908.c in Sources */,
 				107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */,
 				107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */,
@@ -1438,6 +1465,7 @@
 				10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */,
 				10265173224CD2ED00D223A6 /* CanTransform_777.c in Sources */,
 				107106082272DCBC0074B0C0 /* SelfDividingNumbers_728.c in Sources */,
+				10AC5DC22284E82F00ED8321 /* MirrorReflection_858.c in Sources */,
 				102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */,
 				1026516F224CB59C00D223A6 /* JudgeSquareSum_633.c in Sources */,
 				102650BA2243B5DE00D223A6 /* IsLongPressedName_925.c in Sources */,

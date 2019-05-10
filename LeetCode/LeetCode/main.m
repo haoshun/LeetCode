@@ -163,6 +163,10 @@
 
 //#define BackspaceCompare_844
 
+//#define MirrorReflection_858
+
+#define BinaryGap_868
+
 //#define MiddleNode_876
 
 //#define ProjectionArea_883
@@ -171,7 +175,7 @@
 
 //#define IsLongPressedName_925
 
-#define LargestPerimeter_976
+//#define LargestPerimeter_976
 //#define SortedSquares_977
 
 //#define SumEvenAfterQueries_985
@@ -1650,6 +1654,30 @@ void BackspaceCompare()
 #endif
 
 
+#pragma mark - 858_镜面反射_MirrorReflection
+
+#ifdef MirrorReflection_858
+#import "858_MirrorReflection/MirrorReflection_858.h"
+
+void MirrorReflection()
+{
+    printf("最先接收到光线的接收器编号为: %d\n," , mirrorReflection(8, 3));
+}
+#endif
+
+
+#pragma mark - 868_二进制间距_BinaryGap
+
+#ifdef BinaryGap_868
+#import "868_BinaryGap/BinaryGap_868.h"
+
+void BinaryGap()
+{
+    printf("二进制间距: %d\n," , binaryGap(22));
+}
+#endif
+
+
 #pragma mark - 876_比较含退格的字符串_MiddleNode
 
 #ifdef MiddleNode_876
@@ -2259,6 +2287,16 @@ int main(int argc, const char * argv[]) {
         
 #ifdef BackspaceCompare_844
         BackspaceCompare();
+#endif
+        
+        
+#ifdef MirrorReflection_858
+        MirrorReflection();
+#endif
+        
+        
+#ifdef BinaryGap_868
+        BinaryGap();
 #endif
         
         
