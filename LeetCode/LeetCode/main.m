@@ -165,7 +165,7 @@
 
 //#define MirrorReflection_858
 
-#define BinaryGap_868
+//#define BinaryGap_868
 
 //#define MiddleNode_876
 
@@ -174,6 +174,8 @@
 //#define SmallestRangeI_908
 
 //#define IsLongPressedName_925
+
+#define PowerfulIntegers_970
 
 //#define LargestPerimeter_976
 //#define SortedSquares_977
@@ -1773,6 +1775,26 @@ void IsLongPressedName()
 #endif
 
 
+#pragma mark - 970_强整数_PowerfulIntegers
+
+#ifdef PowerfulIntegers_970
+#import "970_PowerfulIntegers/PowerfulIntegers_970.h"
+
+void PowerfulIntegers()
+{
+    int returnSize = 0;
+    int * nums = powerfulIntegers(2, 3, 10, &returnSize);
+    for (int i = 0;i<returnSize; ++i)
+    {
+        printf("%d," , nums[i]);
+    }
+    printf("\n");
+
+}
+#endif
+
+
+
 #pragma mark - 976_三角形的最大周长_LargestPerimeter
 
 #ifdef LargestPerimeter_976
@@ -2317,6 +2339,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef IsLongPressedName_925
         IsLongPressedName();
+#endif
+        
+        
+#ifdef PowerfulIntegers_970
+        PowerfulIntegers();
 #endif
         
         

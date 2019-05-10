@@ -84,6 +84,7 @@
 		10AC5DBE2282859A00ED8321 /* LargestPerimeter_976.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DBD2282859A00ED8321 /* LargestPerimeter_976.c */; };
 		10AC5DC22284E82F00ED8321 /* MirrorReflection_858.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */; };
 		10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC5228564C600ED8321 /* BinaryGap_868.c */; };
+		10AC5DCA2285838700ED8321 /* PowerfulIntegers_970.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC92285838700ED8321 /* PowerfulIntegers_970.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
@@ -274,6 +275,8 @@
 		10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MirrorReflection_858.c; sourceTree = "<group>"; };
 		10AC5DC4228564C600ED8321 /* BinaryGap_868.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryGap_868.h; sourceTree = "<group>"; };
 		10AC5DC5228564C600ED8321 /* BinaryGap_868.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryGap_868.c; sourceTree = "<group>"; };
+		10AC5DC82285838700ED8321 /* PowerfulIntegers_970.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerfulIntegers_970.h; sourceTree = "<group>"; };
+		10AC5DC92285838700ED8321 /* PowerfulIntegers_970.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PowerfulIntegers_970.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -1022,6 +1025,15 @@
 			path = 868_BinaryGap;
 			sourceTree = "<group>";
 		};
+		10AC5DC72285835F00ED8321 /* 970_PowerfulIntegers */ = {
+			isa = PBXGroup;
+			children = (
+				10AC5DC82285838700ED8321 /* PowerfulIntegers_970.h */,
+				10AC5DC92285838700ED8321 /* PowerfulIntegers_970.c */,
+			);
+			path = 970_PowerfulIntegers;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1285,6 +1297,7 @@
 				10AC5DB72281272100ED8321 /* 883_ProjectionArea */,
 				243FA67D227D1F6900AF6162 /* 908_SmallestRangeI */,
 				102650B72243B5BF00D223A6 /* 925_IsLongPressedName */,
+				10AC5DC72285835F00ED8321 /* 970_PowerfulIntegers */,
 				10AC5DBB2282857100ED8321 /* 976_LargestPerimeter */,
 				1026517C224CDFEF00D223A6 /* 977_SortedSquares */,
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
@@ -1391,6 +1404,7 @@
 				245BEC4E216E1845005984BE /* SearchInsert_35.c in Sources */,
 				102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */,
 				10AC5DBE2282859A00ED8321 /* LargestPerimeter_976.c in Sources */,
+				10AC5DCA2285838700ED8321 /* PowerfulIntegers_970.c in Sources */,
 				1026513A224B2C7100D223A6 /* IsPowerOfTwo_231.c in Sources */,
 				102650F1224A246A00D223A6 /* LengthOfLastWord_58.c in Sources */,
 				1065C16322533DBF008BC940 /* IsUgly_263.c in Sources */,
