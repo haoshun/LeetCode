@@ -85,6 +85,7 @@
 		10AC5DC22284E82F00ED8321 /* MirrorReflection_858.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC12284E82F00ED8321 /* MirrorReflection_858.c */; };
 		10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC5228564C600ED8321 /* BinaryGap_868.c */; };
 		10AC5DCA2285838700ED8321 /* PowerfulIntegers_970.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DC92285838700ED8321 /* PowerfulIntegers_970.c */; };
+		10AC5DCE2286CB9400ED8321 /* MaximumProduct_628.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DCD2286CB9400ED8321 /* MaximumProduct_628.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
@@ -277,6 +278,8 @@
 		10AC5DC5228564C600ED8321 /* BinaryGap_868.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryGap_868.c; sourceTree = "<group>"; };
 		10AC5DC82285838700ED8321 /* PowerfulIntegers_970.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerfulIntegers_970.h; sourceTree = "<group>"; };
 		10AC5DC92285838700ED8321 /* PowerfulIntegers_970.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PowerfulIntegers_970.c; sourceTree = "<group>"; };
+		10AC5DCC2286CB9400ED8321 /* MaximumProduct_628.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximumProduct_628.h; sourceTree = "<group>"; };
+		10AC5DCD2286CB9400ED8321 /* MaximumProduct_628.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaximumProduct_628.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -1034,6 +1037,15 @@
 			path = 970_PowerfulIntegers;
 			sourceTree = "<group>";
 		};
+		10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */ = {
+			isa = PBXGroup;
+			children = (
+				10AC5DCC2286CB9400ED8321 /* MaximumProduct_628.h */,
+				10AC5DCD2286CB9400ED8321 /* MaximumProduct_628.c */,
+			);
+			path = 628_MaximumProduct;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1206,6 +1218,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1479,6 +1492,7 @@
 				10780359223F45F6009684B6 /* AddTwoNumbers_2.c in Sources */,
 				10265173224CD2ED00D223A6 /* CanTransform_777.c in Sources */,
 				107106082272DCBC0074B0C0 /* SelfDividingNumbers_728.c in Sources */,
+				10AC5DCE2286CB9400ED8321 /* MaximumProduct_628.c in Sources */,
 				10AC5DC22284E82F00ED8321 /* MirrorReflection_858.c in Sources */,
 				102650D222447AF400D223A6 /* RemoveDuplicates_26.c in Sources */,
 				1026516F224CB59C00D223A6 /* JudgeSquareSum_633.c in Sources */,

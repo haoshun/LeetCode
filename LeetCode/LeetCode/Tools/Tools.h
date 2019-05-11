@@ -19,4 +19,7 @@ struct ListNode {
 //翻转字符串
 void RotateString (char * s , int from , int to);
 
+//获取较大值
+int max (int a , int b);
+
 #endif /* Tools_h */

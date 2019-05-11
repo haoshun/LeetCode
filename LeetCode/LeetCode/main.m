@@ -143,6 +143,8 @@
 
 //#define MaxCount_598
 
+#define MaximumProduct_628
+
 //#define JudgeSquareSum_633
 
 //#define FindErrorNums_645
@@ -175,7 +177,7 @@
 
 //#define IsLongPressedName_925
 
-#define PowerfulIntegers_970
+//#define PowerfulIntegers_970
 
 //#define LargestPerimeter_976
 //#define SortedSquares_977
@@ -1505,6 +1507,19 @@ void MaxCount()
 #endif
 
 
+#pragma mark - 628_三个数的最大乘积_MaximumProduct
+
+#ifdef MaximumProduct_628
+#import "628_MaximumProduct/MaximumProduct_628.h"
+
+void MaximumProduct()
+{
+    int num[4] = {1,2,3,4};
+    printf("三个数的最大乘积  %d\n" , maximumProduct(num, 4));
+}
+#endif
+
+
 #pragma mark - 633_平方数之和_JudgeSquareSum
 
 #ifdef JudgeSquareSum_633
@@ -2259,6 +2274,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef MaxCount_598
         MaxCount();
+#endif
+        
+        
+#ifdef MaximumProduct_628
+        MaximumProduct();
 #endif
         
         

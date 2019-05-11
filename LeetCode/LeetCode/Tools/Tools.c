@@ -18,3 +18,10 @@ void RotateString (char * s , int from , int to)
     }
 }
 
+
+//获取较大值
+int max (int a , int b)
+{
+    return a > b ? a : b ;
+}
+
