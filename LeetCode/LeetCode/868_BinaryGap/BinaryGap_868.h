@@ -2,8 +2,8 @@
 //  BinaryGap_868.h
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/5/10.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/5/10.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #ifndef BinaryGap_868_h

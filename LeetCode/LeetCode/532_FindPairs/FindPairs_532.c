@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by 郝 源顺 on 2018/12/11.
-//  Copyright © 2018年 desezed. All rights reserved.
+//  Copyright © 2018年 Shun. All rights reserved.
 //
 
 #include "FindPairs_532.h"

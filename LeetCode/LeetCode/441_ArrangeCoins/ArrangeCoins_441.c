@@ -2,8 +2,8 @@
 //  ArrangeCoins_441.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/4/4.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/4/4.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #include "ArrangeCoins_441.h"

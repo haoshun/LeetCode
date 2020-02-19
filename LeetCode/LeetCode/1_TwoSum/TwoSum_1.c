@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by Shun on 2018/5/6.
-//  Copyright © 2018年 desezed. All rights reserved.
+//  Copyright © 2018年 Shun. All rights reserved.
 //
 
 #include "TwoSum_1.h"

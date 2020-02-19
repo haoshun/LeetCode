@@ -2,8 +2,8 @@
 //  IsIdealPermutation.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/5/5.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/5/5.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #include "IsIdealPermutation.h"

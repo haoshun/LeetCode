@@ -2,8 +2,8 @@
 //  SingleNumber_136.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/3/26.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/3/26.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #include "SingleNumber_136.h"

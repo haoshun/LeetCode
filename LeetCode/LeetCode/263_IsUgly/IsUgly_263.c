@@ -2,8 +2,8 @@
 //  IsUgly_263.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/4/2.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/4/2.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #include "IsUgly_263.h"

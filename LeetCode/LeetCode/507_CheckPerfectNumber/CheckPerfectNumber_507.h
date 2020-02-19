@@ -2,8 +2,8 @@
 //  CheckPerfectNumber_507.h
 //  LeetCode
 //
-//  Created by 郝源顺 on 2019/4/26.
-//  Copyright © 2019 desezed. All rights reserved.
+//  Created by Shun on 2019/4/26.
+//  Copyright © 2019 Shun. All rights reserved.
 //
 
 #ifndef CheckPerfectNumber_507_h

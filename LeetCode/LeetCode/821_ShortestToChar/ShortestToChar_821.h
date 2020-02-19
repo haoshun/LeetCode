@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by 郝 源顺 on 2018/9/23.
-//  Copyright © 2018年 desezed. All rights reserved.
+//  Copyright © 2018年 Shun. All rights reserved.
 //
 
 #ifndef ShortestToChar_h

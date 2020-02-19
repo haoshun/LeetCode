@@ -3,7 +3,7 @@
 //  LeetCode
 //
 //  Created by 郝 源顺 on 2018/10/14.
-//  Copyright © 2018年 desezed. All rights reserved.
+//  Copyright © 2018年 Shun. All rights reserved.
 //
 
 #ifndef LongestCommonPrefix_h
