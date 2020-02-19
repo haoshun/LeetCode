@@ -66,6 +66,7 @@
 		1026517B224CD80900D223A6 /* MiddleNode_876.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517A224CD80900D223A6 /* MiddleNode_876.c */; };
 		1026517F224CE02900D223A6 /* SortedSquares_977.c in Sources */ = {isa = PBXBuildFile; fileRef = 1026517E224CE02900D223A6 /* SortedSquares_977.c */; };
 		10265183224DAC5700D223A6 /* SumEvenAfterQueries_985.c in Sources */ = {isa = PBXBuildFile; fileRef = 10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */; };
+		1040D52523FD282B00424827 /* Defines.c in Sources */ = {isa = PBXBuildFile; fileRef = 1040D52423FD282B00424827 /* Defines.c */; };
 		1065C16322533DBF008BC940 /* IsUgly_263.c in Sources */ = {isa = PBXBuildFile; fileRef = 1065C16222533DBF008BC940 /* IsUgly_263.c */; };
 		107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */ = {isa = PBXBuildFile; fileRef = 107105FB2271AB510074B0C0 /* MinMoves_453.c */; };
 		107106002271ED2D0074B0C0 /* MinMoves2_462.c in Sources */ = {isa = PBXBuildFile; fileRef = 107105FF2271ED2D0074B0C0 /* MinMoves2_462.c */; };
@@ -240,6 +241,8 @@
 		1026517E224CE02900D223A6 /* SortedSquares_977.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortedSquares_977.c; sourceTree = "<group>"; };
 		10265181224DAC5700D223A6 /* SumEvenAfterQueries_985.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumEvenAfterQueries_985.h; sourceTree = "<group>"; };
 		10265182224DAC5700D223A6 /* SumEvenAfterQueries_985.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SumEvenAfterQueries_985.c; sourceTree = "<group>"; };
+		1040D52323FD282B00424827 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		1040D52423FD282B00424827 /* Defines.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Defines.c; sourceTree = "<group>"; };
 		1065C16122533DBF008BC940 /* IsUgly_263.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsUgly_263.h; sourceTree = "<group>"; };
 		1065C16222533DBF008BC940 /* IsUgly_263.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsUgly_263.c; sourceTree = "<group>"; };
 		107105FA2271AB510074B0C0 /* MinMoves_453.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinMoves_453.h; sourceTree = "<group>"; };
@@ -414,15 +417,6 @@
 				102650B12243AED800D223A6 /* ReverseWords_557.c */,
 			);
 			path = 557_ReverseWords;
-			sourceTree = "<group>";
-		};
-		102650B32243B2D700D223A6 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				102650B42243B2E900D223A6 /* Tools.h */,
-				102650B52243B2E900D223A6 /* Tools.c */,
-			);
-			path = Tools;
 			sourceTree = "<group>";
 		};
 		102650B72243B5BF00D223A6 /* 925_IsLongPressedName */ = {
@@ -875,6 +869,19 @@
 			path = 985_SumEvenAfterQueries;
 			sourceTree = "<group>";
 		};
+		1040D52223FD272A00424827 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				102650B42243B2E900D223A6 /* Tools.h */,
+				102650B52243B2E900D223A6 /* Tools.c */,
+				24E4577A20A01E840048DEF7 /* QuickSort.h */,
+				24E4577B20A01E840048DEF7 /* QuickSort.c */,
+				1040D52323FD282B00424827 /* Defines.h */,
+				1040D52423FD282B00424827 /* Defines.c */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		1065C16022533D96008BC940 /* 263_IsUgly */ = {
 			isa = PBXGroup;
 			children = (
@@ -1218,6 +1225,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				1040D52223FD272A00424827 /* General */,
 				10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
@@ -1316,8 +1324,6 @@
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
 				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
-				24E4577920A01E640048DEF7 /* QuickSort */,
-				102650B32243B2D700D223A6 /* Tools */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -1338,15 +1344,6 @@
 				24E45777209EC3060048DEF7 /* ThreeSum_15.c */,
 			);
 			path = 15_ThreeSum;
-			sourceTree = "<group>";
-		};
-		24E4577920A01E640048DEF7 /* QuickSort */ = {
-			isa = PBXGroup;
-			children = (
-				24E4577A20A01E840048DEF7 /* QuickSort.h */,
-				24E4577B20A01E840048DEF7 /* QuickSort.c */,
-			);
-			path = QuickSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1444,6 +1441,7 @@
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
+				1040D52523FD282B00424827 /* Defines.c in Sources */,
 				10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */,
 				243FA680227D1F9300AF6162 /* SmallestRangeI_908.c in Sources */,
 				107106042272A2A80074B0C0 /* CheckPerfectNumber_507.c in Sources */,

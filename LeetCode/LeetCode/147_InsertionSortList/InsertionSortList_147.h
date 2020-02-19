@@ -10,7 +10,7 @@
 #define InsertionSortList_147_h
 
 #include <stdio.h>
-#include "Tools.h"
+#include "Defines.h"
 
 //147. 对链表进行插入排序
 //对链表进行插入排序。

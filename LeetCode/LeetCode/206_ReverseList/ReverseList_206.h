@@ -10,7 +10,7 @@
 #define ReverseList_206_h
 
 #include <stdio.h>
-#include "Tools.h"
+#include "Defines.h"
 
 //206. 反转链表
 //反转一个单链表。
