@@ -48,6 +48,8 @@
 
 //#define Merge_88
 
+#define InorderTraversal_94
+
 //#define IsPalindrome_125
 
 //#define SingleNumber_136
@@ -143,7 +145,7 @@
 
 //#define MaxCount_598
 
-#define MaximumProduct_628
+//#define MaximumProduct_628
 
 //#define JudgeSquareSum_633
 
@@ -690,6 +692,34 @@ void Merge()
         printf("%d " , num1[i]);
     }
     printf("\n");
+}
+#endif
+
+
+#pragma mark - 94_二叉树的中序遍历_Merge
+
+#ifdef InorderTraversal_94
+#import "94_InorderTraversal/InorderTraversal_94.h"
+
+void InorderTraversal()
+{
+    struct TreeNode t1 , t2 , t3;
+    t1.left = t2.right = t3.left = t3.right = NULL;
+    t1.right = &t2;
+    t2.left = &t3;
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 3;
+    
+    int returnSize = 0;
+    int * result = inorderTraversal(&t1, &returnSize);
+    printf("s二叉树的中序遍历:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+    
 }
 #endif
 
@@ -2024,6 +2054,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef Merge_88
         Merge();
+#endif
+        
+        
+#ifdef InorderTraversal_94
+        InorderTraversal();
 #endif
         
         
