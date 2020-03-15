@@ -104,6 +104,7 @@
 		245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC512172F9BE005984BE /* LongestCommonPrefix.c */; };
 		245BEC56217316F0005984BE /* StrStr_28.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC55217316F0005984BE /* StrStr_28.c */; };
 		245BEC5A217860C2005984BE /* PlusOne_66.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC59217860C1005984BE /* PlusOne_66.c */; };
+		246303E6241E4AFE005045CA /* PreorderTraversal_144.c in Sources */ = {isa = PBXBuildFile; fileRef = 246303E5241E4AFE005045CA /* PreorderTraversal_144.c */; };
 		24B7F4C521410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c in Sources */ = {isa = PBXBuildFile; fileRef = 24B7F4C421410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c */; };
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
 		24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum_1.c */; };
@@ -318,6 +319,8 @@
 		245BEC55217316F0005984BE /* StrStr_28.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StrStr_28.c; sourceTree = "<group>"; };
 		245BEC58217860C1005984BE /* PlusOne_66.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlusOne_66.h; sourceTree = "<group>"; };
 		245BEC59217860C1005984BE /* PlusOne_66.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PlusOne_66.c; sourceTree = "<group>"; };
+		246303E4241E4AFE005045CA /* PreorderTraversal_144.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreorderTraversal_144.h; sourceTree = "<group>"; };
+		246303E5241E4AFE005045CA /* PreorderTraversal_144.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PreorderTraversal_144.c; sourceTree = "<group>"; };
 		24B7F4C321410A7C0051F309 /* ReverseWordsAndReduceSpace_186.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseWordsAndReduceSpace_186.h; sourceTree = "<group>"; };
 		24B7F4C421410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseWordsAndReduceSpace_186.c; sourceTree = "<group>"; };
 		24E45767209CAC3C0048DEF7 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1209,6 +1212,15 @@
 			path = 66_PlusOne;
 			sourceTree = "<group>";
 		};
+		246303E3241E4AB1005045CA /* 144_PreorderTraversal */ = {
+			isa = PBXGroup;
+			children = (
+				246303E4241E4AFE005045CA /* PreorderTraversal_144.h */,
+				246303E5241E4AFE005045CA /* PreorderTraversal_144.c */,
+			);
+			path = 144_PreorderTraversal;
+			sourceTree = "<group>";
+		};
 		24B7F4C221410A200051F309 /* 186_ReverseWordsAndReduceSpace */ = {
 			isa = PBXGroup;
 			children = (
@@ -1237,9 +1249,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				108929C22418F6B200B49C3C /* 94_InorderTraversal */,
-				1040D52223FD272A00424827 /* General */,
-				10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */,
+				246303E3241E4AB1005045CA /* 144_PreorderTraversal */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1263,6 +1273,7 @@
 				102650FA224A325A00D223A6 /* 82_DeleteDuplicates */,
 				102650FE224A4A6300D223A6 /* 83_DeleteDuplicates */,
 				10265102224A4BA800D223A6 /* 88_Merge */,
+				108929C22418F6B200B49C3C /* 94_InorderTraversal */,
 				102650C322446DDE00D223A6 /* 125_IsPalindrome */,
 				10265106224A4E6100D223A6 /* 136_SingleNumber */,
 				1026510A224AEF5400D223A6 /* 137_SingleNumber */,
@@ -1315,6 +1326,7 @@
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
 				107106092272EF140074B0C0 /* 598_MaxCount */,
+				10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */,
 				1026516C224CB57900D223A6 /* 633_JudgeSquareSum */,
 				243FA679227B1B4C00AF6162 /* 645_FindErrorNums */,
 				107106052272DC9B0074B0C0 /* 728_SelfDividingNumbers */,
@@ -1336,6 +1348,7 @@
 				1026517C224CDFEF00D223A6 /* 977_SortedSquares */,
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
 				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
+				1040D52223FD272A00424827 /* General */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
 			);
 			path = LeetCode;
@@ -1454,6 +1467,7 @@
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				108929C52418F6DD00B49C3C /* InorderTraversal_94.c in Sources */,
 				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
+				246303E6241E4AFE005045CA /* PreorderTraversal_144.c in Sources */,
 				1026514F224C757100D223A6 /* BulbSwitch_319.c in Sources */,
 				1040D52523FD282B00424827 /* Defines.c in Sources */,
 				10AC5DC6228564C600ED8321 /* BinaryGap_868.c in Sources */,

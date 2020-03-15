@@ -48,7 +48,7 @@
 
 //#define Merge_88
 
-#define InorderTraversal_94
+//#define InorderTraversal_94
 
 //#define IsPalindrome_125
 
@@ -57,6 +57,8 @@
 
 //#define HasCycle_141
 //#define DetectCycle_142
+
+#define PreorderTraversal_144
 
 //#define InsertionSortList_147
 
@@ -828,6 +830,34 @@ void DetectCycle()
     //    n7.next = NULL;
     result = detectCycle(&n1);
     printf("链表开始入环的第一个节点: %d \n" , result ->val);
+}
+#endif
+
+
+#pragma mark - 144_二叉树的前序遍历_PreorderTraversal
+
+#ifdef PreorderTraversal_144
+#include "144_PreorderTraversal/PreorderTraversal_144.h"
+
+void PreorderTraversal()
+{
+    struct TreeNode t1 , t2 , t3;
+    t1.left = t2.right = t3.left = t3.right = NULL;
+    t1.right = &t2;
+    t2.left = &t3;
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 3;
+    
+    int returnSize = 0;
+    int * result = preorderTraversal(&t1, &returnSize);
+    printf("s二叉树的前序遍历:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+    
 }
 #endif
 
@@ -2084,6 +2114,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef DetectCycle_142
         DetectCycle();
+#endif
+        
+        
+#ifdef PreorderTraversal_144
+        PreorderTraversal();
 #endif
       
         
