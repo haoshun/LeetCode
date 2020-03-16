@@ -78,6 +78,7 @@
 		1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */ = {isa = PBXBuildFile; fileRef = 1078035C2240A069009684B6 /* AddToArrayForm_989.c */; };
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
 		108929C52418F6DD00B49C3C /* InorderTraversal_94.c in Sources */ = {isa = PBXBuildFile; fileRef = 108929C42418F6DD00B49C3C /* InorderTraversal_94.c */; };
+		108929CF241F77AC00B49C3C /* 1413_SortedArrayToBST.c in Sources */ = {isa = PBXBuildFile; fileRef = 108929CE241F77AC00B49C3C /* 1413_SortedArrayToBST.c */; };
 		10AC5DAA22784E6C00ED8321 /* FindNthDigit_400.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */; };
 		10AC5DAE227E9C2D00ED8321 /* NthUglyNumber_264.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DAD227E9C2D00ED8321 /* NthUglyNumber_264.c */; };
 		10AC5DB2227EDF7200ED8321 /* IsIdealPermutation.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DB1227EDF7200ED8321 /* IsIdealPermutation.c */; };
@@ -267,6 +268,8 @@
 		107803602240EEAB009684B6 /* AddStrings_415.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddStrings_415.c; sourceTree = "<group>"; };
 		108929C32418F6DD00B49C3C /* InorderTraversal_94.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InorderTraversal_94.h; sourceTree = "<group>"; };
 		108929C42418F6DD00B49C3C /* InorderTraversal_94.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InorderTraversal_94.c; sourceTree = "<group>"; };
+		108929CD241F77AC00B49C3C /* 1413_SortedArrayToBST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 1413_SortedArrayToBST.h; sourceTree = "<group>"; };
+		108929CE241F77AC00B49C3C /* 1413_SortedArrayToBST.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 1413_SortedArrayToBST.c; sourceTree = "<group>"; };
 		10AC5DA822784E6C00ED8321 /* FindNthDigit_400.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNthDigit_400.h; sourceTree = "<group>"; };
 		10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindNthDigit_400.c; sourceTree = "<group>"; };
 		10AC5DAC227E9C2D00ED8321 /* NthUglyNumber_264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NthUglyNumber_264.h; sourceTree = "<group>"; };
@@ -978,6 +981,23 @@
 			path = 94_InorderTraversal;
 			sourceTree = "<group>";
 		};
+		108929CB241F74FF00B49C3C /* Interview */ = {
+			isa = PBXGroup;
+			children = (
+				108929CC241F756200B49C3C /* 1413_04_02 */,
+			);
+			path = Interview;
+			sourceTree = "<group>";
+		};
+		108929CC241F756200B49C3C /* 1413_04_02 */ = {
+			isa = PBXGroup;
+			children = (
+				108929CD241F77AC00B49C3C /* 1413_SortedArrayToBST.h */,
+				108929CE241F77AC00B49C3C /* 1413_SortedArrayToBST.c */,
+			);
+			path = 1413_04_02;
+			sourceTree = "<group>";
+		};
 		10AC5DA722784E4600ED8321 /* 400_FindNthDigit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1249,7 +1269,6 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				246303E3241E4AB1005045CA /* 144_PreorderTraversal */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1279,6 +1298,7 @@
 				1026510A224AEF5400D223A6 /* 137_SingleNumber */,
 				1026510E224AF0B000D223A6 /* 141_HasCycle */,
 				10265112224B124900D223A6 /* 142_DetectCycle */,
+				246303E3241E4AB1005045CA /* 144_PreorderTraversal */,
 				10265116224B14A300D223A6 /* 147_InsertionSortList */,
 				102650DA2248BB5F00D223A6 /* 168_ConvertToTitle */,
 				102650D6224888EE00D223A6 /* 171_TitleToNumber */,
@@ -1349,6 +1369,7 @@
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
 				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
 				1040D52223FD272A00424827 /* General */,
+				108929CB241F74FF00B49C3C /* Interview */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
 			);
 			path = LeetCode;
@@ -1440,6 +1461,7 @@
 				245BEC4E216E1845005984BE /* SearchInsert_35.c in Sources */,
 				102650E52249E17400D223A6 /* ComputeArea_223.c in Sources */,
 				10AC5DBE2282859A00ED8321 /* LargestPerimeter_976.c in Sources */,
+				108929CF241F77AC00B49C3C /* 1413_SortedArrayToBST.c in Sources */,
 				10AC5DCA2285838700ED8321 /* PowerfulIntegers_970.c in Sources */,
 				1026513A224B2C7100D223A6 /* IsPowerOfTwo_231.c in Sources */,
 				102650F1224A246A00D223A6 /* LengthOfLastWord_58.c in Sources */,

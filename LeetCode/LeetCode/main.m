@@ -58,7 +58,7 @@
 //#define HasCycle_141
 //#define DetectCycle_142
 
-#define PreorderTraversal_144
+//#define PreorderTraversal_144
 
 //#define InsertionSortList_147
 
@@ -192,7 +192,7 @@
 
 
 
-
+#define SortedArrayToBST_1413
 
 char  * decryptString(char * s)
 {
@@ -1962,6 +1962,31 @@ void AddToArrayForm()
 #endif
 
 
+#pragma mark - 1413_面试题 04.02. 最小高度树
+
+#ifdef SortedArrayToBST_1413
+#import "Interview/1413_04_02/1413_SortedArrayToBST.h"
+#import "94_InorderTraversal/InorderTraversal_94.h"
+#define ARRAY_SIZE 5
+void SortedArrayToBST()
+{
+    int nums[ARRAY_SIZE] ={-10,-3,0,5,9};
+    int returnSize = 0;
+    
+    struct TreeNode * BST = sortedArrayToBST(nums, ARRAY_SIZE);
+    
+    int * result = inorderTraversal(BST, &returnSize);
+    printf("s二叉树的中序遍历:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+    
+}
+#endif
+
+
 
 #pragma mark -
 int main(int argc, const char * argv[]) {
@@ -2454,6 +2479,13 @@ int main(int argc, const char * argv[]) {
         
 #ifdef AddToArrayForm_989
         AddToArrayForm();
+#endif
+        
+        
+        
+        
+#ifdef SortedArrayToBST_1413
+        SortedArrayToBST();
 #endif
         
 
