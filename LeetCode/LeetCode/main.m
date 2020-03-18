@@ -190,9 +190,9 @@
 
 //#define AddToArrayForm_989
 
+#define BstFromPreorder_1008
 
-
-#define SortedArrayToBST_1413
+//#define SortedArrayToBST_1413
 
 char  * decryptString(char * s)
 {
@@ -1962,19 +1962,46 @@ void AddToArrayForm()
 #endif
 
 
+
+#pragma mark - 1008_先序遍历构造二叉树_BstFromPreorder
+
+#ifdef BstFromPreorder_1008
+#import "1008_BstFromPreorder/BstFromPreorder_1008.h"
+#import "144_PreorderTraversal/PreorderTraversal_144.h"
+#define ARRAY_SIZE 6
+void BstFromPreorder()
+{
+    int nums[ARRAY_SIZE] ={8,5,1,7,10,12};
+    //int nums[ARRAY_SIZE] ={16,15,10,5,11};
+    struct TreeNode * BST = bstFromPreorder(nums, ARRAY_SIZE);
+    
+    int returnSize = 0;
+    int * result = preorderTraversal(BST, &returnSize);
+    printf("s二叉树的前序遍历:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+    
+}
+#endif
+
+
+
 #pragma mark - 1413_面试题 04.02. 最小高度树
 
 #ifdef SortedArrayToBST_1413
 #import "Interview/1413_04_02/1413_SortedArrayToBST.h"
 #import "94_InorderTraversal/InorderTraversal_94.h"
-#define ARRAY_SIZE 5
+#define ARRAY_SIZE 6
 void SortedArrayToBST()
 {
     int nums[ARRAY_SIZE] ={-10,-3,0,5,9};
     int returnSize = 0;
-    
+
     struct TreeNode * BST = sortedArrayToBST(nums, ARRAY_SIZE);
-    
+
     int * result = inorderTraversal(BST, &returnSize);
     printf("s二叉树的中序遍历:  \n");
     for (int i = 0 ; i < returnSize; ++i)
@@ -2481,6 +2508,11 @@ int main(int argc, const char * argv[]) {
         AddToArrayForm();
 #endif
         
+        
+
+#ifdef BstFromPreorder_1008
+        BstFromPreorder();
+#endif
         
         
         

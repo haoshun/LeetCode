@@ -22,4 +22,6 @@ struct TreeNode {
     struct TreeNode *right;
 };
 
+struct TreeNode* createNode(int num);
+
 #endif /* Defines_h */

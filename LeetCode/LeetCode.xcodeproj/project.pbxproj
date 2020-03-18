@@ -79,6 +79,7 @@
 		107803612240EEAB009684B6 /* AddStrings_415.c in Sources */ = {isa = PBXBuildFile; fileRef = 107803602240EEAB009684B6 /* AddStrings_415.c */; };
 		108929C52418F6DD00B49C3C /* InorderTraversal_94.c in Sources */ = {isa = PBXBuildFile; fileRef = 108929C42418F6DD00B49C3C /* InorderTraversal_94.c */; };
 		108929CF241F77AC00B49C3C /* 1413_SortedArrayToBST.c in Sources */ = {isa = PBXBuildFile; fileRef = 108929CE241F77AC00B49C3C /* 1413_SortedArrayToBST.c */; };
+		108929D32422425D00B49C3C /* BstFromPreorder_1008.c in Sources */ = {isa = PBXBuildFile; fileRef = 108929D22422425D00B49C3C /* BstFromPreorder_1008.c */; };
 		10AC5DAA22784E6C00ED8321 /* FindNthDigit_400.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */; };
 		10AC5DAE227E9C2D00ED8321 /* NthUglyNumber_264.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DAD227E9C2D00ED8321 /* NthUglyNumber_264.c */; };
 		10AC5DB2227EDF7200ED8321 /* IsIdealPermutation.c in Sources */ = {isa = PBXBuildFile; fileRef = 10AC5DB1227EDF7200ED8321 /* IsIdealPermutation.c */; };
@@ -270,6 +271,8 @@
 		108929C42418F6DD00B49C3C /* InorderTraversal_94.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InorderTraversal_94.c; sourceTree = "<group>"; };
 		108929CD241F77AC00B49C3C /* 1413_SortedArrayToBST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 1413_SortedArrayToBST.h; sourceTree = "<group>"; };
 		108929CE241F77AC00B49C3C /* 1413_SortedArrayToBST.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 1413_SortedArrayToBST.c; sourceTree = "<group>"; };
+		108929D12422425D00B49C3C /* BstFromPreorder_1008.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BstFromPreorder_1008.h; sourceTree = "<group>"; };
+		108929D22422425D00B49C3C /* BstFromPreorder_1008.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BstFromPreorder_1008.c; sourceTree = "<group>"; };
 		10AC5DA822784E6C00ED8321 /* FindNthDigit_400.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNthDigit_400.h; sourceTree = "<group>"; };
 		10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindNthDigit_400.c; sourceTree = "<group>"; };
 		10AC5DAC227E9C2D00ED8321 /* NthUglyNumber_264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NthUglyNumber_264.h; sourceTree = "<group>"; };
@@ -998,6 +1001,15 @@
 			path = 1413_04_02;
 			sourceTree = "<group>";
 		};
+		108929D02422423500B49C3C /* 1008_BstFromPreorder */ = {
+			isa = PBXGroup;
+			children = (
+				108929D12422425D00B49C3C /* BstFromPreorder_1008.h */,
+				108929D22422425D00B49C3C /* BstFromPreorder_1008.c */,
+			);
+			path = 1008_BstFromPreorder;
+			sourceTree = "<group>";
+		};
 		10AC5DA722784E4600ED8321 /* 400_FindNthDigit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1269,6 +1281,7 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				108929D02422423500B49C3C /* 1008_BstFromPreorder */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1474,6 +1487,7 @@
 				245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */,
 				245BEC3E215B604E005984BE /* CompressChars_443.c in Sources */,
 				245BEC36215B09E7005984BE /* NumJewelsInStones_771.c in Sources */,
+				108929D32422425D00B49C3C /* BstFromPreorder_1008.c in Sources */,
 				102650A2224375CC00D223A6 /* RemoveElements_203.c in Sources */,
 				245BEC3A215B2701005984BE /* Isomorphic_205.c in Sources */,
 				10265131224B20AC00D223A6 /* ContainsNearbyAlmostDuplicate_220.c in Sources */,

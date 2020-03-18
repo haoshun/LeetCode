@@ -8,15 +8,6 @@
 
 #include "1413_SortedArrayToBST.h"
 
- struct TreeNode* createNode(int num)
- {
-     printf("%d , " , num);
-     struct TreeNode* node = (struct TreeNode*)malloc(sizeof(struct TreeNode));
-     node -> val = num;
-     node -> left = NULL;
-     node -> right = NULL;
-     return node;
- }
 
 struct TreeNode* realToBST(int* nums , int head , int rear)
 {
@@ -46,3 +37,9 @@ struct TreeNode* sortedArrayToBST(int* nums, int numsSize){
 
     return realToBST(nums,0,numsSize-1);
 }
+
+
+
+
+
+

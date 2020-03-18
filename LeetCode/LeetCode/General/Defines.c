@@ -7,3 +7,14 @@
 //
 
 #include "Defines.h"
+
+
+
+struct TreeNode* createNode(int num)
+{
+    struct TreeNode* node = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    node -> val = num;
+    node -> left = NULL;
+    node -> right = NULL;
+    return node;
+}
