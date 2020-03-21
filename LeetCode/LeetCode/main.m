@@ -50,6 +50,8 @@
 
 //#define InorderTraversal_94
 
+#define LevelOrder_102
+
 //#define IsPalindrome_125
 
 //#define SingleNumber_136
@@ -190,7 +192,7 @@
 
 //#define AddToArrayForm_989
 
-#define BstFromPreorder_1008
+//#define BstFromPreorder_1008
 
 //#define SortedArrayToBST_1413
 
@@ -721,6 +723,46 @@ void InorderTraversal()
         printf("%d ," ,  result[i]);
     }
     printf("\n");
+    
+}
+#endif
+
+
+#pragma mark - 102_二叉树的层次遍历_HasCycle
+
+#ifdef LevelOrder_102
+#import "102_LevelOrder/LevelOrder_102.h"
+
+void LevelOrder()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    t1.val = 3;
+    t2.val = 9;
+    t3.val = 20;
+    t4.val = 15;
+    t5.val = 7;
+    
+    struct TreeNode t6;
+    
+    int returnSize = 0;
+    int *columnSizes = NULL;
+    int ** result =  levelOrder(&t6, &returnSize, &columnSizes);
+    
+
+    for(int  i=0;i<returnSize;i++)
+    {
+        printf("%d ,\n" , columnSizes[i]);
+  for(int j=0;j<columnSizes[i];j++)
+   {
+     printf("%d\n",result[i][j]);
+    }
+}
+
     
 }
 #endif
@@ -2141,6 +2183,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef InorderTraversal_94
         InorderTraversal();
+#endif
+        
+        
+#ifdef LevelOrder_102
+        LevelOrder();
 #endif
         
         
