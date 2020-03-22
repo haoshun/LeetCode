@@ -1,12 +1,12 @@
 //
-//  LevelOrder_102.c
+//  LevelOrderBottom_107.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2020/3/21.
+//  Created by 郝 源顺 on 2020/3/22.
 //  Copyright © 2020 desezed. All rights reserved.
 //
 
-#include "LevelOrder_102.h"
+#include "LevelOrderBottom_107.h"
 
 struct HS_Array_Node {
      struct HS_Array_Node* next;
@@ -14,7 +14,7 @@ struct HS_Array_Node {
      int length;
 };
 
-struct HS_Array_Node* createArrayNode(int length)
+struct HS_Array_Node* createArrayNode107(int length)
 {
    struct HS_Array_Node* node = (struct HS_Array_Node*)malloc(sizeof(struct HS_Array_Node));
    node -> next = NULL;
@@ -23,9 +23,8 @@ struct HS_Array_Node* createArrayNode(int length)
    return node;
 }
 
-int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes)
-{
-     if(!root)
+int** levelOrderBottom(struct TreeNode* root, int* returnSize, int** returnColumnSizes){
+if(!root)
      {
          *returnSize = 0;
         return NULL;
@@ -35,7 +34,7 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
     struct HS_Array_Node* arrayHead  = NULL ;
     struct HS_Array_Node*arrayRear = NULL;
     struct HS_Array_Node *arrayNode = NULL;
-    int queueLen = 0 ,level = 0 ,maxWidth = 0;
+    int queueLen = 0 ,level = 0;
     
     struct QueueNode* qNode = NULL;
 
@@ -44,12 +43,7 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
     while(pQueue -> length)
     {
         ++level;
-        if (maxWidth < pQueue -> length) {
-            maxWidth = pQueue -> length;
-        }
-        
-
-        arrayNode = createArrayNode(pQueue -> length);
+        arrayNode = createArrayNode107(pQueue -> length);
         queueLen = pQueue -> length;
         
         for(int i = 0; i < queueLen ; ++i)
@@ -73,8 +67,8 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
         }
         else
         {
-            arrayRear -> next = arrayNode;
-            arrayRear = arrayNode;
+            arrayNode -> next = arrayHead;
+            arrayHead = arrayNode;
         }
     }
 

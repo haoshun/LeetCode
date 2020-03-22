@@ -1,31 +1,29 @@
 //
-//  LevelOrder_102.c
+//  AverageOfLevels_637.c
 //  LeetCode
 //
-//  Created by 郝源顺 on 2020/3/21.
+//  Created by 郝 源顺 on 2020/3/22.
 //  Copyright © 2020 desezed. All rights reserved.
 //
 
-#include "LevelOrder_102.h"
+#include "AverageOfLevels_637.h"
 
 struct HS_Array_Node {
      struct HS_Array_Node* next;
-     int* vaules;
-     int length;
+     double average;
 };
 
-struct HS_Array_Node* createArrayNode(int length)
+struct HS_Array_Node* createArrayNode637()
 {
    struct HS_Array_Node* node = (struct HS_Array_Node*)malloc(sizeof(struct HS_Array_Node));
    node -> next = NULL;
-   node -> length = length;
-   node -> vaules = (int*)malloc(sizeof(int)*length);
+   node -> average = 0.0;
    return node;
 }
 
-int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes)
-{
-     if(!root)
+
+double* averageOfLevels(struct TreeNode* root, int* returnSize){
+    if(!root)
      {
          *returnSize = 0;
         return NULL;
@@ -33,8 +31,8 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
     
     struct HS_Queue * pQueue = createQueue();
     struct HS_Array_Node* arrayHead  = NULL ;
-    struct HS_Array_Node*arrayRear = NULL;
-    struct HS_Array_Node *arrayNode = NULL;
+    struct HS_Array_Node* arrayRear = NULL;
+    struct HS_Array_Node* arrayNode = NULL;
     int queueLen = 0 ,level = 0 ,maxWidth = 0;
     
     struct QueueNode* qNode = NULL;
@@ -49,14 +47,14 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
         }
         
 
-        arrayNode = createArrayNode(pQueue -> length);
+        arrayNode = createArrayNode637();
         queueLen = pQueue -> length;
         
         for(int i = 0; i < queueLen ; ++i)
         {
             qNode = deQueue(pQueue);
 
-            arrayNode -> vaules[i] = qNode -> treeNode -> val;
+            arrayNode -> average = arrayNode -> average + (qNode -> treeNode -> val * 1.0 - arrayNode -> average) / (i + 1);
 
             if(qNode -> treeNode -> left)
                 enQueue(pQueue,createQueueNode(qNode -> treeNode -> left));
@@ -78,23 +76,16 @@ int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes
         }
     }
 
-    int **returnArray = (int**)malloc(sizeof(int*)*level);
-    int *columnSizes = (int*)malloc(sizeof(int)*level);
+    double *returnArray = (double*)malloc(sizeof(double)*level);
     
-
     for(int i = 0 ; i < level ; ++i)
     {
-        columnSizes[i] = arrayHead -> length;
-        
-        returnArray[i] = arrayHead -> vaules;
-
+        returnArray[i] = arrayHead -> average;
         arrayHead = arrayHead -> next;
     }
 
     *returnSize = level;
-    *returnColumnSizes = columnSizes;
 
     return returnArray;
 }
-
 

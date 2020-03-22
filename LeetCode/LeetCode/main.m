@@ -50,7 +50,9 @@
 
 //#define InorderTraversal_94
 
-#define LevelOrder_102
+//#define LevelOrder_102
+
+//#define LevelOrderBottom_107
 
 //#define IsPalindrome_125
 
@@ -61,6 +63,7 @@
 //#define DetectCycle_142
 
 //#define PreorderTraversal_144
+//#define PostorderTraversal_145
 
 //#define InsertionSortList_147
 
@@ -152,6 +155,8 @@
 //#define MaximumProduct_628
 
 //#define JudgeSquareSum_633
+
+#define AverageOfLevels_637
 
 //#define FindErrorNums_645
 
@@ -728,7 +733,7 @@ void InorderTraversal()
 #endif
 
 
-#pragma mark - 102_二叉树的层次遍历_HasCycle
+#pragma mark - 102_二叉树的层次遍历_LevelOrder
 
 #ifdef LevelOrder_102
 #import "102_LevelOrder/LevelOrder_102.h"
@@ -761,6 +766,47 @@ void LevelOrder()
    {
      printf("%d\n",result[i][j]);
     }
+}
+
+    
+}
+#endif
+
+
+#pragma mark - 107_二叉树的层次遍历_II_LevelOrderBottom
+
+#ifdef LevelOrderBottom_107
+#import "107_LevelOrderBottom/LevelOrderBottom_107.h"
+
+void LevelOrderBottom()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    t1.val = 3;
+    t2.val = 9;
+    t3.val = 20;
+    t4.val = 15;
+    t5.val = 7;
+    
+    struct TreeNode t6;
+    
+    int returnSize = 0;
+    int *columnSizes = NULL;
+    int ** result =  levelOrderBottom(&t1, &returnSize, &columnSizes);
+    
+
+    for(int  i=0;i<returnSize;i++)
+    {
+        //printf("%d ,\n" , columnSizes[i]);
+      for(int j=0;j<columnSizes[i];j++)
+       {
+           printf("%d ",result[i][j]);
+        }
+        printf("\n");
 }
 
     
@@ -894,6 +940,34 @@ void PreorderTraversal()
     int returnSize = 0;
     int * result = preorderTraversal(&t1, &returnSize);
     printf("s二叉树的前序遍历:  \n");
+    for (int i = 0 ; i < returnSize; ++i)
+    {
+        printf("%d ," ,  result[i]);
+    }
+    printf("\n");
+    
+}
+#endif
+
+
+#pragma mark - 145_二叉树的后序遍历_PostorderTraversal
+
+#ifdef PostorderTraversal_145
+#include "145_PostorderTraversal/PostorderTraversal_145.h"
+
+void PostorderTraversal()
+{
+    struct TreeNode t1 , t2 , t3;
+    t1.left = t2.right = t3.left = t3.right = NULL;
+    t1.right = &t2;
+    t2.left = &t3;
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 3;
+    
+    int returnSize = 0;
+    int * result = postorderTraversal(&t1, &returnSize);
+    printf("s二叉树的后序遍历:  \n");
     for (int i = 0 ; i < returnSize; ++i)
     {
         printf("%d ," ,  result[i]);
@@ -1635,6 +1709,38 @@ void JudgeSquareSum()
 #endif
 
 
+#pragma mark - 637_二叉树的层平均值_AverageOfLevels
+
+#ifdef AverageOfLevels_637
+#import "637_AverageOfLevels/AverageOfLevels_637.h"
+
+void AverageOfLevels()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+        t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+        t1.left = &t2;
+        t1.right = &t3;
+        t3.left = &t4;
+        t3.right = &t5;
+        t1.val = 3;
+        t2.val = 9;
+        t3.val = 20;
+        t4.val = 15;
+        t5.val = 7;
+        
+        
+        int returnSize = 0;
+        double * result =  averageOfLevels(&t1, &returnSize);
+        
+
+        for(int  i=0;i<returnSize;i++)
+        {
+            printf("%f , " , result[i]);
+        }
+}
+#endif
+
+
 #pragma mark - 645_错误的集合_FindErrorNums
 
 #ifdef FindErrorNums_645
@@ -2191,6 +2297,10 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef LevelOrderBottom_107
+        LevelOrderBottom();
+#endif
+        
 #ifdef IsPalindrome_125
         IsPalindrome();
 #endif
@@ -2220,6 +2330,11 @@ int main(int argc, const char * argv[]) {
         PreorderTraversal();
 #endif
       
+        
+#ifdef PostorderTraversal_145
+        PostorderTraversal();
+#endif
+        
         
 #ifdef InsertionSortList_147
         InsertionSortList();
@@ -2453,6 +2568,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef JudgeSquareSum_633
         JudgeSquareSum();
+#endif
+        
+        
+#ifdef AverageOfLevels_637
+        AverageOfLevels();
 #endif
         
         

@@ -34,26 +34,7 @@
 //]
 
 
-struct QueueNode {
-      struct TreeNode *treeNode;
-      struct QueueNode *next;
- };
 
-  struct HS_Queue {
-      struct QueueNode *head;
-      struct QueueNode *rear;
-      int length;
- };
-
- 
-
-
-
- struct HS_Array_Node {
-      struct HS_Array_Node* next;
-      int* vaules;
-      int length;
- };
 
 
 int** levelOrder(struct TreeNode* root, int* returnSize, int** returnColumnSizes);

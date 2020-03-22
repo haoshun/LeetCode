@@ -108,6 +108,9 @@
 		245BEC56217316F0005984BE /* StrStr_28.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC55217316F0005984BE /* StrStr_28.c */; };
 		245BEC5A217860C2005984BE /* PlusOne_66.c in Sources */ = {isa = PBXBuildFile; fileRef = 245BEC59217860C1005984BE /* PlusOne_66.c */; };
 		246303E6241E4AFE005045CA /* PreorderTraversal_144.c in Sources */ = {isa = PBXBuildFile; fileRef = 246303E5241E4AFE005045CA /* PreorderTraversal_144.c */; };
+		246303EE24279496005045CA /* PostorderTraversal_145.c in Sources */ = {isa = PBXBuildFile; fileRef = 246303ED24279496005045CA /* PostorderTraversal_145.c */; };
+		246303F9242797B6005045CA /* LevelOrderBottom_107.c in Sources */ = {isa = PBXBuildFile; fileRef = 246303F8242797B6005045CA /* LevelOrderBottom_107.c */; };
+		246303FD24279A94005045CA /* AverageOfLevels_637.c in Sources */ = {isa = PBXBuildFile; fileRef = 246303FC24279A94005045CA /* AverageOfLevels_637.c */; };
 		24B7F4C521410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c in Sources */ = {isa = PBXBuildFile; fileRef = 24B7F4C421410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c */; };
 		24E4576B209CAC3C0048DEF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E4576A209CAC3C0048DEF7 /* main.m */; };
 		24E45773209EB4E00048DEF7 /* TwoSum_1.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E45772209EB4E00048DEF7 /* TwoSum_1.c */; };
@@ -330,6 +333,18 @@
 		245BEC59217860C1005984BE /* PlusOne_66.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PlusOne_66.c; sourceTree = "<group>"; };
 		246303E4241E4AFE005045CA /* PreorderTraversal_144.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreorderTraversal_144.h; sourceTree = "<group>"; };
 		246303E5241E4AFE005045CA /* PreorderTraversal_144.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PreorderTraversal_144.c; sourceTree = "<group>"; };
+		246303E824279202005045CA /* Solution_589.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution_589.cpp; sourceTree = "<group>"; };
+		246303E924279202005045CA /* Solution_589.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution_589.hpp; sourceTree = "<group>"; };
+		246303EC24279496005045CA /* PostorderTraversal_145.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostorderTraversal_145.h; sourceTree = "<group>"; };
+		246303ED24279496005045CA /* PostorderTraversal_145.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PostorderTraversal_145.c; sourceTree = "<group>"; };
+		246303F32427965E005045CA /* Solution_590.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solution_590.cpp; sourceTree = "<group>"; };
+		246303F42427965E005045CA /* Solution_590.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solution_590.hpp; sourceTree = "<group>"; };
+		246303F7242797B6005045CA /* LevelOrderBottom_107.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelOrderBottom_107.h; sourceTree = "<group>"; };
+		246303F8242797B6005045CA /* LevelOrderBottom_107.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LevelOrderBottom_107.c; sourceTree = "<group>"; };
+		246303FB24279A94005045CA /* AverageOfLevels_637.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AverageOfLevels_637.h; sourceTree = "<group>"; };
+		246303FC24279A94005045CA /* AverageOfLevels_637.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AverageOfLevels_637.c; sourceTree = "<group>"; };
+		246303FF2427A5B5005045CA /* WidthOfBinaryTree_662.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WidthOfBinaryTree_662.h; sourceTree = "<group>"; };
+		246304002427A5B5005045CA /* WidthOfBinaryTree_662.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = WidthOfBinaryTree_662.c; sourceTree = "<group>"; };
 		24B7F4C321410A7C0051F309 /* ReverseWordsAndReduceSpace_186.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseWordsAndReduceSpace_186.h; sourceTree = "<group>"; };
 		24B7F4C421410A7C0051F309 /* ReverseWordsAndReduceSpace_186.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseWordsAndReduceSpace_186.c; sourceTree = "<group>"; };
 		24E45767209CAC3C0048DEF7 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1265,6 +1280,60 @@
 			path = 144_PreorderTraversal;
 			sourceTree = "<group>";
 		};
+		246303E7242791CB005045CA /* 589_Solution */ = {
+			isa = PBXGroup;
+			children = (
+				246303E824279202005045CA /* Solution_589.cpp */,
+				246303E924279202005045CA /* Solution_589.hpp */,
+			);
+			path = 589_Solution;
+			sourceTree = "<group>";
+		};
+		246303EB2427946B005045CA /* 145_PostorderTraversal */ = {
+			isa = PBXGroup;
+			children = (
+				246303EC24279496005045CA /* PostorderTraversal_145.h */,
+				246303ED24279496005045CA /* PostorderTraversal_145.c */,
+			);
+			path = 145_PostorderTraversal;
+			sourceTree = "<group>";
+		};
+		246303EF2427961B005045CA /* 590_Solution */ = {
+			isa = PBXGroup;
+			children = (
+				246303F32427965E005045CA /* Solution_590.cpp */,
+				246303F42427965E005045CA /* Solution_590.hpp */,
+			);
+			path = 590_Solution;
+			sourceTree = "<group>";
+		};
+		246303F624279797005045CA /* 107_LevelOrderBottom */ = {
+			isa = PBXGroup;
+			children = (
+				246303F7242797B6005045CA /* LevelOrderBottom_107.h */,
+				246303F8242797B6005045CA /* LevelOrderBottom_107.c */,
+			);
+			path = 107_LevelOrderBottom;
+			sourceTree = "<group>";
+		};
+		246303FA24279A6D005045CA /* 637_AverageOfLevels */ = {
+			isa = PBXGroup;
+			children = (
+				246303FB24279A94005045CA /* AverageOfLevels_637.h */,
+				246303FC24279A94005045CA /* AverageOfLevels_637.c */,
+			);
+			path = 637_AverageOfLevels;
+			sourceTree = "<group>";
+		};
+		246303FE2427A574005045CA /* 662_WidthOfBinaryTree */ = {
+			isa = PBXGroup;
+			children = (
+				246303FF2427A5B5005045CA /* WidthOfBinaryTree_662.h */,
+				246304002427A5B5005045CA /* WidthOfBinaryTree_662.c */,
+			);
+			path = 662_WidthOfBinaryTree;
+			sourceTree = "<group>";
+		};
 		24B7F4C221410A200051F309 /* 186_ReverseWordsAndReduceSpace */ = {
 			isa = PBXGroup;
 			children = (
@@ -1293,8 +1362,9 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				10892A1B242633D900B49C3C /* 102_LevelOrder */,
-				108929D02422423500B49C3C /* 1008_BstFromPreorder */,
+				246303FE2427A574005045CA /* 662_WidthOfBinaryTree */,
+				246303FA24279A6D005045CA /* 637_AverageOfLevels */,
+				246303F624279797005045CA /* 107_LevelOrderBottom */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1319,12 +1389,14 @@
 				102650FE224A4A6300D223A6 /* 83_DeleteDuplicates */,
 				10265102224A4BA800D223A6 /* 88_Merge */,
 				108929C22418F6B200B49C3C /* 94_InorderTraversal */,
+				10892A1B242633D900B49C3C /* 102_LevelOrder */,
 				102650C322446DDE00D223A6 /* 125_IsPalindrome */,
 				10265106224A4E6100D223A6 /* 136_SingleNumber */,
 				1026510A224AEF5400D223A6 /* 137_SingleNumber */,
 				1026510E224AF0B000D223A6 /* 141_HasCycle */,
 				10265112224B124900D223A6 /* 142_DetectCycle */,
 				246303E3241E4AB1005045CA /* 144_PreorderTraversal */,
+				246303EB2427946B005045CA /* 145_PostorderTraversal */,
 				10265116224B14A300D223A6 /* 147_InsertionSortList */,
 				102650DA2248BB5F00D223A6 /* 168_ConvertToTitle */,
 				102650D6224888EE00D223A6 /* 171_TitleToNumber */,
@@ -1371,6 +1443,8 @@
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
+				246303E7242791CB005045CA /* 589_Solution */,
+				246303EF2427961B005045CA /* 590_Solution */,
 				107106092272EF140074B0C0 /* 598_MaxCount */,
 				10AC5DCB2286CB6800ED8321 /* 628_MaximumProduct */,
 				1026516C224CB57900D223A6 /* 633_JudgeSquareSum */,
@@ -1394,6 +1468,7 @@
 				1026517C224CDFEF00D223A6 /* 977_SortedSquares */,
 				10265180224DAC3D00D223A6 /* 985_SumEvenAfterQueries */,
 				1078035A2240A039009684B6 /* 989_AddToArrayForm */,
+				108929D02422423500B49C3C /* 1008_BstFromPreorder */,
 				1040D52223FD272A00424827 /* General */,
 				108929CB241F74FF00B49C3C /* Interview */,
 				24E4576A209CAC3C0048DEF7 /* main.m */,
@@ -1508,7 +1583,9 @@
 				1026516B224CB41200D223A6 /* CountSegments_434.c in Sources */,
 				10265129224B1D4C00D223A6 /* ContainsDuplicate_217.c in Sources */,
 				1026511D224B161500D223A6 /* TrailingZeroes_172.c in Sources */,
+				246303FD24279A94005045CA /* AverageOfLevels_637.c in Sources */,
 				10265136224B2B0C00D223A6 /* MyStackCreate_225.c in Sources */,
+				246303EE24279496005045CA /* PostorderTraversal_145.c in Sources */,
 				102650FD224A327C00D223A6 /* DeleteDuplicates_82.c in Sources */,
 				245BEC56217316F0005984BE /* StrStr_28.c in Sources */,
 				102650A62243A4A000D223A6 /* ReverseString_344.c in Sources */,
@@ -1549,6 +1626,7 @@
 				102650CE224476C500D223A6 /* SwapPairs_24.c in Sources */,
 				1078035D2240A069009684B6 /* AddToArrayForm_989.c in Sources */,
 				10265146224C710D00D223A6 /* MoveZeroes_283.c in Sources */,
+				246303F9242797B6005045CA /* LevelOrderBottom_107.c in Sources */,
 				24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */,
 				102650B62243B2E900D223A6 /* Tools.c in Sources */,
 				102650D92248892300D223A6 /* TitleToNumber_171.c in Sources */,
