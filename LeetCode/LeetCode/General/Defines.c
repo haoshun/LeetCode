@@ -87,6 +87,24 @@ int isQueueEmpty(struct HS_Queue * pQueue)
      return NULL;
  }
 
+//销毁队列
+void destroyQueue(struct HS_Queue * pQueue)
+{
+    if(pQueue)
+    {
+        if(pQueue -> length)
+        {
+            int queueLen = pQueue -> length;
+            struct QueueNode* qNode = NULL;
+            for(int i = 0 ; i < queueLen ; ++i)
+            {
+                qNode = deQueue(pQueue);
+                free(qNode);
+            }
+        }
+        free(pQueue);
+    }
+}
 
 
 

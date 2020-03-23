@@ -10,6 +10,8 @@
 #define Defines_h
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
 struct ListNode {
     int val;
@@ -57,6 +59,8 @@ void enQueue(struct HS_Queue* pQueue , struct QueueNode* node);
 
 //出队
 struct QueueNode* deQueue(struct HS_Queue* pQueue);
+
+void destroyQueue(struct HS_Queue * pQueue);
 
 //struct HS_Array_Node* createArrayNode(int length);
 

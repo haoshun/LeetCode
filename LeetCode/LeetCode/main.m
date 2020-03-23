@@ -52,7 +52,11 @@
 
 //#define LevelOrder_102
 
+//#define MaxDepth_104
+
 //#define LevelOrderBottom_107
+
+//#define MinDepth_111
 
 //#define IsPalindrome_125
 
@@ -156,7 +160,7 @@
 
 //#define JudgeSquareSum_633
 
-#define AverageOfLevels_637
+//#define AverageOfLevels_637
 
 //#define FindErrorNums_645
 
@@ -196,6 +200,8 @@
 //#define SumEvenAfterQueries_985
 
 //#define AddToArrayForm_989
+
+#define IsCousins_993
 
 //#define BstFromPreorder_1008
 
@@ -762,12 +768,40 @@ void LevelOrder()
     for(int  i=0;i<returnSize;i++)
     {
         printf("%d ,\n" , columnSizes[i]);
-  for(int j=0;j<columnSizes[i];j++)
-   {
-     printf("%d\n",result[i][j]);
+        for(int j=0;j<columnSizes[i];j++)
+        {
+            printf("%d\n",result[i][j]);
+        }
     }
 }
+#endif
 
+
+#pragma mark - 104_二叉树的最大深度_MaxDepth
+
+#ifdef MaxDepth_104
+#import "104_MaxDepth/MaxDepth_104.h"
+
+void MaxDepth()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 3;
+    t4.val = 4;
+    t5.val = 7;
+    
+    //struct TreeNode t6;
+    
+    int returnDepth = maxDepth(&t1);
+    
+    printf("二叉树的最大深度 : %d\n",returnDepth);
     
 }
 #endif
@@ -809,6 +843,35 @@ void LevelOrderBottom()
         printf("\n");
 }
 
+    
+}
+#endif
+
+
+#pragma mark - 111_二叉树的最小深度_MinDepth
+
+#ifdef MinDepth_111
+#import "111_MinDepth/MinDepth_111.h"
+
+void MinDepth()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    t1.val = 3;
+    t2.val = 9;
+    t3.val = 20;
+    t4.val = 15;
+    t5.val = 7;
+    
+    //struct TreeNode t6;
+    
+    int returnDepth = minDepth(&t1);
+    
+    printf("二叉树的最小深度 : %d\n",returnDepth);
     
 }
 #endif
@@ -2110,6 +2173,31 @@ void AddToArrayForm()
 #endif
 
 
+#pragma mark - 993_二叉树的堂兄弟节点_IsCousins
+
+#ifdef IsCousins_993
+#import "993_IsCousins/IsCousins_993.h"
+
+void IsCousins()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t3.left = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t2.right = &t4;
+    t3.right = &t5;
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 3;
+    t4.val = 4;
+    t5.val = 5;
+   
+    printf("是否含有堂兄弟节点? : %s\n", isCousins(&t1, 5, 4) ? "是" :"否");
+    
+}
+#endif
+
+
 
 #pragma mark - 1008_先序遍历构造二叉树_BstFromPreorder
 
@@ -2297,9 +2385,20 @@ int main(int argc, const char * argv[]) {
 #endif
         
         
+#ifdef MaxDepth_104
+        MaxDepth();
+#endif
+        
+        
 #ifdef LevelOrderBottom_107
         LevelOrderBottom();
 #endif
+        
+        
+#ifdef MinDepth_111
+        MinDepth();
+#endif
+        
         
 #ifdef IsPalindrome_125
         IsPalindrome();
@@ -2675,6 +2774,10 @@ int main(int argc, const char * argv[]) {
         AddToArrayForm();
 #endif
         
+        
+#ifdef IsCousins_993
+        IsCousins();
+#endif
         
 
 #ifdef BstFromPreorder_1008
