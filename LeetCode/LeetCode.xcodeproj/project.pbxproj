@@ -288,6 +288,10 @@
 		10892A292428D4D800B49C3C /* MinDepth_111.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinDepth_111.c; sourceTree = "<group>"; };
 		10892A2C2428D58900B49C3C /* IsCousins_993.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsCousins_993.h; sourceTree = "<group>"; };
 		10892A2D2428D58900B49C3C /* IsCousins_993.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsCousins_993.c; sourceTree = "<group>"; };
+		10892A302429F10A00B49C3C /* N-ary_Tree_Level_Order_Traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "N-ary_Tree_Level_Order_Traversal.cpp"; sourceTree = "<group>"; };
+		10892A312429F10A00B49C3C /* N-ary_Tree_Level_Order_Traversal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "N-ary_Tree_Level_Order_Traversal.hpp"; sourceTree = "<group>"; };
+		10892A342429F20F00B49C3C /* Maximum_Depth_of_N-ary_Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Maximum_Depth_of_N-ary_Tree.cpp"; sourceTree = "<group>"; };
+		10892A352429F20F00B49C3C /* Maximum_Depth_of_N-ary_Tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Maximum_Depth_of_N-ary_Tree.hpp"; sourceTree = "<group>"; };
 		10AC5DA822784E6C00ED8321 /* FindNthDigit_400.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNthDigit_400.h; sourceTree = "<group>"; };
 		10AC5DA922784E6C00ED8321 /* FindNthDigit_400.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindNthDigit_400.c; sourceTree = "<group>"; };
 		10AC5DAC227E9C2D00ED8321 /* NthUglyNumber_264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NthUglyNumber_264.h; sourceTree = "<group>"; };
@@ -1073,6 +1077,24 @@
 			path = 993_IsCousins;
 			sourceTree = "<group>";
 		};
+		10892A2F2429F05700B49C3C /* 429_N-ary Tree Level Order Traversal */ = {
+			isa = PBXGroup;
+			children = (
+				10892A302429F10A00B49C3C /* N-ary_Tree_Level_Order_Traversal.cpp */,
+				10892A312429F10A00B49C3C /* N-ary_Tree_Level_Order_Traversal.hpp */,
+			);
+			path = "429_N-ary Tree Level Order Traversal";
+			sourceTree = "<group>";
+		};
+		10892A332429F1D700B49C3C /* 559_Maximum_Depth_of_N-ary_Tree */ = {
+			isa = PBXGroup;
+			children = (
+				10892A342429F20F00B49C3C /* Maximum_Depth_of_N-ary_Tree.cpp */,
+				10892A352429F20F00B49C3C /* Maximum_Depth_of_N-ary_Tree.hpp */,
+			);
+			path = "559_Maximum_Depth_of_N-ary_Tree";
+			sourceTree = "<group>";
+		};
 		10AC5DA722784E4600ED8321 /* 400_FindNthDigit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1468,6 +1490,7 @@
 				10265164224CB1A400D223A6 /* 389_FindTheDifference */,
 				10AC5DA722784E4600ED8321 /* 400_FindNthDigit */,
 				1078035E2240EE85009684B6 /* 415_AddStrings */,
+				10892A2F2429F05700B49C3C /* 429_N-ary Tree Level Order Traversal */,
 				10265168224CB3CD00D223A6 /* 434_CountSegments */,
 				100EE67922561A9200D817B9 /* 441_ArrangeCoins */,
 				245BEC3B215B6023005984BE /* 443_CompressChars */,
@@ -1479,6 +1502,7 @@
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
+				10892A332429F1D700B49C3C /* 559_Maximum_Depth_of_N-ary_Tree */,
 				246303E7242791CB005045CA /* 589_Solution */,
 				246303EF2427961B005045CA /* 590_Solution */,
 				107106092272EF140074B0C0 /* 598_MaxCount */,
