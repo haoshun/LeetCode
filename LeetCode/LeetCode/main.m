@@ -56,6 +56,8 @@
 
 //#define LevelOrderBottom_107
 
+#define IsBalanced_110
+
 //#define MinDepth_111
 
 //#define IsPalindrome_125
@@ -201,7 +203,7 @@
 
 //#define AddToArrayForm_989
 
-#define IsCousins_993
+//#define IsCousins_993
 
 //#define BstFromPreorder_1008
 
@@ -843,6 +845,35 @@ void LevelOrderBottom()
         printf("\n");
 }
 
+    
+}
+#endif
+
+
+#pragma mark - 110_平衡二叉树_IsBalanced
+
+#ifdef IsBalanced_110
+#import "110_IsBalanced/IsBalanced_110.h"
+
+void IsBalanced()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    t1.val = 3;
+    t2.val = 9;
+    t3.val = 20;
+    t4.val = 15;
+    t5.val = 7;
+    
+    //struct TreeNode t6;
+    
+    bool isAVL = isBalanced(&t1);
+    
+    printf("是否是平衡二叉树? %s\n", isAVL? "是" : "否");
     
 }
 #endif
@@ -2392,6 +2423,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef LevelOrderBottom_107
         LevelOrderBottom();
+#endif
+        
+
+#ifdef IsBalanced_110
+        IsBalanced();
 #endif
         
         
