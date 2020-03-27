@@ -25,3 +25,12 @@ int max (int a , int b)
     return a > b ? a : b ;
 }
 
+void printArray(int * nums , int arraySize)
+{
+    for (int i = 0 ; i < arraySize ; ++i)
+    {
+        printf("%d ," ,nums[i]);
+    }
+    printf("\n");
+}
+

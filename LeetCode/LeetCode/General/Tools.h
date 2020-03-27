@@ -19,4 +19,6 @@ void RotateString (char * s , int from , int to);
 //获取较大值
 int max (int a , int b);
 
+void printArray(int * nums , arraySize);
+
 #endif /* Tools_h */

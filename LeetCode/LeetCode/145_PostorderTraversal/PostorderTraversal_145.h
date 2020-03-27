@@ -26,6 +26,10 @@
 //输出: [3,2,1]
 //进阶: 递归算法很简单，你可以通过迭代算法完成吗？
 
+void realPostOrderTraversal(struct TreeNode* root, int* count);
+
+void outPutPostOrderTraversal(struct TreeNode* root, int* returnArray , int* index);
+
 int* postorderTraversal(struct TreeNode* root, int* returnSize);
 
 #endif /* PostorderTraversal_145_h */

@@ -56,7 +56,7 @@
 
 //#define LevelOrderBottom_107
 
-#define IsBalanced_110
+//#define IsBalanced_110
 
 //#define MinDepth_111
 
@@ -155,6 +155,8 @@
 //#define ReverseStr_II_541
 //
 //#define ReverseWords_557
+
+#define IsSubtree_572
 
 //#define MaxCount_598
 
@@ -1759,6 +1761,94 @@ void ReverseWords()
 #endif
 
 
+#pragma mark - 572_另一个树的子树_IsSubtree
+
+#ifdef IsSubtree_572
+#import "572_IsSubtree/IsSubtree_572.h"
+
+void IsSubtree()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+        t3.left = t3.right = t4.left = t4.right = t5.left = t5.right = NULL;
+        t1.left = &t2;
+        t1.right = &t3;
+        t2.left = &t4;
+        t2.right = &t5;
+        t1.val = 3;
+        t2.val = 4;
+        t3.val = 5;
+        t4.val = 1;
+        t5.val = 2;
+
+    struct TreeNode t6 , t7 , t8;
+        t7.left = t7.right = t8.left = t8.right = NULL;
+        t6.left = &t7;
+        t6.right = &t8;
+
+        t6.val = 4;
+        t7.val = 1;
+        t8.val = 2;
+
+    bool result = isSubtree(&t1, &t6);
+        
+//    struct TreeNode t1 , t2 , t3 ;
+//    t1.right = t2.left = t2.right = t3.left = t3.right = NULL;
+//        t1.left = &t2;
+//
+//        t1.val = 1;
+//        t2.val = 1;
+//        t3.val = 1;
+//
+//        bool result = isSubtree(&t1, &t3);
+    
+    
+//    struct TreeNode t1 , t2 , t3 , t4 , t5, t6, t7;
+//    t1.left = t2.left = t3.left = t4.left = t5.left = t6.right = t7.left = t7.right = NULL;
+//
+//    t1.right = &t2;
+//    t2.right = &t3;
+//    t3.right = &t4;
+//    t4.right = &t5;
+//    t5.right = &t6;
+//
+//    t6.left = &t7;
+//
+//
+//    t1.val = 1;
+//    t2.val = 1;
+//    t3.val = 1;
+//    t4.val = 1;
+//    t5.val = 1;
+//
+//    t6.val = 1;
+//    t7.val = 2;
+//
+//    struct TreeNode t11 , t12 , t13 , t14 , t15;
+//    t11.left = t12.left = t13.left = t14.left = t15.left = NULL;
+//
+//    t11.right = &t12;
+//    t12.right = &t13;
+//    t13.right = &t14;
+//    t14.right = &t15;
+//    t15.right = &t1;
+//
+//
+//    t11.val = 1;
+//    t12.val = 1;
+//    t13.val = 1;
+//    t14.val = 1;
+//    t15.val = 1;
+//
+//
+//    bool result = isSubtree(&t11, &t1);
+    
+    
+        
+        printf("t是否是s的子树 %s\n" , result? "是" : "否");
+}
+#endif
+
+
 #pragma mark - 598_范围求和 II_MaxCount
 
 #ifdef MaxCount_598
@@ -2688,6 +2778,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef ReverseWords_557
         ReverseWords();
+#endif
+
+        
+#ifdef IsSubtree_572
+        IsSubtree();
 #endif
         
         
