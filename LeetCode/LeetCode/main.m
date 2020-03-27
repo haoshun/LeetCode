@@ -50,6 +50,7 @@
 
 //#define InorderTraversal_94
 
+#define IsSymmetric_101
 //#define LevelOrder_102
 
 //#define MaxDepth_104
@@ -156,7 +157,7 @@
 //
 //#define ReverseWords_557
 
-#define IsSubtree_572
+//#define IsSubtree_572
 
 //#define MaxCount_598
 
@@ -738,6 +739,37 @@ void InorderTraversal()
         printf("%d ," ,  result[i]);
     }
     printf("\n");
+    
+}
+#endif
+
+
+#pragma mark - 101_对称二叉树_IsSymmetric
+
+#ifdef IsSymmetric_101
+#import "101_IsSymmetric/IsSymmetric_101.h"
+
+void IsSymmetric()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5 ,t6 , t7;
+    t6.left = t6.right = t4.left = t4.right = t5.left = t5.right =t7.left = t7.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t2.left = &t4;
+    t2.right = &t5;
+    t3.left = &t6;
+    t3.right = &t7;
+    
+    t1.val = 1;
+    t2.val = 2;
+    t3.val = 2;
+    t4.val = 3;
+    t5.val = 4;
+    t6.val = 4;
+    t7.val = 3;
+    
+    
+    printf("是否是对称二叉树? %s\n" , isSymmetric(&t1) ? "是" : "否");
     
 }
 #endif
@@ -2503,6 +2535,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef LevelOrder_102
         LevelOrder();
+#endif
+        
+        
+#ifdef IsSymmetric_101
+        IsSymmetric();
 #endif
         
         
