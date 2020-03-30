@@ -50,7 +50,9 @@
 
 //#define InorderTraversal_94
 
-#define IsSymmetric_101
+#define NumTrees_96
+
+//#define IsSymmetric_101
 //#define LevelOrder_102
 
 //#define MaxDepth_104
@@ -740,6 +742,19 @@ void InorderTraversal()
     }
     printf("\n");
     
+}
+#endif
+
+
+#pragma mark - 96_不同的二叉搜索树_NumTrees
+
+#ifdef NumTrees_96
+#import "96_NumTrees/NumTrees_96.h"
+
+void NumTrees()
+{
+    int n = 7;
+    printf("%d 个结点会有 %d 种不同的二叉搜索树? \n" ,n , numTrees(n));
 }
 #endif
 
@@ -2530,6 +2545,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef InorderTraversal_94
         InorderTraversal();
+#endif
+        
+        
+#ifdef NumTrees_96
+        NumTrees();
 #endif
         
         
