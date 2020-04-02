@@ -101,6 +101,9 @@
 		10D836FD2433777400AF2ACB /* IsSameTree_100.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D836FC2433777400AF2ACB /* IsSameTree_100.c */; };
 		10D83701243377FF00AF2ACB /* MergeTrees_617.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D83700243377FF00AF2ACB /* MergeTrees_617.c */; };
 		10D83705243378A600AF2ACB /* SortedArrayToBST_108.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D83704243378A600AF2ACB /* SortedArrayToBST_108.c */; };
+		10D837092435E67600AF2ACB /* IncreasingBST_897.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D837082435E67600AF2ACB /* IncreasingBST_897.c */; };
+		10D8370D2435E6FB00AF2ACB /* FindBottomLeftValue_513.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D8370C2435E6FB00AF2ACB /* FindBottomLeftValue_513.c */; };
+		10D837112435E79600AF2ACB /* BstToGst_538_1038.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D837102435E79600AF2ACB /* BstToGst_538_1038.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
@@ -333,6 +336,12 @@
 		10D83700243377FF00AF2ACB /* MergeTrees_617.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MergeTrees_617.c; sourceTree = "<group>"; };
 		10D83703243378A600AF2ACB /* SortedArrayToBST_108.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortedArrayToBST_108.h; sourceTree = "<group>"; };
 		10D83704243378A600AF2ACB /* SortedArrayToBST_108.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortedArrayToBST_108.c; sourceTree = "<group>"; };
+		10D837072435E67600AF2ACB /* IncreasingBST_897.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IncreasingBST_897.h; sourceTree = "<group>"; };
+		10D837082435E67600AF2ACB /* IncreasingBST_897.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IncreasingBST_897.c; sourceTree = "<group>"; };
+		10D8370B2435E6FB00AF2ACB /* FindBottomLeftValue_513.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindBottomLeftValue_513.h; sourceTree = "<group>"; };
+		10D8370C2435E6FB00AF2ACB /* FindBottomLeftValue_513.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindBottomLeftValue_513.c; sourceTree = "<group>"; };
+		10D8370F2435E79600AF2ACB /* BstToGst_538_1038.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BstToGst_538_1038.h; sourceTree = "<group>"; };
+		10D837102435E79600AF2ACB /* BstToGst_538_1038.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BstToGst_538_1038.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -1269,6 +1278,33 @@
 			path = 108_SortedArrayToBST;
 			sourceTree = "<group>";
 		};
+		10D837062435E64400AF2ACB /* 897_IncreasingBST */ = {
+			isa = PBXGroup;
+			children = (
+				10D837072435E67600AF2ACB /* IncreasingBST_897.h */,
+				10D837082435E67600AF2ACB /* IncreasingBST_897.c */,
+			);
+			path = 897_IncreasingBST;
+			sourceTree = "<group>";
+		};
+		10D8370A2435E6CE00AF2ACB /* 513_FindBottomLeftValue */ = {
+			isa = PBXGroup;
+			children = (
+				10D8370B2435E6FB00AF2ACB /* FindBottomLeftValue_513.h */,
+				10D8370C2435E6FB00AF2ACB /* FindBottomLeftValue_513.c */,
+			);
+			path = 513_FindBottomLeftValue;
+			sourceTree = "<group>";
+		};
+		10D8370E2435E74600AF2ACB /* 538_1038_BstToGst */ = {
+			isa = PBXGroup;
+			children = (
+				10D8370F2435E79600AF2ACB /* BstToGst_538_1038.h */,
+				10D837102435E79600AF2ACB /* BstToGst_538_1038.c */,
+			);
+			path = 538_1038_BstToGst;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1588,7 +1624,9 @@
 				107105FD2271ECF40074B0C0 /* 462_MinMoves2 */,
 				245BEC3F215C9110005984BE /* 482_LicenseKeyFormatting */,
 				107106012272A2830074B0C0 /* 507_CheckPerfectNumber */,
+				10D8370A2435E6CE00AF2ACB /* 513_FindBottomLeftValue */,
 				24388DED21BF9EE5002A4F8A /* 532_FindPairs */,
+				10D8370E2435E74600AF2ACB /* 538_1038_BstToGst */,
 				102650A72243AAFA00D223A6 /* 541_ReverseStr */,
 				102650AF2243AEBD00D223A6 /* 557_ReverseWords */,
 				10892A332429F1D700B49C3C /* 559_Maximum_Depth_of_N-ary_Tree */,
@@ -1614,6 +1652,7 @@
 				10AC5DC3228564A500ED8321 /* 868_BinaryGap */,
 				10265178224CD7AC00D223A6 /* 876_MiddleNode */,
 				10AC5DB72281272100ED8321 /* 883_ProjectionArea */,
+				10D837062435E64400AF2ACB /* 897_IncreasingBST */,
 				243FA67D227D1F6900AF6162 /* 908_SmallestRangeI */,
 				102650B72243B5BF00D223A6 /* 925_IsLongPressedName */,
 				10AC5DC72285835F00ED8321 /* 970_PowerfulIntegers */,
@@ -1728,6 +1767,7 @@
 				245BEC2E21575841005984BE /* ShortestToChar_821.c in Sources */,
 				1026509E2243737200D223A6 /* MergeTwoLists_21.c in Sources */,
 				10265119224B14BA00D223A6 /* InsertionSortList_147.c in Sources */,
+				10D8370D2435E6FB00AF2ACB /* FindBottomLeftValue_513.c in Sources */,
 				10892A262428D44A00B49C3C /* MaxDepth_104.c in Sources */,
 				245BEC522172F9BE005984BE /* LongestCommonPrefix.c in Sources */,
 				245BEC3E215B604E005984BE /* CompressChars_443.c in Sources */,
@@ -1775,11 +1815,13 @@
 				10265105224A4BC500D223A6 /* Merge_88.c in Sources */,
 				102650B22243AED800D223A6 /* ReverseWords_557.c in Sources */,
 				102650ED224A20CF00D223A6 /* RemoveElement_27.c in Sources */,
+				10D837092435E67600AF2ACB /* IncreasingBST_897.c in Sources */,
 				10265121224B17C900D223A6 /* Rotate_189.c in Sources */,
 				102650F5224A294200D223A6 /* AddBinary_67.c in Sources */,
 				102650C622446E0F00D223A6 /* IsPalindrome_125.c in Sources */,
 				10BCAEA7242CD24100111F2A /* IsSubtree_572.c in Sources */,
 				102650AA2243AB4800D223A6 /* ReverseStr_541.c in Sources */,
+				10D837112435E79600AF2ACB /* BstToGst_538_1038.c in Sources */,
 				245BEC46216B337B005984BE /* Reverse_7.c in Sources */,
 				10265183224DAC5700D223A6 /* SumEvenAfterQueries_985.c in Sources */,
 				245BEC5A217860C2005984BE /* PlusOne_66.c in Sources */,
