@@ -50,7 +50,7 @@
 
 //#define InorderTraversal_94
 
-#define NumTrees_96
+//#define NumTrees_96
 
 //#define IsSymmetric_101
 //#define LevelOrder_102
@@ -103,6 +103,7 @@
 
 //#define IsPowerOfTwo_231
 
+#define BinaryTreePaths_257
 //#define AddDigits_258
 
 //#define IsUgly_263
@@ -1398,6 +1399,32 @@ void IsPowerOfTwo()
 }
 #endif
 
+
+#pragma mark - 257_二叉树的所有路径_BinaryTreePaths
+
+#ifdef BinaryTreePaths_257
+#import "257_BinaryTreePaths/BinaryTreePaths_257.h"
+
+void BinaryTreePaths()
+{
+    struct TreeNode t1 , t2 , t3 , t4 , t5;
+    t2.left = t2.right = t4.left = t4.right = t5.left = t5.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t3.left = &t4;
+    t3.right = &t5;
+    t1.val = 3;
+    t2.val = 9;
+    t3.val = 20;
+    t4.val = 15;
+    t5.val = 7;
+    
+    int returnSize = 0;
+    binaryTreePaths(&t1, &returnSize);
+    
+    
+}
+#endif
 
 
 #pragma mark - 258_各位相加_AddDigits
@@ -2695,6 +2722,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef IsPowerOfTwo_231
         IsPowerOfTwo();
+#endif
+        
+ 
+#ifdef BinaryTreePaths_257
+        BinaryTreePaths();
 #endif
         
         
