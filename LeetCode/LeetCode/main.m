@@ -52,6 +52,8 @@
 
 //#define NumTrees_96
 
+#define IsValidBST_98
+
 //#define IsSymmetric_101
 //#define LevelOrder_102
 
@@ -103,7 +105,7 @@
 
 //#define IsPowerOfTwo_231
 
-#define BinaryTreePaths_257
+//#define BinaryTreePaths_257
 //#define AddDigits_258
 
 //#define IsUgly_263
@@ -756,6 +758,26 @@ void NumTrees()
 {
     int n = 7;
     printf("%d 个结点会有 %d 种不同的二叉搜索树? \n" ,n , numTrees(n));
+}
+#endif
+
+
+#pragma mark - 98_验证二叉搜索树_IsValidBST
+
+#ifdef IsValidBST_98
+#import "98_IsValidBST/IsValidBST_98.h"
+
+void IsValidBST()
+{
+    struct TreeNode t1 , t2 , t3;
+    t2.left = t2.right = t3.left = t3.right = NULL;
+    t1.left = &t2;
+    t1.right = &t3;
+    t1.val = 2;
+    t2.val = 1;
+    t3.val = 3;
+    
+    printf("是否是对称二叉树? %s\n" , isValidBST(&t1) ? "是" : "否");
 }
 #endif
 
@@ -2577,6 +2599,11 @@ int main(int argc, const char * argv[]) {
         
 #ifdef NumTrees_96
         NumTrees();
+#endif
+        
+        
+#ifdef IsValidBST_98
+        IsValidBST();
 #endif
         
         

@@ -105,6 +105,8 @@
 		10D8370D2435E6FB00AF2ACB /* FindBottomLeftValue_513.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D8370C2435E6FB00AF2ACB /* FindBottomLeftValue_513.c */; };
 		10D837112435E79600AF2ACB /* BstToGst_538_1038.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D837102435E79600AF2ACB /* BstToGst_538_1038.c */; };
 		10D837152437187D00AF2ACB /* PruneTree_814.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D837142437187D00AF2ACB /* PruneTree_814.c */; };
+		10D83742243DA3EF00AF2ACB /* IsValidBST_98.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D83741243DA3EF00AF2ACB /* IsValidBST_98.c */; };
+		10D83746243DAAB900AF2ACB /* LeafSimilar_872.c in Sources */ = {isa = PBXBuildFile; fileRef = 10D83745243DAAB900AF2ACB /* LeafSimilar_872.c */; };
 		24388DE821BE5CCE002A4F8A /* FindDisappearedNumbers_448.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */; };
 		24388DF021BF9F14002A4F8A /* FindPairs_532.c in Sources */ = {isa = PBXBuildFile; fileRef = 24388DEF21BF9F14002A4F8A /* FindPairs_532.c */; };
 		243FA67C227B1B7700AF6162 /* FindErrorNums_645.c in Sources */ = {isa = PBXBuildFile; fileRef = 243FA67B227B1B7700AF6162 /* FindErrorNums_645.c */; };
@@ -351,6 +353,10 @@
 		10D837102435E79600AF2ACB /* BstToGst_538_1038.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BstToGst_538_1038.c; sourceTree = "<group>"; };
 		10D837132437187D00AF2ACB /* PruneTree_814.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PruneTree_814.h; sourceTree = "<group>"; };
 		10D837142437187D00AF2ACB /* PruneTree_814.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PruneTree_814.c; sourceTree = "<group>"; };
+		10D83740243DA3EF00AF2ACB /* IsValidBST_98.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsValidBST_98.h; sourceTree = "<group>"; };
+		10D83741243DA3EF00AF2ACB /* IsValidBST_98.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsValidBST_98.c; sourceTree = "<group>"; };
+		10D83744243DAAB900AF2ACB /* LeafSimilar_872.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeafSimilar_872.h; sourceTree = "<group>"; };
+		10D83745243DAAB900AF2ACB /* LeafSimilar_872.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LeafSimilar_872.c; sourceTree = "<group>"; };
 		24388DE621BE5CCE002A4F8A /* FindDisappearedNumbers_448.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindDisappearedNumbers_448.h; sourceTree = "<group>"; };
 		24388DE721BE5CCE002A4F8A /* FindDisappearedNumbers_448.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindDisappearedNumbers_448.c; sourceTree = "<group>"; };
 		24388DEE21BF9F14002A4F8A /* FindPairs_532.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPairs_532.h; sourceTree = "<group>"; };
@@ -1335,6 +1341,24 @@
 			path = 814_PruneTree;
 			sourceTree = "<group>";
 		};
+		10D8373F243DA3CA00AF2ACB /* 98_IsValidBST */ = {
+			isa = PBXGroup;
+			children = (
+				10D83740243DA3EF00AF2ACB /* IsValidBST_98.h */,
+				10D83741243DA3EF00AF2ACB /* IsValidBST_98.c */,
+			);
+			path = 98_IsValidBST;
+			sourceTree = "<group>";
+		};
+		10D83743243DAA8F00AF2ACB /* 872_LeafSimilar */ = {
+			isa = PBXGroup;
+			children = (
+				10D83744243DAAB900AF2ACB /* LeafSimilar_872.h */,
+				10D83745243DAAB900AF2ACB /* LeafSimilar_872.c */,
+			);
+			path = 872_LeafSimilar;
+			sourceTree = "<group>";
+		};
 		24388DE521BE5C94002A4F8A /* 448_FindDisappearedNumbers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1624,6 +1648,8 @@
 		24E45769209CAC3C0048DEF7 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				10D83743243DAA8F00AF2ACB /* 872_LeafSimilar */,
+				10D8373F243DA3CA00AF2ACB /* 98_IsValidBST */,
 				24E45774209EB4E40048DEF7 /* 1_TwoSum */,
 				1026509A2243425D00D223A6 /* 2_AddTwoNumbers */,
 				245BEC43216B3350005984BE /* 7_Reverse */,
@@ -1884,6 +1910,7 @@
 				1026515F224CAE3A00D223A6 /* IsPerfectSquare_367.c in Sources */,
 				107105FC2271AB510074B0C0 /* MinMoves_453.c in Sources */,
 				108929C52418F6DD00B49C3C /* InorderTraversal_94.c in Sources */,
+				10D83746243DAAB900AF2ACB /* LeafSimilar_872.c in Sources */,
 				1071060C2272EF3A0074B0C0 /* MaxCount_598.c in Sources */,
 				246303E6241E4AFE005045CA /* PreorderTraversal_144.c in Sources */,
 				10D83705243378A600AF2ACB /* SortedArrayToBST_108.c in Sources */,
@@ -1939,6 +1966,7 @@
 				10265163224CB0DF00D223A6 /* GuessNumber_374.cpp in Sources */,
 				24E4577C20A01E840048DEF7 /* QuickSort.c in Sources */,
 				1026517B224CD80900D223A6 /* MiddleNode_876.c in Sources */,
+				10D83742243DA3EF00AF2ACB /* IsValidBST_98.c in Sources */,
 				1026517F224CE02900D223A6 /* SortedSquares_977.c in Sources */,
 				245BEC4A216C4276005984BE /* IsPalindrome_9.c in Sources */,
 				10AC5DAE227E9C2D00ED8321 /* NthUglyNumber_264.c in Sources */,
