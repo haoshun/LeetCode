@@ -34,3 +34,11 @@ void printArray(int * nums , int arraySize)
     printf("\n");
 }
 
+
+void swapTwoInt(int * a , int * b)
+{
+    (*a) ^= (*b);
+    (*b) ^= (*a);
+    (*a) ^= (*b);
+}
+

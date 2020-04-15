@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tools.h"
 
 
 
@@ -52,7 +53,7 @@
 
 //#define NumTrees_96
 
-#define IsValidBST_98
+//#define IsValidBST_98
 
 //#define IsSymmetric_101
 //#define LevelOrder_102
@@ -197,6 +198,8 @@
 //#define MiddleNode_876
 
 //#define ProjectionArea_883
+
+#define SortArrayByParity_905
 
 //#define SmallestRangeI_908
 
@@ -2249,6 +2252,22 @@ void ProjectionArea()
 #endif
 
 
+#pragma mark - 905_按奇偶排序数组_SortArrayByParity
+
+#ifdef SortArrayByParity_905
+#import "905_SortArrayByParity/SortArrayByParity_905.h"
+
+void SortArrayByParity()
+{
+    int num[4] ={3,1,2,4};
+    int returnSize = 0;
+    
+    printf("按奇偶排序数组 : \n");
+    printArray(sortArrayByParity(num, 4, &returnSize), returnSize);
+}
+#endif
+
+
 #pragma mark - 908_最小差值 I_SmallestRangeI_908
 
 #ifdef SmallestRangeI_908
@@ -2986,6 +3005,11 @@ int main(int argc, const char * argv[]) {
         ProjectionArea();
 #endif
 
+        
+#ifdef SortArrayByParity_905
+        SortArrayByParity();
+#endif
+        
         
 #ifdef SmallestRangeI_908
         SmallestRangeI();
