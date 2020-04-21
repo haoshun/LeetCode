@@ -199,7 +199,7 @@
 
 //#define ProjectionArea_883
 
-#define SortArrayByParity_905
+//#define SortArrayByParity_905
 
 //#define SmallestRangeI_908
 
@@ -217,6 +217,8 @@
 //#define IsCousins_993
 
 //#define BstFromPreorder_1008
+
+#define RelativeSortArray_1122
 
 //#define SortedArrayToBST_1413
 
@@ -2461,6 +2463,27 @@ void BstFromPreorder()
 
 
 
+#pragma mark - 1122_数组的相对排序_RelativeSortArray
+
+#ifdef RelativeSortArray_1122
+#import "1122_RelativeSortArray/RelativeSortArray_1122.h"
+
+void RelativeSortArray()
+{
+    int arr1Size = 11;
+    int arr2Size = 6;
+    int arr1[11] ={2,3,1,3,2,4,6,7,9,2,19};
+    int arr2[6] ={2,1,4,3,9,6};
+    int returnSize = 0;
+    
+    int * nums = relativeSortArray(arr1, arr1Size, arr2, arr2Size, &returnSize);
+    printArray(nums, returnSize);
+    
+}
+#endif
+
+
+
 #pragma mark - 1413_面试题 04.02. 最小高度树
 
 #ifdef SortedArrayToBST_1413
@@ -3055,6 +3078,10 @@ int main(int argc, const char * argv[]) {
         BstFromPreorder();
 #endif
         
+        
+#ifdef RelativeSortArray_1122
+        RelativeSortArray();
+#endif
         
         
 #ifdef SortedArrayToBST_1413
