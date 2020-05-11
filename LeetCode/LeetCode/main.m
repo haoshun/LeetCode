@@ -12,8 +12,7 @@
 
 
 
-
-//#define TwoSum_1
+#define TwoSum_1
 //#define AddTwoNumbers_2
 //
 //#define Reverse_7
@@ -218,7 +217,7 @@
 
 //#define BstFromPreorder_1008
 
-#define RelativeSortArray_1122
+//#define RelativeSortArray_1122
 
 //#define SortedArrayToBST_1413
 
@@ -255,11 +254,12 @@ void TwoSum()
     //        int nums[8] ={2,7,11,15,20,21,22,24};
     //        int * result = twoSum(nums, 8, 37);
     //        int * result1 = twoSumHash(nums, 8, 37);
-    //        int nums[4] ={2,7,11,15};
+            int nums[4] ={2,7,11,15};
     
-    int nums[4] ={0,3,4,0};
-    int * result = twoSum(nums, 4, 0);
-    int * result1 = twoSumHash(nums, 4, 0);
+    //int nums[4] ={0,3,4,0};
+    int returnSize = 0;
+    int * result = twoSum(nums, 4, 9,&returnSize);
+    int * result1 = twoSumHash(nums, 4, 9,&returnSize);
     printf("TwoSum result : %d , %d\n" , result[0] , result[1]);
     printf("TwoSumHash result1 :%d , %d\n" , result1[0] , result1[1]);
 }
@@ -3089,9 +3089,12 @@ int main(int argc, const char * argv[]) {
 #endif
         
 
-        
-
-        
+        for (int i = 2; i < 1000; ++i) {
+            if (8 * i * i > 64 * i * log2(i)) {
+                printf("%d \n" , i);
+                break;
+            }
+        }
         
 
     

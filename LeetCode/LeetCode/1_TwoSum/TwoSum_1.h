@@ -24,8 +24,8 @@
 //因为 nums[0] + nums[1] = 2 + 7 = 9
 //所以返回 [0, 1]
 
-int* twoSum(int* nums, int numsSize, int target);
+int* twoSum(int* nums, int numsSize, int target, int* returnSize);
 
-int* twoSumHash(int* nums, int numsSize, int target);
+int* twoSumHash(int* nums, int numsSize, int target, int* returnSize);
 
 #endif /* TwoSum_h */

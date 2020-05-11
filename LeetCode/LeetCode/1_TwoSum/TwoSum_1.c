@@ -11,7 +11,7 @@
 //我的解法
 //时间复杂度 O(n^n)
 
-int* twoSum(int* nums, int numsSize, int target)
+int* twoSum(int* nums, int numsSize, int target, int* returnSize)
 {
     int i =0,k=0;
     int  * resultP = (int*)malloc(2*sizeof(int));
@@ -35,7 +35,7 @@ int* twoSum(int* nums, int numsSize, int target)
 //如何对一个数组进行快速查找一个元素？算法中提供了一种方法——哈希（Hash），即对数组中的每个元素按照某种方法（hash function）计算其“唯一”值id（称为哈希值），存储在新的数组A中（一般称为哈希数组），并且其下标就是这个“唯一”值。那么如果访问A[id]存在，则这个元素存在，否则，原始数组中不存在该元素。由于数组是顺序存储的支持随机访问，所以查找一个元素是否在数组中，只需要O(1)的时间，但是在初始化哈希数组时，需要O(n)的时间和O(n)的空间。对于某些特定应用中，需要快速的时间，而对空间要求不苛刻时，哈希数组是一个非常好的方法。
 
 //时间复杂度O(n) 空间复杂度O(n)
-int* twoSumHash(int* nums, int numsSize, int target)
+int* twoSumHash(int* nums, int numsSize, int target, int* returnSize)
 {
     int min = 2147483647;
     int i = 0;
@@ -48,10 +48,11 @@ int* twoSumHash(int* nums, int numsSize, int target)
     int len = max - min + 1;   //确定hash长度
     int *table = (int*)malloc(len*sizeof(int));
     int *indice = (int*)malloc(2*sizeof(int));
-    for (i = 0; i < len; i++)
-    {
-        table[i] = -1;         //hash初值
-    }
+//    for (i = 0; i < len; i++)
+//    {
+//        table[i] = -1;         //hash初值
+//    }
+    memset(table, -1, len*sizeof(int));
     for (i = 0; i < numsSize; i++)
     {
         if (nums[i]-min < len)
