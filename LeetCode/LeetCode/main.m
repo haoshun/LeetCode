@@ -12,7 +12,7 @@
 
 
 
-#define TwoSum_1
+//#define TwoSum_1
 //#define AddTwoNumbers_2
 //
 //#define Reverse_7
@@ -109,7 +109,7 @@
 //#define AddDigits_258
 
 //#define IsUgly_263
-//#define NthUglyNumber_264
+#define NthUglyNumber_264
 
 //#define MissingNumber_268
 
@@ -1234,9 +1234,13 @@ void TrailingZeroes()
 
 void ReverseWordsAndReduceSpace()
 {
-    char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
-    ;
-    printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
+//    char w[300] = "lak.kb c!gfbb' cgyxxrph!ai paim,izbj.tnkugjx.f!uhs!xgv vsx.ncydmsgeaenstgthzd'fv qssjheigf!xca!d ,tsvj!yni'csdnphtt cej.ngxy egnh oaxzxugnehorkqkt,";
+//    ;
+//    printf("反转字符串中的单词 %s\n" , reverseWordsAndReduceSpace(w));
+    
+    char t[100] = "the sky is blue";
+    printf("反转字符串中的单词 %s\n" , reverseWords_151(t));
+    
 }
 #endif
 
@@ -1501,8 +1505,65 @@ void IsUgly()
 
 void NthUglyNumber()
 {
-    int n = 1690;
-    printf("第%d位丑数为 : %d \n" , n, nthUglyNumber(n));
+//    int n = 10;
+//    printf("第%d位丑数为 : %d \n" , n, nthUglyNumber(n));
+//
+//    char u[100] = "loveleetcode";
+//
+//    printf("第一个只出现一次的字符 %c\n" , firstUniqChar_offer(u));
+//
+//
+//    struct ListNode n1 , n2 , n3 , n4 ,n5 , n6 , n7 , n8;
+//    struct ListNode *result;
+//    n1.val = 4;
+//    n1.next = &n2;
+//
+//    n2.val = 1;
+//    n2.next = &n3;
+//
+//    n3.val = 8;
+//    n3.next = &n4;
+//
+//    n4.val = 4;
+//    n4.next = &n5;
+//
+//    n5.val = 5;
+//    n5.next = NULL;
+//
+//
+//    n6.val = 5;
+//    n6.next = &n7;
+//
+//    n7.val = 0;
+//    n7.next = &n8;
+//
+//    n8.val = 1;
+//    n8.next = &n3;
+//
+//    result = getIntersectionNode(&n1, &n6);
+    
+    int col = 2;
+    
+    int**p = (int**)malloc(sizeof(int*)*6);
+    for (int i = 0; i < 6; i++) {
+        p[i] = (int*)malloc(sizeof(int)*2);
+    }
+    
+    p[0][0] = 1;
+    p[0][1] = 2;
+    p[1][0] = 2;
+    p[1][1] = 3;
+    p[2][0] = 3;
+    p[2][1] = 4;
+    p[3][0] = 4;
+    p[3][1] = 5;
+    p[4][0] = 5;
+    p[4][1] = 6;
+    p[5][0] = 6;
+    p[5][1] = 7;
+    
+    printf("是否在一条直线上 : %d\n," , checkStraightLine(p, 6, &col));
+    
 }
 #endif
 
@@ -2509,6 +2570,86 @@ void SortedArrayToBST()
 #endif
 
 
+int** generate(int numRows, int* returnSize, int** returnColumnSizes){
+    int** returnArray = NULL;
+    *returnSize = 0;
+    if(numRows)
+    {
+        returnArray = (int** )malloc(sizeof(int*) * numRows);
+        *returnSize = numRows;
+        returnColumnSizes = (int** )malloc(sizeof(int*) * numRows);
+        for(int i = 1 ; i <= numRows ; ++i)
+        {
+            returnArray[i-1] = (int*)malloc(sizeof(int) * i);
+            returnColumnSizes[i-1] = (int*)malloc(sizeof(int));
+            returnColumnSizes[i-1][0] = i;
+
+            for(int j = 0 ; j < i ; ++j)
+            {
+                if(j == 0 || j == i - 1)
+                    returnArray[i-1][j] = 1;
+                else
+                    returnArray[i-1][j] = returnArray[i-2][j-1] + returnArray[i-2][j];
+            }
+        }
+    }
+    return returnArray;
+}
+
+
+
+
+ void reverseArray(int* arr, int arrSize)
+ {
+    for(int i = 0 , j = arrSize - 1 ; i < j ; ++i , --j)
+    {
+        arr[i] ^= arr[j];
+        arr[j] ^= arr[i];
+        arr[i] ^= arr[j];
+    }
+ }
+int* pancakeSort(int* arr, int arrSize, int* returnSize){
+    *returnSize = 0;
+    if(arrSize > 1)
+    {
+        int* tmp = (int* )malloc(sizeof(int) * 2 * arrSize);
+        int tmpLength = 0;
+        for(int i = arrSize ; i > 0 ; ++tmpLength)
+        {
+            if(arr[0] == i)
+            {
+                reverseArray(arr,i);
+                tmp[tmpLength] = i;
+                --i;
+                continue;
+            }
+            
+            for(int j = i - 1 ; j >0 ; --j)
+            {
+                if(arr[j] != i)
+                    break;
+                else
+                    --i;
+            }
+                
+            
+            for(int j = 0 ; j < i  ; ++j)
+            {
+                if(arr[j] == i)
+                {
+                    reverseArray(arr,j + 1);
+                    tmp[tmpLength] = j + 1;
+                    break;
+                }
+            }
+        }
+        *returnSize = tmpLength;
+        return tmp;
+    }
+    return arr;
+}
+
+
 
 #pragma mark -
 int main(int argc, const char * argv[]) {
@@ -3089,15 +3230,21 @@ int main(int argc, const char * argv[]) {
 #endif
         
 
-        for (int i = 2; i < 1000; ++i) {
-            if (8 * i * i > 64 * i * log2(i)) {
-                printf("%d \n" , i);
-                break;
-            }
-        }
+//        for (int i = 2; i < 1000; ++i) {
+//            if (8 * i * i > 64 * i * log2(i)) {
+//                printf("%d \n" , i);
+//                break;
+//            }
+//        }
         
-
+        int returnSize = 0;
+//        int** returnColumnSizes = NULL;
+//
+//        int** result = generate(5, &returnSize, returnColumnSizes);
     
+        
+        int arr[4] = {3,1,2,4};
+        int * returnArray = pancakeSort(arr, 4, &returnSize);
         
         
 //        char w[300] = "Cv 79 agctu qh cig, vjg yknn tgkipu; cv 69, vjg ykv; cpf cv 59, vjg lwfiogpv.";
@@ -3108,3 +3255,5 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+
+

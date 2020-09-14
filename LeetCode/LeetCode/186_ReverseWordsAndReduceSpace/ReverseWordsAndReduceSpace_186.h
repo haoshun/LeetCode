@@ -34,4 +34,6 @@
 //Reduce them to a single space in the reversed string.
 char* reverseWordsAndReduceSpace(char* s) ;
 
+char * reverseWords_151(char * s);
+
 #endif /* ReverseStr_h */

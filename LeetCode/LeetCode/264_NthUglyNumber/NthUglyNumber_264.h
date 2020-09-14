@@ -10,6 +10,7 @@
 #define NthUglyNumber_264_h
 
 #include <stdio.h>
+#include "Defines.h"
 
 //264. 丑数 II
 //
@@ -35,5 +36,12 @@
 //Assume you have Uk, the kth ugly number. Then Uk+1 must be Min(L1 * 2, L2 * 3, L3 * 5).
 
 int nthUglyNumber(int n);
+
+char firstUniqChar_offer(char* s);
+
+struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB);
+
+
+bool checkStraightLine(int** coordinates, int coordinatesSize, int* coordinatesColSize);
 
 #endif /* NthUglyNumber_264_h */

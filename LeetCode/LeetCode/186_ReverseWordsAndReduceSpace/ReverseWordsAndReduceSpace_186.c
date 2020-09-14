@@ -35,3 +35,42 @@ char* reverseWordsAndReduceSpace(char* s)
     return s;
 }
 
+void replaceString (char * s , int from , int to , int* index)
+{
+    for(int i = from ; i <= to ; ++i , ++(*index))
+        s[*index] = s[i];
+}
+
+char * reverseWords_151(char * s){
+    if(s)
+    {
+        int len = strlen(s), from = len, to = len, index = 0;
+        //int end = len - 1;
+        for(int i = 0 ; i < len; ++i)
+        {
+            if(s[i] != ' ')
+            {
+                if(i < from)
+                {
+                    from = i;
+                }
+                to = i;
+            }
+            if (s[i] == ' ' ||  i == len - 1) {
+                if(from <= to && from != len)
+                {
+                    if (index) {
+                        s[index++] = ' ';
+                    }
+                    RotateString(s,from,to);
+                    replaceString(s,from,to,&index);
+                    from = to = len;
+                }
+            }
+        }
+        s[index] = '\0';
+        RotateString(s,0,index-1);
+        //len = strlen(s);
+    }
+    return s;
+}
